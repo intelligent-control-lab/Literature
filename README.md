@@ -15,6 +15,8 @@ https://arxiv.org/pdf/1712.01406.pdf
 ### Verification of neural networks
 Verification of Deep Convolutional Neural Networks Using ImageStars https://arxiv.org/abs/2004.05511
 
+Parallelization Techniques for Verifying Neural Networks https://arxiv.org/pdf/2004.08440.pdf
+
 ### Verification of closed-loop system
 Reach-SDP: Reachability Analysis of Closed-Loop Systems with Neural Network Controllers via Semidefinite Programming https://arxiv.org/pdf/2004.07876.pdf
 
