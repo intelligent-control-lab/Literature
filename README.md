@@ -11,6 +11,9 @@ Output-Lifted Learning Model Predictive Control for Flat Systems https://arxiv.o
 Nonlinear Bayesian Estimation: From Kalman Filtering to a Broader Horizon
 https://arxiv.org/pdf/1712.01406.pdf
 
+Meta-Reinforcement Learning for Robotic Industrial Insertion Tasks
+https://arxiv.org/pdf/2004.14404.pdf
+
 ## Verification
 ### Verification of neural networks
 Verification of Deep Convolutional Neural Networks Using ImageStars https://arxiv.org/abs/2004.05511
