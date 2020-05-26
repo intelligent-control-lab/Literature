@@ -14,6 +14,9 @@ https://arxiv.org/pdf/1712.01406.pdf
 Meta-Reinforcement Learning for Robotic Industrial Insertion Tasks
 https://arxiv.org/pdf/2004.14404.pdf
 
+ABC-LMPC: Safe Sample-Based Learning MPC for Stochastic Nonlinear Dynamical Systems with Adjustable Boundary Conditions
+http://robotics.cs.rutgers.edu/wafr2020/wp-content/uploads/sites/7/2020/05/WAFR_2020_FV_2.pdf
+
 ## Verification
 ### Verification of neural networks
 Verification of Deep Convolutional Neural Networks Using ImageStars https://arxiv.org/abs/2004.05511
