@@ -31,7 +31,14 @@ Stability and feasibility of neural network-based controllers via output range a
 ## Multi-Agent Systems
 On the Dynamics of Deterministic Epidemic Propagation over Networks https://arxiv.org/pdf/1701.03137.pdf
 
-## Motion Planning
+## Motion Planning and Control
+
+### Hierarchical Control
+Continuous Task Transition Approach for Robot Controller based on Hierarchical Quadratic Programming http://dyros.snu.ac.kr/wp-content/plugins/uploadingdownloading-non-latin-filename/download.php?id=3897
+
+The Hierarchical Operational Space Formulation : Stability Analysis for the Regulation Case http://dyros.snu.ac.kr/wp-content/plugins/uploadingdownloading-non-latin-filename/download.php?id=3728
+
+Whole-body Control of Non-holonomic Mobile Manipulator Based on Hierarchical Quadratic Programming and Continuous Task Transition http://dyros.snu.ac.kr/wp-content/plugins/uploadingdownloading-non-latin-filename/download.php?id=4016
 
 ## Manufacturing
 
