@@ -1,3 +1,32 @@
+% id:
+%   C: conference
+%   J: journal
+%   B: book/book chapter
+%   T: thesis
+%   W: workshop
+%   U: unpublished
+%   P: Pattern
+%
+% venues:
+%   IROS: IEEE/RSJ International Conference on Intelligent Robots and Systems
+%   ICRA: IEEE International Conference on Robotics and Automation
+%   DSCC: Dynamic Systems and Control Conference
+%   ACC: American Control Conference
+%   ITSC: IEEE International Conference on Intelligent Transportation Systems
+%   IV: IEEE Intelligent Vehicles Symposium
+%   SC-L: Systems \& Control Letters
+%   SICON: SIAM Journal on Control and optimization
+%   CCTA: IEEE Conference on Control Technology and Applications
+%   T-IV: IEEE Transactions on Intelligent Vehicles
+%   ICARCV: International Conference on Control, Automation, Robotics and Vision
+%   CDC: IEEE Conference on Decision and Control
+%   L4DC: Learning for Dynamics and Control Conference
+%   TECS: ACM Transactions on Embedded Computing Systems
+%   IFAC: IFAC World Congress
+%   RA-L: IEEE Robotics and Automation Letters
+%   CORL: Conference on Robot Learning
+
+
 @inproceedings{liu2014modeling,
   id={C1},
   title={Modeling and controller design of cooperative robots in workspace sharing human-robot assembly teams},
@@ -7,59 +36,72 @@
   year={2014},
   organization={IEEE},
   repository={https://github.com/changliuliu/SafeSetAlgorithm},
-  url={https://www.cs.cmu.edu/&#126;cliu6/files/iros14.pdf}
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/iros14.pdf},
+  abstract={Human workers and robots are two major workforces in modern factories. For safety reasons, they are separated, which limits the productive potentials of both parties. It is promising if we can combine human’s flexibility and robot’s productivity in manufacturing. This paper investigates the modeling and controller design method of workspace sharing human-robot assembly teams and adopts a two-layer interaction model between the human and the robot. In theoretical analysis, enforcing invariance in a safe set guarantees safety. In imple- mentation, an integrated method concerning online learning of closed loop human behavior and receding horizon control in the safe set is proposed. Simulation results in a 2D setup confirm the safety and efficiency of the algorithm.}
 }
 
 @inproceedings{liu2014control,
   id={C2},
   title={Control in a safe set: Addressing safety in human-robot interactions},
   author={Liu, Changliu and Tomizuka, Masayoshi},
-  booktitle={2014 ASME Dynamic Systems and Control Conference},
+  booktitle={Dynamic Systems and Control Conference},
   year={2014},
   organization={ASME},
   repository={https://github.com/changliuliu/SafeSetAlgorithm},
   url={https://www.cs.cmu.edu/&#126;cliu6/files/dscc14.pdf},
-  page={https://www.cs.cmu.edu/&#126;cliu6/files/dscc_supplementary.pdf}
+  page={https://www.cs.cmu.edu/&#126;cliu6/files/dscc_supplementary.pdf},
+  abstract={Human-robot interactions (HRI) happen in a wide range of situations. Safety is one of the biggest concerns in HRI. This paper proposes a safe set method for designing the robot controller and offers theoretical guarantees of safety. The interactions are modeled in a multi-agent system framework. To deal with humans in the loop, we design a parameter adaptation algorithm (PAA) to learn the closed loop behavior of humans online. Then a safe set (a subset of the state space) is constructed and the optimal control law is mapped to the set of control which can make the safe set invariant. This algorithm is applied with different safety constraints to both mobile robots and robot arms. The simulation results confirm the effectiveness of the algorithm.},
+  award={Best Student Paper Finalist}
 }
 
 @inproceedings{liu2015safe,
   id={C3},
   title={Safe exploration: Addressing various uncertainty levels in human robot interactions},
   author={Liu, Changliu and Tomizuka, Masayoshi},
-  booktitle={2015 American Control Conference (ACC)},
+  booktitle={American Control Conference},
   pages={465--470},
   year={2015},
-  organization={IEEE}
+  organization={IEEE},
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/acc15.pdf},
+  repository={https://github.com/changliuliu/PAA_MSEE},
+  abstract={To address the safety issues in human robot interactions (HRI), a safe set algorithm (SSA) was developed previously. However, during HRI, the uncertainty levels are changing in different phases of the interaction, which is not captured by SSA. A safe exploration algorithm (SEA) is proposed in this paper to address the uncertainty levels in the robot control. To estimate the uncertainty levels online, a learning method in the belief space is developed. A comparative study between SSA and SEA is conducted. The simulation results confirm that SEA can capture the uncertainty reduction behavior which is observed in human-human interactions.}
 }
 
 @inproceedings{liu2016algorithmic,
   id={C4},
   title={Algorithmic safety measures for intelligent industrial co-robots},
   author={Liu, Changliu and Tomizuka, Masayoshi},
-  booktitle={2016 IEEE International Conference on Robotics and Automation (ICRA)},
+  booktitle={IEEE International Conference on Robotics and Automation},
   pages={3095--3102},
   year={2016},
-  organization={IEEE}
+  organization={IEEE},
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/icra16.pdf},
+  repository={https://github.com/changliuliu/VRsim},
+  abstract={In factories of the future, humans and robots are expected to be co-workers and co-inhabitants in the flexible production lines. It is important to ensure that humans and robots do not harm each other. This paper is concerned with functional issues to ensure safe and efficient interactions among human workers and the next generation intelligent industrial co-robots. The robot motion planning and control problem in a human involved environment is posed as a constrained optimal control problem. A modularized parallel controller structure is proposed to solve the problem online, which includes a baseline controller that ensures efficiency, and a safety controller that addresses real time safety by making a safe set invariant. Capsules are used to represent the complicated geometry of humans and robots. The design considerations of each module are discussed. Simulation studies which reproduce realistic scenarios are performed on a planar robot arm and a 6 DoF robot arm. The simulation results confirm the effectiveness of the method.}
 }
 
 @inproceedings{liu2016blame,
   id={C5},
   title={Who to blame? learning and control strategies with information asymmetry},
   author={Liu, Changliu and Zhang, Wenlong and Tomizuka, Masayoshi},
-  booktitle={2016 American Control Conference (ACC)},
+  booktitle={American Control Conference},
   pages={4859--4864},
   year={2016},
-  organization={IEEE}
+  organization={IEEE},
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/acc16-1.pdf},
+  abstract={The rise of robot-robot interactions (RRI) is pushing for novel controller design techniques. Instead of using fixed control laws, robots should choose actions to minimize some cost functions specified by the designer. However, since the cost function of one robot may not be known to other robots (information asymmetry), special reasoning strategies are needed for multiple robots to learn to cooperate. Analysis shows that conventional learning and control strategies can lead to instability in a multi-agent system since the imperfection of other agents is not considered. In this paper, a new learning and control strategy that deals with interactions among imperfect agents is proposed. Analysis and simulation results show that the proposed strategy improves the performance of the system.}
 }
 
 @inproceedings{liu2016enabling,
   id={C6},
   title={Enabling safe freeway driving for automated vehicles},
   author={Liu, Changliu and Tomizuka, Masayoshi},
-  booktitle={2016 American Control Conference (ACC)},
+  booktitle={American Control Conference},
   pages={3461--3467},
   year={2016},
-  organization={IEEE}
+  organization={IEEE},
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/acc16-2.pdf},
+  abstract={The development of automated vehicles brings new challenges to road safety. The behavior of the automated vehicles should be carefully designed in order to interact with the environment and other vehicles efficiently and safely. This paper is focused on the learning and decision making methods for the automated vehicles towards safe freeway driving. Based on a multi-agent traffic model, the decision making problem is posed as an optimal control problem, which is solved by 1) behavior classification and trajectory prediction of the surrounding vehicles, and 2) a unique parallel planner architecture which addresses the efficiency goal and the safety goal separately. The simulation results demonstrate the effectiveness of the algorithm.}
 }
 
 @incollection{liu2017designing,
@@ -69,34 +111,43 @@
   booktitle={Trends in Control and Decision-Making for Human--Robot Collaboration Systems},
   pages={241--270},
   year={2017},
-  publisher={Springer, Cham}
+  publisher={Springer, Cham},
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/springer.pdf},
+  abstract={Recent advances in robotics suggest that human robot interaction (HRI) is no longer a fantasy, but is happening in various fields such as industrial robots, autonomous vehicles and medical robots. Human safety is one of the biggest concerns in HRI. As humans will respond to the robot's movement, interactions need to be considered explicitly by the robot. A systematic approach to design the robot behavior towards safe HRI is discussed in this chapter. By modeling the interactions in a multi-agent framework, the safety issues are understood as conflicts in the multi-agent system. By mimicking human's social behavior, the robot's behavior is constrained by the "no-collision" social norm and the uncertainties it perceives for human motions. An efficient action is then found within the constraints. Both analysis and human-involved simulation verify the effectiveness of the method.}
 }
 
 @phdthesis{liu2017designing,
+  id={T},
   title={Designing robot behavior in human-robot interactions},
   author={Liu, Changliu},
   year={2017},
-  school={UC Berkeley}
+  school={UC Berkeley},
+  booktitle={PhD Thesis},
+  link={https://escholarship.org/uc/item/8tz6x0t9}
 }
 
 @inproceedings{tang2016robotic,
   id={C7},
   title={Robotic manipulation of deformable objects by tangent space mapping and non-rigid registration},
   author={Tang, Te and Liu, Changliu and Chen, Wenjie and Tomizuka, Masayoshi},
-  booktitle={2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
   pages={2689--2696},
   year={2016},
-  organization={IEEE}
+  organization={IEEE},
+  link={https://ieeexplore.ieee.org/abstract/document/7759418},
+  abstract={Recent works of non-rigid registration have shown promising applications on tasks of deformable manipulation. Those approaches use thin plate spline-robust point matching (TPS-RPM) algorithm to regress a transformation function, which could generate a corresponding manipulation trajectory given a new pose/shape of the object. However, this method regards the object as a bunch of discrete and independent points. Structural information, such as shape and length, is lost during the transformation. This limitation makes the object’s final shape to differ from training to test, and can sometimes cause damage to the object because of excessive stretching. To deal with these problems, this paper introduces a tangent space mapping (TSM) algorithm, which maps the deformable object in the tangent space instead of the Cartesian space to maintain structural information. The new algorithm is shown to be robust to the changes in the object’s pose/shape, and the object’s final shape is similar to that of training. It is also guaranteed not to overstretch the object during manipulation. A series of rope manipulation tests are performed to validate the effectiveness of the proposed algorithm.}
 }
 
 @inproceedings{zhan2016non,
   id={C8},
   title={A non-conservatively defensive strategy for urban autonomous driving},
   author={Zhan, Wei and Liu, Changliu and Chan, Ching-Yao and Tomizuka, Masayoshi},
-  booktitle={2016 IEEE 19th International Conference on Intelligent Transportation Systems (ITSC)},
+  booktitle={IEEE International Conference on Intelligent Transportation Systems},
   pages={459--464},
   year={2016},
-  organization={IEEE}
+  organization={IEEE},
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/itsc16.pdf},
+  abstract={From the driving strategy point of view, a major challenge for autonomous vehicles in urban environment is to behave defensively to potential dangers, yet to not overreact to threats with low probability. As it is overwhelming to program the action rules case-by-case, a unified planning framework under uncertainty is proposed in this paper, which achieves a non-conservatively defensive strategy (NCDS) in various kinds of scenarios for urban autonomous driving. First, uncertainties in urban scenarios are simplified to two probabilistic cases, namely passing and yielding. Two-way-stop intersection is used as an exemplar scenario to illustrate the derivation of probabilities for different intentions of others via a logistic regression model. Then a deterministic planner is designed as the baseline. Also, a safe set is defined, which considers both current and preview safety. The planning framework under uncertainty is then proposed, in which safety is guaranteed and overcautious behavior is prevented. Finally, the proposed planning framework is tested by simulation in the exemplar scenario, which demonstrates that an NCDS can be realistically achieved by employing the proposed framework.}
 }
 
 @techreport{liu2017robustly,
@@ -104,47 +155,62 @@
   title={The robustly-safe automated driving system for enhanced active safety},
   author={Liu, Changliu and Chen, Jianyu and Nguyen, Trong-Duy and Tomizuka, Masayoshi},
   year={2017},
-  institution={SAE Technical Paper}
+  booktitle={SAE World Congress},
+  institution={SAE Technical Paper},
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/sae17.pdf},
+  abstract={The development of automated vehicles brings new challenges to road safety. The behavior of the automated vehicles should be carefully designed in order to interact with the environment and other vehicles efficiently and safely. The robustly-safe automated driving system (ROAD) prevents or minimizes occurrences of collisions of the automated vehicles with surrounding vehicles and moving objects while maintaining efficiency. A set of design principles are elaborated based on the previous work, including robust perception and cognition algorithms for environment monitoring and high level decision making and low level control algorithms for safe maneuvering of the automated vehicle. The autonomous driving problem in mixed traffic is posed as a stochastic optimization problem, which is solved by 1) behavior classification and trajectory prediction of the surrounding vehicles, and 2) an unique parallel planner architecture which addresses the efficiency goal and the safety goal separately. Extensive simulations are performed to validate the effectiveness of the proposed algorithm, which evaluate both high level decision making and low level vehicle regulation. Two typical scenarios are considered, driving on freeway and driving in unstructured environments such as parking lots. In the simulation, multiple moving agents representing surrounding vehicles and pedestrians are added to the environment, some of which are controlled by human users in order to test the real time response of the automated vehicle.}
 }
 
 @inproceedings{liu2017convex,
   id={C10},
   title={Convex feasible set algorithm for constrained trajectory smoothing},
   author={Liu, Changliu and Lin, Chung-Yen and Wang, Yizhou and Tomizuka, Masayoshi},
-  booktitle={2017 American Control Conference (ACC)},
+  booktitle={American Control Conference},
   pages={4177--4182},
   year={2017},
-  organization={IEEE}
+  organization={IEEE},
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/acc17.pdf},
+  abstract={Trajectory smoothing is an important step in robot motion planning, where optimization methods are usually employed. However, the optimization problem for trajectory smoothing in a clustered environment is highly non-convex, and is hard to solve in real time using conventional non-convex optimization solvers. This paper discusses a fast online optimization algorithm for trajectory smoothing, which transforms the original non-convex problem to a convex problem so that it can be solved efficiently online. The performance of the algorithm is illustrated in various cases, and is compared to that of conventional sequential quadratic programming (SQP). It is shown that the computation time is greatly reduced using the proposed algorithm.}
 }
 
 @inproceedings{zhan2017spatially,
   id={C11},
   title={Spatially-partitioned environmental representation and planning architecture for on-road autonomous driving},
   author={Zhan, Wei and Chen, Jianyu and Chan, Ching-Yao and Liu, Changliu and Tomizuka, Masayoshi},
-  booktitle={2017 IEEE Intelligent Vehicles Symposium (IV)},
+  booktitle={IEEE Intelligent Vehicles Symposium},
   pages={632--639},
   year={2017},
-  organization={IEEE}
+  organization={IEEE},
+  link={https://ieeexplore.ieee.org/document/7995789},
+  abstract={Conventional layered planning architecture temporally partitions the spatiotemporal motion planning by the path and speed, which is not suitable for lane change and overtaking scenarios with moving obstacles. In this paper, we propose to spatially partition the motion planning by longitudinal and lateral motions along the rough reference path in the Frenét Frame, which makes it possible to create linearized safety constraints for each layer in a variety of on-road driving scenarios. A generic environmental representation methodology is proposed with three topological elements and corresponding longitudinal constraints to compose all driving scenarios mentioned in this paper according to the overlap between the potential path of the autonomous vehicle and predicted path of other road users. Planners combining A* search and quadratic programming (QP) are designed to plan both rough long-term longitudinal motions and short-term trajectories to exploit the advantages of both search-based and optimization-based methods. Limits of vehicle kinematics and dynamics are considered in the planners to handle extreme cases. Simulation results show that the proposed framework can plan collision-free motions with high driving quality under complicated scenarios and emergency situations.}
 }
 
 @inproceedings{liu2017speed,
   id={C12},
   title={Speed profile planning in dynamic environments via temporal optimization},
   author={Liu, Changliu and Zhan, Wei and Tomizuka, Masayoshi},
-  booktitle={2017 IEEE Intelligent Vehicles Symposium (IV)},
+  booktitle={IEEE Intelligent Vehicles Symposium},
   pages={154--159},
   year={2017},
-  organization={IEEE}
+  organization={IEEE},
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/iv17-2.pdf},
+  repository={https://github.com/changliuliu/TemporalOptimization},
+  page={https://www.cs.cmu.edu/&#126;cliu6/files/iv17-2poster.pdf},
+  abstract={To generate safe and efficient trajectories for an automated vehicle in dynamic environments, a layered approach is usually considered, which separates path planning and speed profile planning. This paper is focused on speed profile planning for a given path that is represented by a set of waypoints. The speed profile will be generated using temporal optimization which optimizes the time stamps for all waypoints along the given path. The formulation of the problem under urban driving scenarios is discussed. To speed up the computation, the non-convex temporal optimization is approximated by a set of quadratic programs which are solved iteratively using the slack convex feasible set (SCFS) algorithm. The simulations in various urban driving scenarios validate the effectiveness of the method.}
 }
 
 @inproceedings{liu2017boundary,
   id={C13},
   title={Boundary layer heuristic for search-based nonholonomic path planning in maze-like environments},
   author={Liu, Changliu and Wang, Yizhou and Tomizuka, Masayoshi},
-  booktitle={2017 IEEE Intelligent Vehicles Symposium (IV)},
+  booktitle={IEEE Intelligent Vehicles Symposium},
   pages={831--836},
   year={2017},
-  organization={IEEE}
+  organization={IEEE},
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/iv17-1.pdf},
+  repository={https://github.com/changliuliu/HeuristicA},
+  page={https://www.cs.cmu.edu/&#126;cliu6/files/iv17-1poster.pdf},
+  abstract={Automatic valet parking is widely viewed as a milestone towards fully autonomous driving. One of the key problems is nonholonomic path planning in maze-like environments (e.g. parking lots). To balance efficiency and passenger comfort, the planner needs to minimize the length of the path as well as the number of gear shifts. Lattice A* search is widely adopted for optimal path planning. However, existing heuristics do not evaluate the nonholonomic dynamic constraint and the collision avoidance constraint simultaneously, which may mislead the search. To efficiently search the environment, the boundary layer heuristic is proposed which puts large cost in the area that the vehicle must shift gear to escape. Such area is called the boundary layer. A simple and efficient geometric method to compute the boundary layer is proposed. The admissibility and consistency of the additive combination of the boundary layer heuristic and existing heuristics are proved in the paper. The simulation results verify that the introduction of the boundary layer heuristic improves the search performance by reducing the computation time by 56.1%.}
 }
 
 @article{liu2017safe,
@@ -156,7 +222,8 @@
   number={1},
   pages={123--125},
   year={2017},
-  publisher={IEEE}
+  publisher={IEEE},
+  link={https://ieeexplore.ieee.org/document/7823104}
 }
 
 @article{liu2017real,
@@ -167,7 +234,9 @@
   volume={108},
   pages={56--63},
   year={2017},
-  publisher={North-Holland}
+  publisher={North-Holland},
+  link={https://www.sciencedirect.com/science/article/abs/pii/S0167691117301469},
+  abstract={Real time trajectory optimization is critical for robotic systems. Due to nonlinear system dynamics and obstacles in the environment, the trajectory optimization problems are highly nonlinear and non convex, hence hard to be computed online. Liu, Lin and Tomizuka proposed the convex feasible set algorithm (CFS) to handle the non convex optimization in real time by convexification. However, one limitation of CFS is that it will not converge to local optima when there are nonlinear equality constraints. In this paper, the slack convex feasible set algorithm (SCFS) is proposed to handle the nonlinear equality constraints, e.g. nonlinear system dynamics, by introducing slack variables to relax the constraints. The geometric interpretation of the method is discussed. The feasibility and convergence of the SCFS algorithm is proved. It is demonstrated that SCFS performs better than existing non convex optimization methods such as interior-point, active set and sequential quadratic programming, as it requires less computation time and converges faster.}
 }
 
 @article{liu2018convex,
@@ -179,27 +248,34 @@
   number={4},
   pages={2712--2733},
   year={2018},
-  publisher={Society for Industrial and Applied Mathematics}
+  publisher={Society for Industrial and Applied Mathematics},
+  url={https://arxiv.org/pdf/1709.00627},
+  repository={https://github.com/changliuliu/CFS},
+  abstract={With the development of robotics, there are growing needs for real time motion planning. However, due to obstacles in the environment, the planning problem is highly non-convex, which makes it difficult to achieve real time computation using existing non-convex optimization algorithms. This paper introduces the convex feasible set algorithm (CFS) which is a fast algorithm for non-convex optimization problems that have convex costs and non-convex constraints. The idea is to find a convex feasible set for the original problem and iteratively solve a sequence of subproblems using the convex constraints. The feasibility and the convergence of the proposed algorithm are proved in the paper. The application of this method on motion planning for mobile robots is discussed. The simulations demonstrate the effectiveness of the proposed algorithm.}
 }
 
 @inproceedings{lin2017real,
   id={C14},
   title={Real-time collision avoidance algorithm on industrial manipulators},
   author={Lin, Hsien-Chung and Liu, Changliu and Fan, Yongxiang and Tomizuka, Masayoshi},
-  booktitle={2017 IEEE Conference on Control Technology and Applications (CCTA)},
+  booktitle={IEEE Conference on Control Technology and Applications},
   pages={1294--1299},
   year={2017},
-  organization={IEEE}
+  organization={IEEE},
+  link={https://ieeexplore.ieee.org/document/8062637},
+  abstract={Safety is a fundamental issue in robotics, especially in the growing application of human-robot interaction (HRI), where collision avoidance is an important consideration. In this paper, a novel real-time velocity based collision avoidance planner is presented to address this problem. The proposed algorithm provides a solution to deal with both collision avoidance and reference tracking simultaneously. An invariant safe set is introduced to exclude the dangerous states that may lead to collision, and a smoothing function is introduced to adapt different reference commands and to preserve the invariant property of the safe set. A real-time experiment with a moving obstacle is conducted on FANUC LR Mate 200iD/7L.}
 }
 
 @inproceedings{chen2018foad,
   id={C15},
   title={FOAD: Fast optimization-based autonomous driving motion planner},
   author={Chen, Jianyu and Liu, Changliu and Tomizuka, Masayoshi},
-  booktitle={2018 Annual American Control Conference (ACC)},
+  booktitle={American Control Conference},
   pages={4725--4732},
   year={2018},
-  organization={IEEE}
+  organization={IEEE},
+  link={https://ieeexplore.ieee.org/document/8431104},
+  abstract={Motion planning is one of the core modules for autonomous driving. Among the current motion planning techniques, optimization-based methods have unique advantages since they allow planning in continuous space and they can evaluate multiple objectives (such as hard constraints) in one formulation. However, it is hard to implement optimization-based methods in real-time in complicated environments due to 1) high computational complexity as the optimization problems are usually non-convex; and 2) difficulty to guarantee closed-loop performance because the low level trajectory tracking controller cannot perform perfect tracking. To solve the first challenge, convex feasible set algorithm (CFS) has been proposed for real time non-convex optimization. To solve the second challenge, a fast optimization-based autonomous driving motion planner (FOAD) is proposed in this paper which implements a soft constrained convex feasible set algorithm (SCCFS) as an enhanced version of CFS. The concept of closed-loop smoothness is defined and analyzed in this paper. Simulations and real vehicle experiments verify the efficiency and capability of the planner.}
 }
 
 @article{liu2017distributed,
@@ -211,27 +287,35 @@
   number={1},
   pages={18--29},
   year={2017},
-  publisher={IEEE}
+  publisher={IEEE},
+  link={https://ieeexplore.ieee.org/document/8241865},
+  abstract={This paper proposes a novel communication-enabled distributed conflict resolution mechanism for interactions among connected autonomous vehicles (CAVs). The environments under consideration are generalized intersections where multiple incoming and outgoing lanes intersect. All vehicles close to the intersection are requested to broadcast their estimated times to occupy the conflict zones where a conflict zone is identified when the extensions of two incoming lanes intersect. The conflict resolution strategy is decoupled temporally for a vehicle. In a decision maker, the vehicle computes the desired time slot to pass the conflict zones based on the broadcasted information by solving a conflict graph locally. Then in a motion planner, the vehicle computes the desired speed profile by solving a temporal optimization problem constrained in the desired time slot. The estimated time to occupy the conflict zones given the new speed profile is then broadcasted again. It is shown theoretically that the aggregation of these local decisions solves the conflicts globally. Moreover, this mechanism increases the efficiency of autonomous vehicles, and outperforms conventional mechanisms such as traffic light or stop sign in a four-way intersection in terms of delay time and throughput as demonstrated by simulation.}
 }
 
 @inproceedings{liu2018improving,
   id={C16},
   title={Improving efficiency of autonomous vehicles by V2V communication},
   author={Liu, Changliu and Lin, Chung-Wei and Shiraishi, Shinichi and Tomizuka, Masayoshi},
-  booktitle={2018 Annual American Control Conference (ACC)},
+  booktitle={American Control Conference},
   pages={4778--4783},
   year={2018},
-  organization={IEEE}
+  organization={IEEE},
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/acc18-1.pdf},
+  abstract={Autonomous vehicles are widely regarded as a promising technology to improve the safety of transportation systems. However, the efficiency of vehicles may be compromised to ensure safety when there are large uncertainties in perception and prediction of the behaviors of other road participants due to limitations in sensors. To remedy this problem, vehicle to vehicle (V2V) communication is applied to improve efficiency of autonomous vehicles during interactions with other vehicles. By requiring the vehicles to communicate their intentions with one another, the efficiency of the vehicles can be improved in terms of smaller variations in their speed profiles and smaller delay as demonstrated in the simulations.}
 }
 
 @inproceedings{liu2018analytically,
   id={C17},
   title={Analytically Modeling Unmanaged Intersections with Microscopic Vehicle Interactions},
   author={Liu, Changliu and Kochenderfer, Mykel J},
-  booktitle={2018 21st International Conference on Intelligent Transportation Systems (ITSC)},
+  booktitle={IEEE International Conference on Intelligent Transportation Systems},
   pages={2352--2357},
   year={2018},
-  organization={IEEE}
+  organization={IEEE},
+  url={https://arxiv.org/abs/1804.04746},
+  repository={https://github.com/sisl/TrafficDelayAnalysis},
+  video={https://www.youtube.com/embed/ROQCT954HVI?si=h2TKG5dC-VvVFwlk},
+  abstract={With the emergence of autonomous vehicles, it is important to understand their impact on the transportation system. However, conventional traffic simulations are time-consuming. In this paper, we introduce an analytical traffic model for unmanaged intersections accounting for microscopic vehicle interactions. The macroscopic property, i.e., delay at the intersection, is modeled as an event-driven stochastic dynamic process, whose dynamics encode the microscopic vehicle behaviors. The distribution of macroscopic properties can be obtained through either direct analysis or event-driven simulation. They are more efficient than conventional (time-driven) traffic simulation, and capture more microscopic details compared to conventional macroscopic flow models. We illustrate the efficiency of this method by delay analyses under two different policies at a two-lane intersection. The proposed model allows for 1) efficient and effective comparison among different policies, 2) policy optimization, 3) traffic prediction, and 4) system optimization (e.g., infrastructure and protocol).}
 }
 
 @article{liu2018analyzing,
@@ -239,7 +323,11 @@
   title={Analyzing traffic delay at unmanaged intersections},
   author={Liu, Changliu and Kochenderfer, Mykel J},
   journal={arXiv:1806.02660},
-  year={2018}
+  year={2018},
+  url={https://arxiv.org/pdf/1806.02660},
+  repository={https://github.com/sisl/TrafficDelayAnalysis},
+  video={https://www.youtube.com/embed/ROQCT954HVI?si=ERfehJO7FJdFafYc},
+  abstract={At an unmanaged intersection, it is important to understand how much traffic delay may be caused as a result of microscopic vehicle interactions. Conventional traffic simulations that explicitly track these interactions are time-consuming. Prior work introduced an analytical traffic model for unmanaged intersections. The traffic delay at the intersection is modeled as an event-driven stochastic process, whose dynamics encode microscopic vehicle interactions. This paper studies the traffic delay in a two-lane intersection using the model. We perform rigorous analyses concerning the distribution of traffic delay under different scenarios. We then discuss the relationships between traffic delay and multiple factors such as traffic flow density, unevenness of traffic flows, temporal gaps between two consecutive vehicles, and the passing order.}
 }
 
 @article{liu2018robot,
@@ -247,7 +335,9 @@
   title={Robot safe interaction system for intelligent industrial co-robots},
   author={Liu, Changliu and Tomizuka, Masayoshi},
   journal={arXiv:1808.03983},
-  year={2018}
+  year={2018},
+  url={https://arxiv.org/abs/1808.03983},
+  abstract={Human-robot interactions have been recognized to be a key element of future industrial collaborative robots (co-robots). Unlike traditional robots that work in structured and deterministic environments, co-robots need to operate in highly unstructured and stochastic environments. To ensure that co-robots operate efficiently and safely in dynamic uncertain environments, this paper introduces the robot safe interaction system. In order to address the uncertainties during human-robot interactions, a unique parallel planning and control architecture is proposed, which has a long term global planner to ensure efficiency of robot behavior, and a short term local planner to ensure real time safety under uncertainties. In order for the robot to respond immediately to environmental changes, fast algorithms are used for real-time computation, i.e., the convex feasible set algorithm for the long term optimization, and the safe set algorithm for the short term optimization. Several test platforms are introduced for safe evaluation of the developed system in the early phase of deployment. The effectiveness and the efficiency of the proposed method have been verified in experiment with an industrial robot manipulator.}
 }
 
 @article{liu2018serocs,
@@ -255,75 +345,93 @@
   title={Serocs: Safe and efficient robot collaborative systems for next generation intelligent industrial co-robots},
   author={Liu, Changliu and Tang, Te and Lin, Hsien-Chung and Cheng, Yujiao and Tomizuka, Masayoshi},
   journal={arXiv:1809.08215},
-  year={2018}
+  year={2018},
+  url={https://arxiv.org/pdf/1809.08215},
+  abstract={Human-robot collaborations have been recognized as an essential component for future factories. It remains challenging to properly design the behavior of those co-robots. Those robots operate in dynamic uncertain environment with limited computation capacity. The design objective is to maximize their task efficiency while guaranteeing safety. This paper discusses a set of design principles of the safe and efficient robot collaboration system (SERoCS) for the next generation co-robots, which consists of robust cognition algorithms for environment monitoring, optimal task planning algorithms for safe human-robot collaborations, and safe motion planning and control algorithms for safe human-robot interactions. The proposed SERoCS will address the design challenges and significantly expand the skill sets of the co-robots to allow them work safely and efficiently with their human counterparts. The development of SERoCS will create a significant advancement toward adoption of co-robots in various industries. The experiments validate the effectiveness of SERoCS.}
 }
 
 @inproceedings{lin2018fast,
   id={C18},
   title={Fast Robot Motion Planning with Collision Avoidance and Temporal Optimization},
   author={Lin, Hsien-Chung and Liu, Changliu and Tomizuka, Masayoshi},
-  booktitle={2018 15th International Conference on Control, Automation, Robotics and Vision (ICARCV)},
+  booktitle={International Conference on Control, Automation, Robotics and Vision},
   pages={29--35},
   year={2018},
-  organization={IEEE}
+  organization={IEEE},
+  link={https://ieeexplore.ieee.org/abstract/document/8581194},
+  abstract={Considering the growing demand of real-time motion planning in robot applications, this paper proposes a fast robot motion planner (FRMP) to plan collision-free and time-optimal trajectories, which applies the convex feasible set algorithm (CFS) to solve both the trajectory planning problem and the temporal optimization problem. The performance of CFS in trajectory planning is compared to the sequential quadratic programming (SQP) in simulation, which shows a significant decrease in iteration numbers and computation time to converge a solution. The effectiveness of temporal optimization is shown on the operational time reduction in the experiment on FANUC LR Mate 200iD/7L.},
+  award={Best Paper Award}
 }
 
 @inproceedings{bhattacharyya2019simulating,
   id={C19},
   title={Simulating emergent properties of human driving behavior using multi-agent reward augmented imitation learning},
   author={Bhattacharyya, Raunak P and Phillips, Derek J and Liu, Changliu and Gupta, Jayesh K and Driggs-Campbell, Katherine and Kochenderfer, Mykel J},
-  booktitle={2019 International Conference on Robotics and Automation (ICRA)},
+  booktitle={IEEE International Conference on Robotics and Automation},
   pages={789--795},
   year={2019},
   organization={IEEE},
-  url={https://ieeexplore.ieee.org/abstract/document/9029720}
+  url={https://arxiv.org/pdf/1903.05766},
+  link={https://ieeexplore.ieee.org/abstract/document/9029720},
+  abstract={Recent developments in multi-agent imitation learning have shown promising results for modeling the behavior of human drivers. However, it is challenging to capture emergent traffic behaviors that are observed in real-world datasets. Such behaviors arise due to the many local interactions between agents that are not commonly accounted for in imitation learning. This paper proposes Reward Augmented Imitation Learning (RAIL), which integrates reward augmentation into the multi-agent imitation learning framework and allows the designer to specify prior knowledge in a principled fashion. We prove that convergence guarantees for the imitation learning process are preserved under the application of reward augmentation. This method is validated in a driving scenario, where an entire traffic scene is controlled by driving policies learned using our proposed algorithm. Further, we demonstrate improved performance in comparison to traditional imitation learning algorithms both in terms of the local actions of a single agent and the behavior of emergent properties in complex, multi-agent settings.}
 }
 
 @inproceedings{cheng2019human,
   id={C20},
   title={Human motion prediction using semi-adaptable neural networks},
   author={Cheng, Yujiao and Zhao, Weiye and Liu, Changliu and Tomizuka, Masayoshi},
-  booktitle={2019 American Control Conference (ACC)},
+  booktitle={American Control Conference},
   pages={4884--4890},
   year={2019},
   organization={IEEE},
-  url={https://ieeexplore.ieee.org/document/8814980}
+  url={https://arxiv.org/abs/1810.00781},
+  link={https://ieeexplore.ieee.org/document/8814980},
+  repository={https://github.com/msc-berkeley/Human-Motion-Prediction},
+  abstract={Human motion prediction is an important component to facilitate human robot interaction. Robots need to accurately predict human's future movement in order to efficiently collaborate with humans, as well as to safely plan its own motion trajectories. Many recent approaches predict human's future movement using deep learning methods, such as recurrent neural networks. However, existing methods lack the ability to adapt to time-varying human behaviors. Moreover, many of them do not quantify uncertainties in the prediction. This paper proposes a new approach that uses an adaptable neural network for human motion prediction, in order to accommodate human's time-varying behaviors and to provide uncertainty bounds of the predictions in real time. In particular, a neural network is trained offline to represent the human motion transition model. Recursive least square parameter adaptation algorithm (RLS-PAA) is adopted for online parameter adaptation of the neural network and for uncertainty estimation. Experiments on several human motion datasets verify that the proposed method outperforms the state-of-the-art approach with a significant improvement in terms of prediction accuracy and computation efficiency.}
 }
 
 @inproceedings{si2019agen,
   id={C21},
   title={Agen: Adaptable generative prediction networks for autonomous driving},
   author={Si, Wenwen and Wei, Tianhao and Liu, Changliu},
-  booktitle={2019 IEEE Intelligent Vehicles Symposium (IV)},
+  booktitle={IEEE Intelligent Vehicles Symposium},
   pages={281--286},
   year={2019},
   organization={IEEE},
-  url={https://ieeexplore.ieee.org/document/8814238}
+  url={https://www.cs.cmu.edu/&#126;cliu6/files/iv19-1.pdf},
+  link={https://ieeexplore.ieee.org/document/8814238},
+  repository={https://github.com/intelligent-control-lab/AGen},
+  page={https://www.cs.cmu.edu/&#126;cliu6/files/iv19-1poster.pdf},
+  abstract={In highly interactive driving scenarios, accurate prediction of other road participants is critical for safe and efficient navigation of autonomous cars. Prediction is challenging due to the difficulty in modeling various driving behavior, or learning such a model. The model should be interactive and reflect individual differences. Imitation learning methods, such as parameter sharing generative adversarial imitation learning (PS-GAIL), are able to learn interactive models. However, the learned models average out individual differences. When used to predict trajectories of individual vehicles, these models are biased. This paper introduces an adaptable generative prediction framework (AGen), which performs online adaptation of the offline learned models to recover individual differences for better prediction. In particular, we combine the recursive least square parameter adaptation algorithm (RLS-PAA) with the offline learned model from PS-GAIL. RLS-PAA has analytical solutions and is able to adapt the model for every single vehicle efficiently online. The proposed method is able to reduce the root mean squared prediction error in a 2.5s time window by 60%, compared with PS-GAIL.}
 }
 
 @inproceedings{xu2019toward,
   id={C22},
   title={Toward Modularization of Neural Network Autonomous Driving Policy Using Parallel Attribute Networks},
   author={Xu, Zhuo and Chang, Haonan and Tang, Chen and Liu, Changliu and Tomizuka, Masayoshi},
-  booktitle={2019 IEEE Intelligent Vehicles Symposium (IV)},
+  booktitle={IEEE Intelligent Vehicles Symposium},
   pages={1400--1407},
   year={2019},
   organization={IEEE},
-  url={https://ieeexplore.ieee.org/document/8813861}
+  link={https://ieeexplore.ieee.org/document/8813861},
+  abstract={Neural network autonomous driving policies are widely explored. However, no matter using imitation learning or reinforcement learning, the network policies are generally hard to train, and the learned knowledge encoded in neural network policies are hard to transfer. We propose to modularize the complicated driving policies in terms of the driving attributes, and present the parallel attribute networks (PAN), which can learn to fullfill the requirements of the attributes in the driving tasks separately, and later assemble their knowledge together. Concretely, we first train a policy network that accomplish the base lane tracking attribute. The modules for the add-on attributes such as avoiding obstacles and obeying traffic rules are then trained to map the corresponding state to a satisfactory set of the vehicle action space. Finally the reference action given by the base policy is projected into the satisfactory sets so as to satisfy the requirements of all the attributes. Using the PAN, many complicated tasks that are hard to train from scratch can be easily trained; also unseen driving tasks can be solved in a zero-shot manner by assembling the pretrained attribute modules. We have validated the capability of our model on a class of autonomous driving problems with attributes of obstacle avoidance, traffic light and speed limit in simulation. Experimental results based on an obstacle avoidance task are also presented.}
 }
 
 @inproceedings{wei2019safe,
   id={C23},
   title={Safe Control Algorithms Using Energy Functions: A Unified Framework, Benchmark, and New Directions},
   author={Wei, Tianhao and Liu, Changliu},
-  booktitle={2019 IEEE 58th Conference on Decision and Control (CDC)},
+  booktitle={IEEE Conference on Decision and Control},
   pages={238-243},
   year={2019},
-  organization={IEEE}
+  organization={IEEE},
+  url={https://arxiv.org/abs/1908.01883},
+  repository={https://github.com/intelligent-control-lab/BIS},
+  abstract={Safe autonomy is important in many application domains, especially for applications involving interactions with humans. Existing safe control algorithms are similar to each other in the sense that: they all provide control input to maintain a low value of an energy function that measures safety. In different methods, the energy function is called a potential function, a safety index, or a barrier function. The connections and relative advantages among these methods remain unclear. This paper introduces a unified framework to derive safe control laws using energy functions. We demonstrate how to integrate existing controllers based on potential field method, safe set algorithm, barrier function method, and sliding mode algorithm into this unified framework. In addition to theoretical comparison, this paper also introduces a benchmark which implements and compares existing methods on a variety of problems with different system dynamics and interaction modes. Based on the comparison results, a new method, called the sublevel safe set algorithm, is derived under the unified framework by optimizing the hyperparameters. The proposed algorithm achieves the best performance in terms of safety and efficiency on all benchmark problems.}
 }
 
 @inproceedings{liu2019neuralverification,
-  id={C24},
+  id={W},
   title={NeuralVerification.jl: Algorithms for verifying deep neural networks},
   author={Liu, Changliu and Arnon, Tomer and Lazarus, Christopher and Kochenderfer, Mykel J},
   booktitle={ICLR 2019 Debugging Machine Learning Models Workshop},
@@ -332,7 +440,7 @@
 }
 
 @inproceedings{abuduweili2019adaptable,
-  id={C25},
+  id={W},
   title={Adaptable Human Intention and Trajectory Prediction for Human-Robot Collaboration},
   author={Abuduweili, Abulikemu and Li, Siyan and Liu, Changliu},
   booktitle={AAAI 2019 Fall Symposium Series, AI for HRI},
@@ -344,33 +452,16 @@
   id={J5},
   title={Graph-Based Modeling, Scheduling, and Verification for Intersection Management of Intelligent Vehicles},
   author={Lin, Yi-Ting and Hsu, Hsiang and Lin, Shang-Chien and Lin, Chung-Wei and Jiang, Iris Hui-Ru and Liu, Changliu},
-  journal={ACM Transactions on Embedded Computing Systems (TECS)},
+  journal={ACM Transactions on Embedded Computing Systems},
   volume={18},
   number={5s},
   pages={1--21},
   year={2019},
   publisher={ACM New York, NY, USA},
-  url={https://dl.acm.org/doi/10.1145/3358221}
+  link={https://dl.acm.org/doi/10.1145/3358221},
+  abstract={Intersection management is one of the most representative applications of intelligent vehicles with connected and autonomous functions. The connectivity provides environmental information that a single vehicle cannot sense, and the autonomy supports precise vehicular control that a human driver cannot achieve. Intersection management solves the fundamental conflict resolution problem for vehicles—two vehicles should not appear at the same location at the same time, and, if they intend to do that, an order should be decided to optimize certain objectives such as the traffic throughput or smoothness. In this paper, we first propose a graph-based model for intersection management. The model is general and applicable to different granularities of intersections and other conflicting scenarios. We then derive formal verification approaches which can guarantee deadlock-freeness. Based on the graph-based model and the verification approaches, we develop a centralized cycle removal algorithm for the graph-based model to schedule vehicles to go through the intersection safely (without collisions) and efficiently without deadlocks. Experimental results demonstrate the expressiveness of the proposed model and the effectiveness and efficiency of the proposed algorithm.}
 }
 
-@inproceedings{abuduweili2020robust,
-  id={C26},
-  title = 	 {Robust Online Model Adaptation by Extended Kalman Filter with Exponential Moving Average and Dynamic Multi-Epoch Strategy},
-  author = 	 {Abulikemu Abuduweili and Changliu Liu},
-  booktitle = 	 {Proceedings of the 2nd Conference on Learning for Dynamics and Control},
-  pages = 	 {65--74},
-  year = 	 {2020},
-  editor = 	 {Alexandre M. Bayen and Ali Jadbabaie and George Pappas and Pablo A. Parrilo and Benjamin Recht and Claire Tomlin and Melanie Zeilinger},
-  volume = 	 {120},
-  series = 	 {Proceedings of Machine Learning Research},
-  address = 	 {The Cloud},
-  month = 	 {10--11 Jun},
-  publisher = 	 {PMLR},
-  pdf = 	 {http://proceedings.mlr.press/v120/abuduweili20a/abuduweili20a.pdf},
-  url = 	 {http://proceedings.mlr.press/v120/abuduweili20a.html},
-  abstract = 	 {High fidelity behavior prediction of intelligent agents is critical in many applications. However, the prediction model trained on the training set may not generalize to the testing set due to domain shift and time variance. The challenge motivates the adoption of online adaptation algorithms to update prediction models in real-time to improve the prediction performance. Inspired by Extended Kalman Filter (EKF), this paper introduces a series of online adaptation methods, which are applicable to neural network-based models. A base adaptation algorithm Modified EKF with forgetting factor (MEKF_lambda) is introduced first, followed by exponential moving average filtering techniques. Then this paper introduces a dynamic multi-epoch update strategy to effectively utilize samples received in real time. With all these extensions, we propose a robust online adaptation algorithm: MEKF with Exponential Moving Average and Dynamic Multi-Epoch strategy (MEKF_EMA-DME). The proposed algorithm outperforms existing methods as demonstrated in experiments.},
-  video = {https://www.youtube.com/embed/15vXtd5rg70}
-}
 
 @inproceedings{zhao2020experimental,
   id={C24},
@@ -380,6 +471,25 @@
   year={2020},
   url={https://arxiv.org/abs/2001.09550},
   video = {https://www.youtube.com/embed/a47n31DDUiM},
+  abstract = {Human motion prediction is non-trivial in modern industrial settings. Accurate prediction of human motion can not only improve efficiency in human robot collaboration, but also enhance human safety in close proximity to robots. Among existing prediction models, the parameterization and identification methods of those models vary. It remains unclear what is the necessary parameterization of a prediction model, whether online adaptation of the model is necessary, and whether prediction can help improve safety and efficiency during human robot collaboration. These problems result from the difficulty to quantitatively evaluate various prediction models in a closed-loop fashion in real human-robot interaction settings. This paper develops a method to evaluate the closed-loop performance of different prediction models. In particular, we compare models with different parameterizations and models with or without online parameter adaptation. Extensive experiments were conducted on a human robot collaboration platform. The experimental results demonstrated that human motion prediction significantly enhanced the collaboration efficiency and human safety. Adaptable prediction models that were parameterized by neural networks achieved the best performance.}
+}
+
+@article{grover2020why,
+  id={C25},
+  title = {Why Does Symmetry Cause Deadlocks?},
+  journal = {IFAC-PapersOnLine},
+  volume = {53},
+  number = {2},
+  pages = {9746-9753},
+  year = {2020},
+  note = {IFAC World Congress},
+  issn = {2405-8963},
+  doi = {https://doi.org/10.1016/j.ifacol.2020.12.2644},
+  link = {https://www.sciencedirect.com/science/article/pii/S2405896320334042},
+  author = {Jaskaran Grover and Changliu Liu and Katia Sycara},
+  keywords = {Mobile robots, Multiagent systems, Autonomous robotic systems, Robotics technology, Model predictive, optimization-based control},
+  abstract = {Collision avoidance for multirobot systems has been studied thoroughly. Recently, control barrier functions (CBFs) have been proposed to mediate between collision avoidance and goal achievement for multiple robots. However, it has been noted that reactive controllers (such as CBFs) are prone to deadlock, an equilibrium that causes the robots to stall before reaching their goals. In this paper, we formally analyze two and three robot systems and discover circumstances under which CBFs cause deadlocks using duality theory. For the two robot system, we consider mutually heterogeneous robots (such as one more vigorous or closer to its goal than the other) and prove that this heterogeneity does not help in preventing deadlock. We then consider three robots, and conclude from these two scenarios that the geometric symmetry resulting from robots’ initial positions and goals constrains CBFs to generate velocities that render deadlock stable. Thus, conferring skewness to the system can help evade deadlock.},
+  video = {https://www.youtube.com/embed/dQ00RrQ1cRg&t=55s}
 }
 
 @article{cheng2020towards,
@@ -392,7 +502,8 @@
   pages={2602--2609},
   year={2020},
   publisher={IEEE},
-  url={https://ieeexplore.ieee.org/abstract/document/8990024}
+  link={https://ieeexplore.ieee.org/abstract/document/8990024},
+  abstract={Human-robot collaboration (HRC) is becoming increasingly important as the paradigm of manufacturing is shifting from mass production to mass customization. The introduction of HRC can significantly improve the flexibility and intelligence of automation. To efficiently finish tasks in HRC systems, the robots need to not only predict the future movements of human, but also more high-level plans, i.e., the sequence of actions to finish the tasks. However, due to the stochastic and time-varying nature of human collaborators, it is quite challenging for the robot to efficiently and accurately identify such task plans and respond in a safe manner. To address this challenge, we propose an integrated human-robot collaboration framework. Both plan recognition and trajectory prediction modules are included for the generation of safe and efficient robotic motions. Such a framework enables the robots to perceive, predict and adapt their actions to the human's work plan and intelligently avoid collisions with the human. Moreover, by explicitly leveraging the hierarchical relationship between plans and trajectories, more robust plan recognition performance can be achieved. Physical experiments were conducted on an industrial robot to verify the proposed framework. The results show that the proposed framework could accurately recognize the human workers’ plans and thus significantly improve the time efficiency of the HRC team even in the presence of motion classification noises.}
 }
 
 @book{liu2019designing,
@@ -400,7 +511,20 @@
   title={Designing robot behavior in human-robot interactions},
   author={Liu, Changliu and Tang, Te and Lin, Hsien-Chung and Tomizuka, Masayoshi},
   year={2019},
-  publisher={CRC Press}
+  publisher={CRC Press},
+  link={https://www.routledge.com/Designing-Robot-Behavior-in-Human-Robot-Interactions/Liu-Tang-Lin-Tomizuka/p/book/9780367179694},
+  page={https://www.cs.cmu.edu/~cliu6/files/book_cover.png},
+  abstract={Human-robot interactions (HRI) have been recognized to be a key element of future robots in many application domains such as manufacturing and transportation, which entail huge social and economic impacts. Future robots are envisioned to be acting like human, which are independent entities that make decisions for themselves; intelligent actuators that interact with the physical world; and involved observers that have rich senses and critical judgements. Most importantly, they are entitled social attributions to build relationships with humans. We call these robots co-robots. Technically, it is challenging to design the behavior of co-robots. Unlike traditional robots that work in structured and deterministic environments, co-robots need to operate in highly unstructured and stochastic environments. The book is to study methodologies to ensure that co-robots operate efficiently and safely in dynamic uncertain environments. This book sets up a unified analytical framework for various human-robot systems, which involves peer-peer interactions or hierarchical interactions. Various methods to design the robot behavior through control, planning, decision and learning are proposed. In particular, the following topics are discussed: safety during human-robot interactions, efficiency in real-time robot motion planning, imitation of human behaviors by robot, dexterity of robot to adapt to different environments and tasks, cooperation among robots and humans and conflict resolution. The proposed methods have been applied on various scenarios, such as human-robot collaborative assembly, robot skill learning from human demonstration, interaction between autonomous and human-driven vehicles, and etc.}
+}
+
+@misc{wang2019system,
+  id={P},
+  title={System and method for planning a vehicle path},
+  author={Wang, Yizhou and Liu, Changliu and Chen, Xiaoying and Wang, Chongyu and Ni, Kai},
+  year={2019},
+  month=jan # "~3",
+  publisher={Google Patents},
+  booktitle={US Patent App. 15/691,617}
 }
 
 @article{liu2020microscopic,
@@ -408,16 +532,55 @@
   title={A Microscopic Epidemic Model and Pandemic Prediction Using Multi-Agent Reinforcement Learning},
   author={Liu, Changliu},
   journal={arXiv:2004.12959},
-  year={2020}
+  year={2020},
+  url={https://arxiv.org/pdf/2004.12959},
+  abstract={This paper introduces a microscopic approach to model epidemics, which can explicitly consider the consequences of individual's decisions on the spread of the disease. We first formulate a microscopic multi-agent epidemic model where every agent can choose its activity level that affects the spread of the disease. Then by minimizing agents' cost functions, we solve for the optimal decisions for individual agents in the framework of game theory and multi-agent reinforcement learning. Given the optimal decisions of all agents, we can make predictions about the spread of the disease. We show that there are negative externalities in the sense that infected agents do not have enough incentives to protect others, which then necessitates external interventions to regulate agents' behaviors. In the discussion section, future directions are pointed out to make the model more realistic.
+}
 }
 
-@workshop{ho2020provably,
+@inproceedings{abuduweili2020robust,
+  id={C26},
+  title =    {Robust Online Model Adaptation by Extended Kalman Filter with Exponential Moving Average and Dynamic Multi-Epoch Strategy},
+  author =   {Abulikemu Abuduweili and Changliu Liu},
+  booktitle =    {Learning for Dynamics and Control Conference},
+  pages =    {65--74},
+  year =   {2020},
+  editor =   {Alexandre M. Bayen and Ali Jadbabaie and George Pappas and Pablo A. Parrilo and Benjamin Recht and Claire Tomlin and Melanie Zeilinger},
+  volume =   {120},
+  series =   {Proceedings of Machine Learning Research},
+  address =    {The Cloud},
+  month =    {10--11 Jun},
+  publisher =    {PMLR},
+  url = {https://arxiv.org/pdf/1912.01790},
+  pdf =    {http://proceedings.mlr.press/v120/abuduweili20a/abuduweili20a.pdf},
+  link =   {http://proceedings.mlr.press/v120/abuduweili20a.html},
+  abstract =   {High fidelity behavior prediction of intelligent agents is critical in many applications. However, the prediction model trained on the training set may not generalize to the testing set due to domain shift and time variance. The challenge motivates the adoption of online adaptation algorithms to update prediction models in real-time to improve the prediction performance. Inspired by Extended Kalman Filter (EKF), this paper introduces a series of online adaptation methods, which are applicable to neural network-based models. A base adaptation algorithm Modified EKF with forgetting factor (MEKF_lambda) is introduced first, followed by exponential moving average filtering techniques. Then this paper introduces a dynamic multi-epoch update strategy to effectively utilize samples received in real time. With all these extensions, we propose a robust online adaptation algorithm: MEKF with Exponential Moving Average and Dynamic Multi-Epoch strategy (MEKF_EMA-DME). The proposed algorithm outperforms existing methods as demonstrated in experiments.},
+  video = {https://www.youtube.com/embed/15vXtd5rg70}
+}
+
+@inproceedings{lin2020dynamic,
   id={C27},
+  author={Lin, Shang-Chien and Hsu, Hsiang and Lin, Yi-Ting and Lin, Chung-Wei and Jiang, Iris Hui-Ru and Liu, Changliu},
+  booktitle={IEEE Intelligent Vehicles Symposium}, 
+  title={A Dynamic Programming Approach to Optimal Lane Merging of Connected and Autonomous Vehicles}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={349-356},
+  doi={10.1109/IV47402.2020.9304813},
+  link={https://ieeexplore.ieee.org/document/9304813},
+  abstract={Lane merging is one of the major sources causing traffic congestion and delay. With the help of vehicle-to-vehicle or vehicle-to-infrastructure communication and autonomous driving technology, there are opportunities to alleviate congestion and delay resulting from lane merging. In this paper, we first summarize modern features and requirements for lane merging, along with the advance of vehicular technology. We then formulate and propose a dynamic programming algorithm to find the optimal solution for a two-lane merging scenario. It schedules the passing order for vehicles while minimizing the time needed for all vehicles to go through the merging point (equivalent to the time that the last vehicle goes through the merging point). We further extend the problem to a consecutive lane-merging scenario. We show the difficulty to apply the original dynamic programming to the consecutive lane-merging scenario and propose an improved version to solve it. Experimental results show that our dynamic programming algorithm can efficiently minimize the time needed for all vehicles to go through the merging point and reduce the average delay of all vehicles, compared with some greedy methods.}
+}
+
+
+@workshop{ho2020provably,
+  id={W},
   author = {Cherie Ho and Katherine Shih and Jaskaran Singh Grover and Changliu Liu and Sebastian Scherer},
   title = {“Provably Safe” in the Wild: Testing Control Barrier Functions on a Vision-Based Quadrotor in an Outdoor Environment},
   booktitle = {Proceedings of RSS '20 2nd Workshop on Robust Autonomy: Safe Robot Learning and Control in Uncertain Real-World Environments},
   year = {2020},
   month = {July},
+  url = {https://openreview.net/pdf?id=CrBJIgBr2BK}
 }
 
 @inproceedings{grover2020deadlock,
@@ -425,25 +588,17 @@
   title={Deadlock Analysis and Resolution in Multi-Robot Systems},
   author={Grover, Jaskaran and Liu, Changliu and Sycara, Katia},
   booktitle={International Workshop on the Algorithmic Foundations of Robotics (WAFR)},
-  year={2020}
-}
-
-@misc{niuwang2020tolerance,
-  id={C29},
-  title={Tolerance-guided Policy Learning for Adaptable and Transferrable Delicate Industrial Insertion,}, 
-  author={Niu, Boshen and Wang, Chenxi and Liu, Changliu},
   year={2020},
-  journal={CoRL},
-  url={https://corlconf.github.io/paper_452/},
-  primaryClass={cs.LG}
+  url={https://arxiv.org/pdf/1911.09146},
+  abstract = {Collision avoidance for multirobot systems is a well studied problem. Recently, control barrier functions (CBFs) have been proposed for synthesizing controllers guarantee collision avoidance and goal stabilization for multiple robots. However, it has been noted reactive control synthesis methods (such as CBFs) are prone to deadlock, an equilibrium of system dynamics causes robots to come to a standstill before reaching their goals. In this paper, we formally derive characteristics of deadlock in a multirobot system uses CBFs. We propose a novel approach to analyze deadlocks resulting from optimization based controllers (CBFs) by bor- rowing tools from duality theory and graph enumeration. Our key insight is system deadlock is characterized by a force-equilibrium on robots and we show how complexity of deadlock analysis increases approximately exponentially with the number of robots. This analysis allows us to interpret deadlock as a subset of the state space, and we prove this set is non-empty, bounded and located on the boundary of the safety set. Finally, we use these properties to develop a provably correct decentralized algorithm for deadlock resolution which ensures robots converge to their goals while avoiding collisions. We show simulation results of the resolution algorithm for two and three robots and experimentally validate this algorithm on Khepera-IV robots.}
 }
 
-@proceedings{huang2020multi,
-    id={C30},
+@inproceedings{huang2020multi,
+    id={C29},
     author = {Huang, Jing and Liu, Changliu},
     title = "{Multi-Car Convex Feasible Set Algorithm in Trajectory Planning}",
     volume = {Volume 1: Adaptive/Intelligent Sys. Control; Driver Assistance/Autonomous Tech.; Control Design Methods; Nonlinear Control; Robotics; Assistive/Rehabilitation Devices; Biomedical/Neural Systems; Building Energy Systems; Connected Vehicle Systems; Control/Estimation of Energy Systems; Control Apps.; Smart Buildings/Microgrids; Education; Human-Robot Systems; Soft Mechatronics/Robotic Components/Systems; Energy/Power Systems; Energy Storage; Estimation/Identification; Vehicle Efficiency/Emissions},
-    series = {Dynamic Systems and Control Conference},
+    booktitle = {Dynamic Systems and Control Conference},
     year = {2020},
     month = {10},
     abstract = "{Trajectory planning is an essential module for autonomous driving. To deal with multi-vehicle interactions, existing methods follow the prediction-then-plan approaches which first predict the trajectories of others then plan the trajectory for the ego vehicle given the predictions. However, since the true trajectories of others may deviate from the predictions, frequent re-planning for the ego vehicle is needed, which may cause many issues such as instability or deadlock. These issues can be overcome if all vehicles can form a consensus by solving the same multi-vehicle trajectory planning problem. Then the major challenge is how to efficiently solve the multi-vehicle trajectory planning problem in real time under the curse of dimensionality. We introduce a novel planner for multi-vehicle trajectory planning based on the convex feasible set (CFS) algorithm. The planning problem is formulated as a non-convex optimization. A novel convexification method to obtain the maximal convex feasible set is proposed, which transforms the problem into a quadratic programming. Simulations in multiple typical on-road driving situations are conducted to demonstrate the effectiveness of the proposed planning algorithm in terms of completeness and optimality.}",
@@ -454,12 +609,12 @@
     video = {https://www.youtube.com/embed/J2E-db1ahGU},
 }
 
-@proceedings{zhao2020contact,
-    id={C31},
+@inproceedings{zhao2020contact,
+    id={C30},
     author = {Zhao, Wei-Ye and He, Suqin and Wen, Chengtao and Liu, Changliu},
     title = "{Contact-Rich Trajectory Generation in Confined Environments Using Iterative Convex Optimization}",
     volume = {Volume 2: Intelligent Transportation/Vehicles; Manufacturing; Mechatronics; Engine/After-Treatment Systems; Soft Actuators/Manipulators; Modeling/Validation; Motion/Vibration Control Applications; Multi-Agent/Networked Systems; Path Planning/Motion Control; Renewable/Smart Energy Systems; Security/Privacy of Cyber-Physical Systems; Sensors/Actuators; Tracking Control Systems; Unmanned Ground/Aerial Vehicles; Vehicle Dynamics, Estimation, Control; Vibration/Control Systems; Vibrations},
-    series = {Dynamic Systems and Control Conference},
+    booktitle = {Dynamic Systems and Control Conference},
     year = {2020},
     month = {10},
     abstract = "{Applying intelligent robot arms in dynamic uncertain environments (i.e., flexible production lines) remains challenging, which requires efficient algorithms for real time trajectory generation. The motion planning problem for robot trajectory generation is highly nonlinear and nonconvex, which usually comes with collision avoidance constraints, robot kinematics and dynamics constraints, and task constraints (e.g., following a Cartesian trajectory defined on a surface and maintain the contact). The nonlinear and nonconvex planning problem is computationally expensive to solve, which limits the application of robot arms in the real world. In this paper, for redundant robot arm planning problems with complex constraints, we present a motion planning method using iterative convex optimization that can efficiently handle the constraints and generate optimal trajectories in real time. The proposed planner guarantees the satisfaction of the contact-rich task constraints and avoids collision in confined environments. Extensive experiments on trajectory generation for weld grinding are performed to demonstrate the effectiveness of the proposed method and its applicability in advanced robotic manufacturing.}",
@@ -470,46 +625,14 @@
     video = {https://www.youtube.com/embed/Meo7TnaPido}
 }
 
-@inproceedings{lin2020dynamic,
-  id={C32},
-  author={Lin, Shang-Chien and Hsu, Hsiang and Lin, Yi-Ting and Lin, Chung-Wei and Jiang, Iris Hui-Ru and Liu, Changliu},
-  booktitle={2020 IEEE Intelligent Vehicles Symposium (IV)}, 
-  title={A Dynamic Programming Approach to Optimal Lane Merging of Connected and Autonomous Vehicles}, 
+@inproceedings{niuwang2020tolerance,
+  id={C31},
+  title={Tolerance-guided Policy Learning for Adaptable and Transferrable Delicate Industrial Insertion,}, 
+  author={Niu, Boshen and Wang, Chenxi and Liu, Changliu},
   year={2020},
-  volume={},
-  number={},
-  pages={349-356},
-  doi={10.1109/IV47402.2020.9304813},
-  url={https://ieeexplore.ieee.org/document/9304813}
-  }
-  
-
-@article{GROVER2020why,
-  id={C33},
-  title = {Why Does Symmetry Cause Deadlocks?},
-  journal = {IFAC-PapersOnLine},
-  volume = {53},
-  number = {2},
-  pages = {9746-9753},
-  year = {2020},
-  note = {21th IFAC World Congress},
-  issn = {2405-8963},
-  doi = {https://doi.org/10.1016/j.ifacol.2020.12.2644},
-  url = {https://www.sciencedirect.com/science/article/pii/S2405896320334042},
-  author = {Jaskaran Grover and Changliu Liu and Katia Sycara},
-  keywords = {Mobile robots, Multiagent systems, Autonomous robotic systems, Robotics technology, Model predictive, optimization-based control},
-  abstract = {Collision avoidance for multirobot systems has been studied thoroughly. Recently, control barrier functions (CBFs) have been proposed to mediate between collision avoidance and goal achievement for multiple robots. However, it has been noted that reactive controllers (such as CBFs) are prone to deadlock, an equilibrium that causes the robots to stall before reaching their goals. In this paper, we formally analyze two and three robot systems and discover circumstances under which CBFs cause deadlocks using duality theory. For the two robot system, we consider mutually heterogeneous robots (such as one more vigorous or closer to its goal than the other) and prove that this heterogeneity does not help in preventing deadlock. We then consider three robots, and conclude from these two scenarios that the geometric symmetry resulting from robots’ initial positions and goals constrains CBFs to generate velocities that render deadlock stable. Thus, conferring skewness to the system can help evade deadlock.},
-  video = {https://www.youtube.com/embed/dQ00RrQ1cRg&t=55s}
-}
-
-@inproceedings{grover2021feasible,
-      id={C34},
-      title={Feasible Region-based Identification Using Duality}, 
-      author={Jaskaran Grover and Changliu Liu and Katia Sycara},
-      year={2021},
-      booktitle={European Control Conference},
-      url={https://arxiv.org/abs/2011.04904},
-      video = {https://www.youtube.com/embed/T6ZiP22ho9E}
+  booktitle={Conference on Robot Learning},
+  url={https://arxiv.org/abs/2108.02303},
+  abstract={Policy learning for delicate industrial insertion tasks (e.g., PC board assembly) is challenging. This paper considers two major problems: how to learn a diversified policy (instead of just one average policy) that can efficiently handle different workpieces with minimum amount of training data, and how to handle defects of workpieces during insertion. To address the problems, we propose tolerance-guided policy learning. To encourage transferability of the learned policy to different workpieces, we add a task embedding to the policy's input space using the insertion tolerance. Then we train the policy using generative adversarial imitation learning with reward shaping (RS-GAIL) on a variety of representative situations. To encourage adaptability of the learned policy to handle defects, we build a probabilistic inference model that can output the best inserting pose based on failed insertions using the tolerance model. The best inserting pose is then used as a reference to the learned policy. This proposed method is validated on a sequence of IC socket insertion tasks in simulation. The results show that 1) RS-GAIL can efficiently learn optimal policies under sparse rewards; 2) the tolerance embedding can enhance the transferability of the learned policy; 3) the probabilistic inference makes the policy robust to defects on the workpieces.}
 }
 
 @inproceedings{jena2020augmenting,
@@ -523,6 +646,63 @@
   url={https://corlconf.github.io/paper_25/}
 }
 
+@inproceedings{an2021flexible,
+      id={C33},
+      title={Flexible MPC-based Conflict Resolution Using Online Adaptive ADMM}, 
+      author={Jerry An and Giulia Giordano and Changliu Liu},
+      year={2021},
+      booktitle={European Control Conference},
+      url={https://arxiv.org/pdf/2103.14118.pdf},
+      video = {https://www.youtube.com/embed/lcZOC_lpuqY},
+}
+
+@inproceedings{grover2021feasible,
+      id={C34},
+      title={Feasible Region-based Identification Using Duality}, 
+      author={Jaskaran Grover and Changliu Liu and Katia Sycara},
+      year={2021},
+      booktitle={European Control Conference},
+      url={https://arxiv.org/abs/2011.04904},
+      video = {https://www.youtube.com/embed/T6ZiP22ho9E}
+}
+
+@inproceedings{zhou2021distributed,
+      id={C35},
+      title={Distributed Motion Coordination Using Convex Feasible Set Based Model Predictive Control}, 
+      author={Hongyu Zhou and Changliu Liu},
+      year={2021},
+      url={https://arxiv.org/abs/2101.07994},
+      booktitle={IEEE International Conference on Robotics and Automation},
+      video = {https://www.youtube.com/embed/Po792hrkzpY}
+}
+
+@inproceedings{gover2021system,
+  id={C36},
+  title={System Identification for Safe Controllers using Inverse Optimization},
+  author={Grover, Jaskaran Singh and Liu, Changliu and Sycara, Katia},
+  booktitle={Modeling, Estimation, and Control Conference},
+  year={2021},
+  url = {https://www.sciencedirect.com/science/article/pii/S2405896321022424},
+  video = {https://www.youtube.com/embed/yusixZPrikk}
+}
+
+@inproceedings{noren2019safe,
+  id={C37},
+  title={Safe Adaptation with Multiplicative Uncertainties Using Robust Safe Set Algorithm},
+  author={Noren, Charles and Zhao, Weiye and Liu, Changliu},
+  booktitle={Modeling, Estimation, and Control Conference},
+  year={2021},
+  url={https://arxiv.org/abs/1912.09095}
+}
+
+@inproceedings{zhao2021model,
+  id={C38},
+  title={Model-free Safe Control for Zero-Violation Reinforcement Learning},
+  author={Zhao, Weiye and He, Tairan and Liu, Changliu},
+  booktitle={Conference on Robot Learning},
+  year={2021},
+  url={https://openreview.net/pdf?id=UGp6FDaxB0f}
+}
 
 @inproceeds{grover2021parameter,
   id={C39},
@@ -536,26 +716,6 @@
   keywords={Robot motion;Parameter estimation;Estimation;Observers;System identification;Multi-robot systems;Task analysis},
   doi={10.1109/MRS50823.2021.9620566},
   url={https://arxiv.org/pdf/2009.13817}
-}
-
-@inproceedings{zhou2021distributed,
-      id={C35},
-      title={Distributed Motion Coordination Using Convex Feasible Set Based Model Predictive Control}, 
-      author={Hongyu Zhou and Changliu Liu},
-      year={2021},
-      url={https://arxiv.org/abs/2101.07994},
-      booktitle={International Conference on Robotics and Automation},
-      video = {https://www.youtube.com/embed/Po792hrkzpY}
-}
-
-@inproceedings{an2021flexible,
-      id={C33},
-      title={Flexible MPC-based Conflict Resolution Using Online Adaptive ADMM}, 
-      author={Jerry An and Giulia Giordano and Changliu Liu},
-      year={2021},
-      booktitle={European Control Conference},
-      url={https://arxiv.org/pdf/2103.14118.pdf},
-      video = {https://www.youtube.com/embed/lcZOC_lpuqY},
 }
 
 @article{liu2021algorithms,
@@ -586,27 +746,6 @@
   video = {https://www.youtube.com/embed/r5TqRTU7lg4}
 }
 
-
-@inproceedings{gover2021system,
-  id={C36},
-  title={System Identification for Safe Controllers using Inverse Optimization},
-  author={Grover, Jaskaran Singh and Liu, Changliu and Sycara, Katia},
-  booktitle={Modeling, Estimation, and Control Conference},
-  year={2021},
-  url = {https://www.sciencedirect.com/science/article/pii/S2405896321022424},
-  video = {https://www.youtube.com/embed/yusixZPrikk}
-}
-
-@inproceedings{noren2019safe,
-  id={C37},
-  title={Safe Adaptation with Multiplicative Uncertainties Using Robust Safe Set Algorithm},
-  author={Noren, Charles and Zhao, Weiye and Liu, Changliu},
-  booktitle={Modeling, Estimation, and Control Conference},
-  year={2021},
-  url={https://arxiv.org/abs/1912.09095}
-}
-
-
 @article{grover2021simultaneously,
   id={W},
   title={Simultaneously learning safety margins and task parameters of multirobot systems},
@@ -634,15 +773,6 @@
   year={2021},
   url={https://arxiv.org/pdf/2108.06871.pdf}
 }
-
-@inproceedings{zhao2021model,
-  title={Model-free Safe Control for Zero-Violation Reinforcement Learning},
-  author={Zhao, Weiye and He, Tairan and Liu, Changliu},
-  booktitle={5th Annual Conference on Robot Learning},
-  year={2021},
-  url={https://openreview.net/pdf?id=UGp6FDaxB0f}
-}
-
 
 @article{ma2021joint,
   title={Joint Synthesis of Safety Certificate and Safe Control Policy using Constrained Reinforcement Learning},
@@ -708,7 +838,7 @@ url={https://arxiv.org/pdf/2009.13817.pdf}
 @inproceedings{liu2022safe2,
 author = {Simin Liu and Changliu Liu and John Dolan},
 title ={Safe Control Under Input Limits with Neural Control Barrier Functions},
-journal = {6th Annual Conference on Robot Learning},
+journal = {Conference on Robot Learning},
 year={2022},
 url={https://arxiv.org/abs/2211.11056}
 }
@@ -716,9 +846,9 @@ url={https://arxiv.org/abs/2211.11056}
 @inproceedings{deka2022actor,
 author = {Ankur Deka and Changliu Liu and Katia Sycara},
 title ={ARC - Actor Residual Critic for Adversarial Imitation Learning},
-journal = {6th Annual Conference on Robot Learning},
+journal = {Conference on Robot Learning},
 year={2022},
-url={https://arxiv.org/abs/2206.02095#:~:text=Adversarial%20Imitation%20Learning%20(AIL)%20is,Reinforcement%20Learning%20(RL)%20algorithm.}
+url={https://arxiv.org/abs/2206.02095}
 }
 
 
@@ -760,7 +890,7 @@ url={https://naizhengtan.github.io/doc/papers/characterizing22haoyu.pdf}
 @inproceedings{grover2022noncooperative,
 author = {Jaskaran Grover and Nishant Mohanty and Wenhao Luo and Changliu Liu and Katia Sycara},
 title ={Noncooperative Herding With Control Barrier Functions: Theory and Experiments},
-journal = {IEEE Conference on Decision and Control (CDC)},
+journal = {IEEE Conference on Decision and Control},
 year={2022},
 url={https://arxiv.org/pdf/2204.10945.pdf}
 }
@@ -779,7 +909,7 @@ url={https://arxiv.org/pdf/2204.10945.pdf}
   author = {Pandya, Ravi and Liu, Changliu},
   title = {Safe and Efficient Exploration of Human Models During Human-Robot Interaction},
   year = {2022},
-  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems},
   video = {https://www.youtube.com/embed/XQ8MJiVzSF4},
 }
 
@@ -788,7 +918,7 @@ url={https://arxiv.org/pdf/2204.10945.pdf}
   author = {Chen, Rui and Wang, Chenxi and Wei, Tianhao and Liu, Changliu},
   title = {A Composable Framework for Policy Design, Learning, and Transfer Toward Safe and Efficient Industrial Insertion},
   year = {2022},
-  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems},
   video = {https://www.youtube.com/embed/658vHXza9UA},
 }
 
@@ -843,7 +973,7 @@ url={https://arxiv.org/abs/2204.07936}}
   id = {C40},
   title = 	 {Safe Control with Neural Network Dynamic Models},
   author =       {Wei, Tianhao and Liu, Changliu},
-  booktitle = 	 {Proceedings of The 4th Annual Learning for Dynamics and Control Conference},
+  booktitle = 	 {Learning for Dynamics and Control Conference},
   year = 	 {2022},
   url = 	 {https://proceedings.mlr.press/v168/wei22a.html},
 }
@@ -852,7 +982,7 @@ url={https://arxiv.org/abs/2204.07936}}
   id = {C41},
   title =    {Joint Synthesis of Safety Certificate and Safe Control Policy Using Constrained Reinforcement Learning},
   author =       {Ma, Haitong and Liu, Changliu and Li, Shengbo Eben and Zheng, Sifa and Chen, Jianyu},
-  booktitle =    {Proceedings of The 4th Annual Learning for Dynamics and Control Conference},
+  booktitle =    {Learning for Dynamics and Control Conference},
   year =   {2022},
   url =    {https://proceedings.mlr.press/v168/ma22a.html},
   video = {https://www.youtube.com/embed/DZkiF9Nsjmw}
@@ -871,16 +1001,6 @@ url={https://arxiv.org/abs/2204.07936}}
   author={Grover, Jaskaran Singh and Liu, Changliu and Sycara, Katia},
   booktitle={International Workshop on the Algorithmic Foundations of Robotics (WAFR)},
   year={2020}
-}
-
-@inproceedings{zhao2020contact,
-  title={Contact-rich trajectory generation in confined environments using iterative convex optimization},
-  author={Zhao, Wei-Ye and He, Suqin and Wen, Chengtao and Liu, Changliu},
-  booktitle={Dynamic Systems and Control Conference},
-  volume={84287},
-  pages={V002T31A002},
-  year={2020},
-  organization={American Society of Mechanical Engineers}
 }
 
 @article{abuduweili2021robust,
@@ -925,7 +1045,7 @@ url={https://arxiv.org/abs/2204.07936}}
 @inproceedings{pandya2022safe,
   title={Safe and efficient exploration of human models during human-robot interaction},
   author={Pandya, Ravi and Liu, Changliu},
-  booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
   pages={6708--6715},
   year={2022},
   organization={IEEE}
@@ -963,7 +1083,7 @@ url={https://arxiv.org/abs/2204.07936}}
 @inproceedings{zhao2023safety,
   title={Safety index synthesis via sum-of-squares programming},
   author={Zhao, Weiye and He, Tairan and Wei, Tianhao and Liu, Simin and Liu, Changliu},
-  booktitle={2023 American Control Conference (ACC)},
+  booktitle={American Control Conference},
   pages={732--737},
   year={2023},
   organization={IEEE}
@@ -1031,7 +1151,7 @@ url={https://arxiv.org/abs/2204.07936}}
 @inproceedings{chen2022safe,
   title={Safe hierarchical navigation in crowded dynamic uncertain environments},
   author={Chen, Hongyi and Feng, Shiyu and Zhao, Ye and Liu, Changliu and Vela, Patricio A},
-  booktitle={2022 IEEE 61st Conference on Decision and Control (CDC)},
+  booktitle={IEEE Conference on Decision and Control},
   pages={1174--1181},
   year={2022},
   organization={IEEE}
@@ -1051,7 +1171,7 @@ url={https://arxiv.org/abs/2204.07936}}
 @inproceedings{chari2023space,
   title={Space-Time Conflict Spheres for Constrained Multi-Agent Motion Planning},
   author={Chari, Anirudh and Chen, Rui and Liu, Changliu},
-  booktitle={2023 IEEE Intelligent Vehicles Symposium (IV)},
+  booktitle={IEEE Intelligent Vehicles Symposium},
   pages={1--6},
   year={2023},
   organization={IEEE}
@@ -1067,7 +1187,7 @@ url={https://arxiv.org/abs/2204.07936}}
 @inproceedings{wei2023zero,
   title={Zero-shot Transferable and Persistently Feasible Safe Control for High Dimensional Systems by Consistent Abstraction},
   author={Wei, Tianhao and Kang, Shucheng and Liu, Ruixuan and Liu, Changliu},
-  booktitle={IEEE Conference on Decision and Control (CDC)},
+  booktitle={IEEE Conference on Decision and Control},
   pages={8614--8619},
   year={2023},
   organization={IEEE}
@@ -1113,13 +1233,14 @@ url={https://arxiv.org/abs/2204.07936}}
 @inproceedings{shek2023learning,
   title={Learning from physical human feedback: An object-centric one-shot adaptation method},
   author={Shek, Alvin and Su, Bo Ying and Chen, Rui and Liu, Changliu},
-  booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)},
+  booktitle={IEEE International Conference on Robotics and Automation},
   pages={9910--9916},
   year={2023},
   organization={IEEE}
 }
 
 @article{liu2023robotic,
+  id={W},
   title={Robotic LEGO Assembly and Disassembly from Human Demonstration},
   author={Liu, Ruixuan and Sun, Yifan and Liu, Changliu},
   journal={ACC Workshop on Recent Advancement of Human Autonomy Interaction and Integration},
@@ -1208,7 +1329,7 @@ url={https://arxiv.org/abs/2204.07936}}
 @inproceedings{liu2023proactive,
   title={Proactive human-robot co-assembly: Leveraging human intention prediction and robust safe control},
   author={Liu, Ruixuan and Chen, Rui and Abuduweili, Abulikemu and Liu, Changliu},
-  booktitle={2023 IEEE Conference on Control Technology and Applications (CCTA)},
+  booktitle={IEEE Conference on Control Technology and Applications},
   pages={339--345},
   year={2023},
   organization={IEEE}
@@ -1238,7 +1359,7 @@ url={https://arxiv.org/abs/2204.07936}}
 @inproceedings{zhang2023interactive,
   title={Interactive Car-Following: Matters but NOT Always},
   author={Zhang, Chengyuan and Chen, Rui and Zhu, Jiacheng and Wang, Wenshuo and Liu, Changliu and Sun, Lijun},
-  booktitle={2023 IEEE 26th International Conference on Intelligent Transportation Systems (ITSC)},
+  booktitle={IEEE International Conference on Intelligent Transportation Systems},
   pages={5120--5125},
   year={2023},
   organization={IEEE}
@@ -1280,7 +1401,7 @@ url={https://arxiv.org/abs/2204.07936}}
 @inproceedings{pandya2024towards,
   title={Towards Proactive Safe Human-Robot Collaborations via Data-Efficient Conditional Behavior Prediction},
   author={Pandya, Ravi and Wang, Zhuoyuan and Nakahira, Yorie and Liu, Changliu},
-  booktitle={International Conference on Robotics and Automation},
+  booktitle={IEEE International Conference on Robotics and Automation},
   year={2024}
 }
 
@@ -1294,7 +1415,7 @@ url={https://arxiv.org/abs/2204.07936}}
 @inproceedings{pandya2024multi,
   title={Multi-Agent Strategy Explanations for Human-Robot Collaboration},
   author={Pandya, Ravi and Zhao, Michelle and Liu, Changliu and Simmons, Reid and Admoni, Henny},
-  booktitle={International Conference on Robotics and Automation},
+  booktitle={IEEE International Conference on Robotics and Automation},
   year={2024}
 }
 
@@ -1386,7 +1507,7 @@ url={https://openreview.net/forum?id=Xe0dVlWU2q}
 @inproceedings{tseng2023consensus,
   title={Consensus-Based Fault-Tolerant Platooning for Connected and Autonomous Vehicles},
   author={Tseng, Tzu-Yen and Huang, Ding-Jiun and Lin, Jia-You and Chang, Po-Jui and Lin, Chung-Wei and Liu, Changliu},
-  booktitle={2023 IEEE Intelligent Vehicles Symposium (IV)},
+  booktitle={IEEE Intelligent Vehicles Symposium},
   pages={1--8},
   year={2023},
   organization={IEEE}
@@ -1433,7 +1554,7 @@ url={https://openreview.net/forum?id=Xe0dVlWU2q}
 @article{he2024learning,
   title={Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation},
   author={He, Tairan and Luo, Zhengyi and Xiao, Wenli and Zhang, Chong and Kitani, Kris and Liu, Changliu and Shi, Guanya},
-  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems},
   year={2024}
 }
 
@@ -1442,15 +1563,6 @@ url={https://openreview.net/forum?id=Xe0dVlWU2q}
   author={He, Tairan and Zhang, Chong and Xiao, Wenli and He, Guanqi and Liu, Changliu and Shi, Guanya},
   journal={Robotics: Science and Systems (RSS)},
   year={2024}
-}
-
-@misc{wang2019system,
-  title={System and method for planning a vehicle path},
-  author={Wang, Yizhou and Liu, Changliu and Chen, Xiaoying and Wang, Chongyu and Ni, Kai},
-  year={2019},
-  month=jan # "~3",
-  publisher={Google Patents},
-  note={US Patent App. 15/691,617}
 }
 
 @inproceedings{hu2024real,
@@ -1477,7 +1589,7 @@ url={https://openreview.net/forum?id=Xe0dVlWU2q}
 @inproceedings{bo2024optimizing,
   title={Optimizing Multi-Touch Textile and Tactile Skin Sensing Through Circuit Parameter Estimation},
   author={Bo Ying, Su, Yuchen Wu, Chengtao Wen and Changliu Liu},
-  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  booktitle={IEEE International Conference on Robotics and Automation},
   year={2024}
 }
 
@@ -1485,7 +1597,7 @@ url={https://openreview.net/forum?id=Xe0dVlWU2q}
 @article{he2024omnih2o,
       title={OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning},
       author={He, Tairan and Luo, Zhengyi and He, Xialin and Xiao, Wenli and Zhang, Chong and Zhang, Weinan and Kitani, Kris and Liu, Changliu and Shi, Guanya},
-      journal={Conference on Robot Learning (CoRL)},
+      journal={Conference on Robot Learning},
       year={2024}
     }
 
