@@ -25,6 +25,11 @@
 %   IFAC: IFAC World Congress
 %   RA-L: IEEE Robotics and Automation Letters
 %   CORL: Conference on Robot Learning
+%   WAFR: International Workshop on the Algorithmic Foundations of Robotics
+%   ISFA: International Symposium on Flexible Automation
+%   AIM: IEEE/ASME International Conference on Advanced Intelligent Mechatronics
+%   CPHS: IFAC Workshop on Cyber-Physical Human Systems
+%   RSS: Robotics: Science and Systems
 
 
 @inproceedings{liu2014modeling,
@@ -49,7 +54,7 @@
   organization={ASME},
   repository={https://github.com/changliuliu/SafeSetAlgorithm},
   url={https://www.cs.cmu.edu/&#126;cliu6/files/dscc14.pdf},
-  page={https://www.cs.cmu.edu/&#126;cliu6/files/dscc_supplementary.pdf},
+  info={https://www.cs.cmu.edu/&#126;cliu6/files/dscc_supplementary.pdf},
   abstract={Human-robot interactions (HRI) happen in a wide range of situations. Safety is one of the biggest concerns in HRI. This paper proposes a safe set method for designing the robot controller and offers theoretical guarantees of safety. The interactions are modeled in a multi-agent system framework. To deal with humans in the loop, we design a parameter adaptation algorithm (PAA) to learn the closed loop behavior of humans online. Then a safe set (a subset of the state space) is constructed and the optimal control law is mapped to the set of control which can make the safe set invariant. This algorithm is applied with different safety constraints to both mobile robots and robot arms. The simulation results confirm the effectiveness of the algorithm.},
   award={Best Student Paper Finalist}
 }
@@ -150,7 +155,7 @@
   abstract={From the driving strategy point of view, a major challenge for autonomous vehicles in urban environment is to behave defensively to potential dangers, yet to not overreact to threats with low probability. As it is overwhelming to program the action rules case-by-case, a unified planning framework under uncertainty is proposed in this paper, which achieves a non-conservatively defensive strategy (NCDS) in various kinds of scenarios for urban autonomous driving. First, uncertainties in urban scenarios are simplified to two probabilistic cases, namely passing and yielding. Two-way-stop intersection is used as an exemplar scenario to illustrate the derivation of probabilities for different intentions of others via a logistic regression model. Then a deterministic planner is designed as the baseline. Also, a safe set is defined, which considers both current and preview safety. The planning framework under uncertainty is then proposed, in which safety is guaranteed and overcautious behavior is prevented. Finally, the proposed planning framework is tested by simulation in the exemplar scenario, which demonstrates that an NCDS can be realistically achieved by employing the proposed framework.}
 }
 
-@techreport{liu2017robustly,
+@inproceedings{liu2017robustly,
   id={C9},
   title={The robustly-safe automated driving system for enhanced active safety},
   author={Liu, Changliu and Chen, Jianyu and Nguyen, Trong-Duy and Tomizuka, Masayoshi},
@@ -195,7 +200,7 @@
   organization={IEEE},
   url={https://www.cs.cmu.edu/&#126;cliu6/files/iv17-2.pdf},
   repository={https://github.com/changliuliu/TemporalOptimization},
-  page={https://www.cs.cmu.edu/&#126;cliu6/files/iv17-2poster.pdf},
+  info={https://www.cs.cmu.edu/&#126;cliu6/files/iv17-2poster.pdf},
   abstract={To generate safe and efficient trajectories for an automated vehicle in dynamic environments, a layered approach is usually considered, which separates path planning and speed profile planning. This paper is focused on speed profile planning for a given path that is represented by a set of waypoints. The speed profile will be generated using temporal optimization which optimizes the time stamps for all waypoints along the given path. The formulation of the problem under urban driving scenarios is discussed. To speed up the computation, the non-convex temporal optimization is approximated by a set of quadratic programs which are solved iteratively using the slack convex feasible set (SCFS) algorithm. The simulations in various urban driving scenarios validate the effectiveness of the method.}
 }
 
@@ -209,7 +214,7 @@
   organization={IEEE},
   url={https://www.cs.cmu.edu/&#126;cliu6/files/iv17-1.pdf},
   repository={https://github.com/changliuliu/HeuristicA},
-  page={https://www.cs.cmu.edu/&#126;cliu6/files/iv17-1poster.pdf},
+  info={https://www.cs.cmu.edu/&#126;cliu6/files/iv17-1poster.pdf},
   abstract={Automatic valet parking is widely viewed as a milestone towards fully autonomous driving. One of the key problems is nonholonomic path planning in maze-like environments (e.g. parking lots). To balance efficiency and passenger comfort, the planner needs to minimize the length of the path as well as the number of gear shifts. Lattice A* search is widely adopted for optimal path planning. However, existing heuristics do not evaluate the nonholonomic dynamic constraint and the collision avoidance constraint simultaneously, which may mislead the search. To efficiently search the environment, the boundary layer heuristic is proposed which puts large cost in the area that the vehicle must shift gear to escape. Such area is called the boundary layer. A simple and efficient geometric method to compute the boundary layer is proposed. The admissibility and consistency of the additive combination of the boundary layer heuristic and existing heuristics are proved in the paper. The simulation results verify that the introduction of the boundary layer heuristic improves the search performance by reducing the computation time by 56.1%.}
 }
 
@@ -401,7 +406,7 @@
   url={https://www.cs.cmu.edu/&#126;cliu6/files/iv19-1.pdf},
   link={https://ieeexplore.ieee.org/document/8814238},
   repository={https://github.com/intelligent-control-lab/AGen},
-  page={https://www.cs.cmu.edu/&#126;cliu6/files/iv19-1poster.pdf},
+  info={https://www.cs.cmu.edu/&#126;cliu6/files/iv19-1poster.pdf},
   abstract={In highly interactive driving scenarios, accurate prediction of other road participants is critical for safe and efficient navigation of autonomous cars. Prediction is challenging due to the difficulty in modeling various driving behavior, or learning such a model. The model should be interactive and reflect individual differences. Imitation learning methods, such as parameter sharing generative adversarial imitation learning (PS-GAIL), are able to learn interactive models. However, the learned models average out individual differences. When used to predict trajectories of individual vehicles, these models are biased. This paper introduces an adaptable generative prediction framework (AGen), which performs online adaptation of the offline learned models to recover individual differences for better prediction. In particular, we combine the recursive least square parameter adaptation algorithm (RLS-PAA) with the offline learned model from PS-GAIL. RLS-PAA has analytical solutions and is able to adapt the model for every single vehicle efficiently online. The proposed method is able to reduce the root mean squared prediction error in a 2.5s time window by 60%, compared with PS-GAIL.}
 }
 
@@ -513,7 +518,7 @@
   year={2019},
   publisher={CRC Press},
   link={https://www.routledge.com/Designing-Robot-Behavior-in-Human-Robot-Interactions/Liu-Tang-Lin-Tomizuka/p/book/9780367179694},
-  page={https://www.cs.cmu.edu/~cliu6/files/book_cover.png},
+  info={https://www.cs.cmu.edu/~cliu6/files/book_cover.png},
   abstract={Human-robot interactions (HRI) have been recognized to be a key element of future robots in many application domains such as manufacturing and transportation, which entail huge social and economic impacts. Future robots are envisioned to be acting like human, which are independent entities that make decisions for themselves; intelligent actuators that interact with the physical world; and involved observers that have rich senses and critical judgements. Most importantly, they are entitled social attributions to build relationships with humans. We call these robots co-robots. Technically, it is challenging to design the behavior of co-robots. Unlike traditional robots that work in structured and deterministic environments, co-robots need to operate in highly unstructured and stochastic environments. The book is to study methodologies to ensure that co-robots operate efficiently and safely in dynamic uncertain environments. This book sets up a unified analytical framework for various human-robot systems, which involves peer-peer interactions or hierarchical interactions. Various methods to design the robot behavior through control, planning, decision and learning are proposed. In particular, the following topics are discussed: safety during human-robot interactions, efficiency in real-time robot motion planning, imitation of human behaviors by robot, dexterity of robot to adapt to different environments and tasks, cooperation among robots and humans and conflict resolution. The proposed methods have been applied on various scenarios, such as human-robot collaborative assembly, robot skill learning from human demonstration, interaction between autonomous and human-driven vehicles, and etc.}
 }
 
@@ -573,7 +578,7 @@
 }
 
 
-@workshop{ho2020provably,
+@article{ho2020provably,
   id={W},
   author = {Cherie Ho and Katherine Shih and Jaskaran Singh Grover and Changliu Liu and Sebastian Scherer},
   title = {“Provably Safe” in the Wild: Testing Control Barrier Functions on a Vision-Based Quadrotor in an Outdoor Environment},
@@ -587,7 +592,7 @@
   id={C28},
   title={Deadlock Analysis and Resolution in Multi-Robot Systems},
   author={Grover, Jaskaran and Liu, Changliu and Sycara, Katia},
-  booktitle={International Workshop on the Algorithmic Foundations of Robotics (WAFR)},
+  booktitle={International Workshop on the Algorithmic Foundations of Robotics},
   year={2020},
   url={https://arxiv.org/pdf/1911.09146},
   abstract = {Collision avoidance for multirobot systems is a well studied problem. Recently, control barrier functions (CBFs) have been proposed for synthesizing controllers guarantee collision avoidance and goal stabilization for multiple robots. However, it has been noted reactive control synthesis methods (such as CBFs) are prone to deadlock, an equilibrium of system dynamics causes robots to come to a standstill before reaching their goals. In this paper, we formally derive characteristics of deadlock in a multirobot system uses CBFs. We propose a novel approach to analyze deadlocks resulting from optimization based controllers (CBFs) by bor- rowing tools from duality theory and graph enumeration. Our key insight is system deadlock is characterized by a force-equilibrium on robots and we show how complexity of deadlock analysis increases approximately exponentially with the number of robots. This analysis allows us to interpret deadlock as a subset of the state space, and we prove this set is non-empty, bounded and located on the boundary of the safety set. Finally, we use these properties to develop a provably correct decentralized algorithm for deadlock resolution which ensures robots converge to their goals while avoiding collisions. We show simulation results of the resolution algorithm for two and three robots and experimentally validate this algorithm on Khepera-IV robots.}
@@ -627,11 +632,12 @@
 
 @inproceedings{niuwang2020tolerance,
   id={C31},
-  title={Tolerance-guided Policy Learning for Adaptable and Transferrable Delicate Industrial Insertion,}, 
+  title={Tolerance-guided Policy Learning for Adaptable and Transferrable Delicate Industrial Insertion}, 
   author={Niu, Boshen and Wang, Chenxi and Liu, Changliu},
   year={2020},
   booktitle={Conference on Robot Learning},
   url={https://arxiv.org/abs/2108.02303},
+  link={https://corlconf.github.io/corl2020/paper_452/},
   abstract={Policy learning for delicate industrial insertion tasks (e.g., PC board assembly) is challenging. This paper considers two major problems: how to learn a diversified policy (instead of just one average policy) that can efficiently handle different workpieces with minimum amount of training data, and how to handle defects of workpieces during insertion. To address the problems, we propose tolerance-guided policy learning. To encourage transferability of the learned policy to different workpieces, we add a task embedding to the policy's input space using the insertion tolerance. Then we train the policy using generative adversarial imitation learning with reward shaping (RS-GAIL) on a variety of representative situations. To encourage adaptability of the learned policy to handle defects, we build a probabilistic inference model that can output the best inserting pose based on failed insertions using the tolerance model. The best inserting pose is then used as a reference to the learned policy. This proposed method is validated on a sequence of IC socket insertion tasks in simulation. The results show that 1) RS-GAIL can efficiently learn optimal policies under sparse rewards; 2) the tolerance embedding can enhance the transferability of the learned policy; 3) the probabilistic inference makes the policy robust to defects on the workpieces.}
 }
 
@@ -643,7 +649,9 @@
   eprint={2001.07798},
   archivePrefix={arXiv},
   booktitle={Conference on Robot Learning},
-  url={https://corlconf.github.io/paper_25/}
+  url={https://arxiv.org/abs/2001.07798},
+  link={https://corlconf.github.io/corl2020/paper_25/},
+  abstract={Imitation learning is the problem of recovering an expert policy without access to a reward signal. Behavior cloning and GAIL are two widely used methods for performing imitation learning. Behavior cloning converges in a few iterations, but doesn’t achieve peak performance due to its inherent iid assumption about the state-action distribution. GAIL addresses the issue by accounting for the temporal dependencies when performing a state distribution matching between the agent and the expert. Although GAIL is sample efficient in the number of expert trajectories required, it is still not very sample efficient in terms of the environment interactions needed for convergence of the policy. Given the complementary benefits of both methods, we present a simple and elegant method to combine both methods to enable stable and sample efficient learning. Our algorithm is very simple to implement and integrates with different policy gradient algorithms. We demonstrate the effectiveness of the algorithm in low dimensional control tasks, gridworlds and in high dimensional image-based tasks.}
 }
 
 @inproceedings{an2021flexible,
@@ -654,6 +662,7 @@
       booktitle={European Control Conference},
       url={https://arxiv.org/pdf/2103.14118.pdf},
       video = {https://www.youtube.com/embed/lcZOC_lpuqY},
+      abstract={Decentralized conflict resolution for autonomous vehicles is needed in many places where a centralized method is not feasible, e.g., parking lots, rural roads, merge lanes, etc. However, existing methods generally do not fully utilize optimization in decentralized conflict resolution. We propose a decentralized conflict resolution method for autonomous vehicles based on a novel extension to the Alternating Direc- tions Method of Multipliers (ADMM), called Online Adaptive ADMM (OA-ADMM), and on Model Predictive Control (MPC). OA-ADMM is tailored to online systems, where fast and adaptive real-time optimization is crucial, and allows the use of safety information about the physical system to improve safety in real-time control. We prove convergence in the static case and give requirements for online convergence. Combining OA-ADMM and MPC allows for robust decentralized motion planning and control that seamlessly integrates decentralized conflict resolution. The effectiveness of our proposed method is shown through simulations in CARLA, an open-source vehicle simulator, resulting in a reduction of 47.93% in mean added delay compared with the next best method.}
 }
 
 @inproceedings{grover2021feasible,
@@ -663,7 +672,8 @@
       year={2021},
       booktitle={European Control Conference},
       url={https://arxiv.org/abs/2011.04904},
-      video = {https://www.youtube.com/embed/T6ZiP22ho9E}
+      video = {https://www.youtube.com/embed/T6ZiP22ho9E},
+      abstract={We consider the problem of estimating bounds on parameters representing tasks being performed by individual robots in a multirobot system. In our previous work, we derived necessary conditions based on persistency of excitation analysis for exact identification of these parameters. We concluded that depending on the robot’s task, the dynamics of individual robots may fail to satisfy these conditions, thereby preventing exact inference. As an extension to that work, this paper focuses on estimating bounds on task parameters when such conditions are not satisfied. Each robot in the team uses optimization-based controllers for mediating between task satisfaction and collision avoidance. We use KKT conditions of this optimization and SVD of active collision avoidance constraints to derive explicit relations between Lagrange multipliers, robot dynamics and task parameters. Using these relations, we are able to derive bounds on each robot’s task parameters. Through numerical simulations we show how our proposed region based identification approach generates feasible regions for parameters when a conventional estimator such as a UKF fails. Additionally, empirical evidence shows that this approach generates contracting sets which converge to the true parameters much faster than the rate at which a UKF based estimate converges. Videos of these results are available at https://bit.ly/2JDMgeJ.}
 }
 
 @inproceedings{zhou2021distributed,
@@ -673,7 +683,8 @@
       year={2021},
       url={https://arxiv.org/abs/2101.07994},
       booktitle={IEEE International Conference on Robotics and Automation},
-      video = {https://www.youtube.com/embed/Po792hrkzpY}
+      video = {https://www.youtube.com/embed/Po792hrkzpY},
+      abstract={The implementation of optimization-based motion coordination approaches in real world multi-agent systems remains challenging due to their high computational complexity and potential deadlocks. This paper presents a distributed model predictive control (MPC) approach based on convex feasible set (CFS) algorithm for multi-vehicle motion coordination in autonomous driving. By using CFS to convexify the collision avoidance constraints, collision-free trajectories can be computed in real time. We analyze the potential deadlocks and show that a deadlock can be resolved by changing vehicles’ desired speeds. The MPC structure ensures that our algorithm is robust to low-level tracking errors. The proposed distributed method has been tested in multiple challenging multi-vehicle environments, including unstructured road, intersection, crossing, platoon formation, merging, and overtaking scenarios. The numerical results and comparison with other approaches (including a centralized MPC and reciprocal velocity obstacles) show that the proposed method is computationally efficient and robust, and avoids deadlocks.}
 }
 
 @inproceedings{gover2021system,
@@ -683,7 +694,8 @@
   booktitle={Modeling, Estimation, and Control Conference},
   year={2021},
   url = {https://www.sciencedirect.com/science/article/pii/S2405896321022424},
-  video = {https://www.youtube.com/embed/yusixZPrikk}
+  video = {https://www.youtube.com/embed/yusixZPrikk},
+  abstract = {This paper presents algorithms for learning parameters of optimization-based controllers used in multiagent systems based on their position-velocity measurements. The motivation to learn these parameters stems from the need to infer an agent’s intent (human or robot) to facilitate accurate predictions of motion as well as efficient interactions in a multiagent system. In this work, we demonstrate how to perform inference using algorithms based on the theory of inverse optimization (IO). We propose QP-based reformulations of IO algorithms for faster processing of batch-data to facilitate quicker inference. In our prior work, we used persistency of excitation analysis for deriving conditions under which conventional estimators such as a Kalman filter can successfully perform such inference. In this work, we demonstrate that whenever these conditions are violated, inference of parameters will fail, be it using IO-based algorithms or a UKF. We provide numerical simulations to infer desired goal locations and controller gains of each robot in a multirobot system and compare performance of IO-based algorithms with a UKF and an adaptive observer. In addition to these, we also conduct experiments with Khepera-4 robots and demonstrate the power of IO-based algorithms in inferring goals in the presence of perception noise.}
 }
 
 @inproceedings{noren2019safe,
@@ -692,7 +704,8 @@
   author={Noren, Charles and Zhao, Weiye and Liu, Changliu},
   booktitle={Modeling, Estimation, and Control Conference},
   year={2021},
-  url={https://arxiv.org/abs/1912.09095}
+  url={https://arxiv.org/abs/1912.09095},
+  abstract={Maintaining safety under adaptation has long been considered to be an important capability for autonomous systems. As these systems estimate and change the ego-model of the system dynamics, questions regarding how to develop safety guarantees for such systems continue to be of interest. We propose a novel robust safe control methodology that uses set-based safety constraints to make a robotic system with dynamical uncertainties safely adapt and operate in its environment. The method consists of designing a scalar energy function (safety index) for an adaptive system with parametric uncertainty and an optimization-based approach for control synthesis. Simulation studies on a two-link manipulator are conducted and the results demonstrate the effectiveness of our proposed method in terms of generating provably safe control for adaptive systems with parametric uncertainty.}
 }
 
 @inproceedings{zhao2021model,
@@ -701,10 +714,12 @@
   author={Zhao, Weiye and He, Tairan and Liu, Changliu},
   booktitle={Conference on Robot Learning},
   year={2021},
-  url={https://openreview.net/pdf?id=UGp6FDaxB0f}
+  url={https://openreview.net/pdf?id=UGp6FDaxB0f},
+  repository={https://github.com/intelligent-control-lab/ISSA_CoRL21},
+  abstract={Maintaining safety under adaptation has long been considered to be an important capability for autonomous systems. As these systems estimate and change the ego-model of the system dynamics, questions regarding how to develop safety guarantees for such systems continue to be of interest. We propose a novel robust safe control methodology that uses set-based safety constraints to make a robotic system with dynamical uncertainties safely adapt and operate in its environment. The method consists of designing a scalar energy function (safety index) for an adaptive system with parametric uncertainty and an optimization-based approach for control synthesis. Simulation studies on a two-link manipulator are conducted and the results demonstrate the effectiveness of our proposed method in terms of generating provably safe control for adaptive systems with parametric uncertainty.}
 }
 
-@inproceeds{grover2021parameter,
+@inproceedings{grover2021parameter,
   id={C39},
   author={Grover, Jaskaran and Liu, Changliu and Sycara, Katia},
   booktitle={2021 International Symposium on Multi-Robot and Multi-Agent Systems (MRS)}, 
@@ -715,25 +730,25 @@
   pages={173-180},
   keywords={Robot motion;Parameter estimation;Estimation;Observers;System identification;Multi-robot systems;Task analysis},
   doi={10.1109/MRS50823.2021.9620566},
-  url={https://arxiv.org/pdf/2009.13817}
+  url={https://arxiv.org/pdf/2009.13817},
+  abstract={This paper considers the problem of parameter identification for a multirobot system. We wish to understand when is it feasible for an adversarial observer to reverse-engineer the parameters of tasks being performed by a team of robots by simply observing their positions. We address this question by using the concept of persistency of excitation from system identification. Each robot in the team uses optimization-based controllers for mediating between task satisfaction and collision avoidance. These controllers exhibit an implicit dependence on the task's parameters which poses a hurdle for deriving necessary conditions for parameter identification, since such conditions usually require an explicit relation. We address this bottleneck by using duality theory and SVD of active collision avoidance constraints and derive an explicit relation between each robot's task parameters and its control inputs. This allows us to derive the main necessary conditions for successful identification which agree with our intuition. We demonstrate the importance of these conditions through numerical simulations by using (a) an adaptive observer and (b) an unscented Kalman filter for goal estimation in various geometric settings. These simulations show that under circumstances where parameter inference is supposed to be infeasible per our conditions, both these estimators fail and likewise when it is feasible, both converge to the true parameters.}
 }
 
-@article{liu2021algorithms,
-  id={J8},
-  url = {http://dx.doi.org/10.1561/2400000035},
-  year = {2021},
-  volume = {4},
-  journal = {Foundations and Trends in Optimization},
-  title = {Algorithms for Verifying Deep Neural Networks},
-  doi = {10.1561/2400000035},
-  issn = {2167-3888},
-  number = {3-4},
-  pages = {244-404},
-  author = {Changliu Liu and Tomer Arnon and Christopher Lazarus and Christopher Strong and Clark Barrett and Mykel J. Kochenderfer}
+@article{abuduweili2021robust,
+  id = {J7},
+  title={Robust nonlinear adaptation algorithms for multitask prediction networks},
+  author={Abuduweili, Abulikemu and Liu, Changliu},
+  journal={International Journal of Adaptive Control and Signal Processing},
+  volume={35},
+  number={3},
+  pages={314--341},
+  year={2021},
+  url={https://onlinelibrary.wiley.com/doi/abs/10.1002/acs.3198},
+  abstract={High fidelity behavior prediction of intelligent agents is critical in many applications,which is challenging due to the stochasticity, heterogeneity and time-varying natureof agent behaviors. Prediction models that work for one individual may not be appli-cable to another. Besides, the prediction model trained on the training set may notgeneralize to the testing set. These challenges motivate the adoption of online adap-tation algorithms to update prediction models in real-time to improve the predictionperformance. This paper considers online adaptable multi-task prediction for bothintention and trajectory. The goal of online adaptation is to improve the performanceof both intention and trajectory predictions with only the feedback of the observedtrajectory. We first introduce a generic tau-step adaptation algorithm of the multi-taskprediction model that updates the model parameters with the trajectory predictionerror in recent tau steps. Inspired by Extended Kalman Filter (EKF), a base adaptationalgorithm Modified EKF with forgetting factor (MEKFtau) is introduced. In order toimprove the performance of MEKFtau, generalized exponential moving average filter-ing techniques are adopted. Then this paper introduces a dynamic multi-epoch updatestrategy to effectively utilize samples received in real time. With all these exten-sions, we propose a robust online adaptation algorithm: MEKF with Moving Averageand dynamic Multi-Epoch strategy (MEKFMA−ME). We empirically study the bestset of parameters to adapt in the multi-task prediction model and demonstrate theeffectiveness of the proposed adaptation algorithms to reduce the prediction error.}
 }
 
 @article{liu2021human,
-  id={J9},
+  id={J8},
   author={Liu, Ruixuan and Liu, Changliu},
   journal={IEEE Control Systems Letters}, 
   title={Human Motion Prediction Using Adaptable Recurrent Neural Networks and Inverse Kinematics}, 
@@ -742,8 +757,28 @@
   number={5},
   pages={1651-1656},
   doi={10.1109/LCSYS.2020.3042609},
-  url={https://ieeexplore.ieee.org/document/9281312},
-  video = {https://www.youtube.com/embed/r5TqRTU7lg4}
+  link={https://ieeexplore.ieee.org/document/9281312},
+  video = {https://www.youtube.com/embed/r5TqRTU7lg4},
+  abstract={Human motion prediction, especially arm prediction, is critical to facilitate safe and efficient human-robot collaboration (HRC). This letter proposes a novel human motion prediction framework that combines a recurrent neural network (RNN) and inverse kinematics (IK) to predict human arm motion. A modified Kalman filter (MKF) is applied to adapt the model online. The proposed framework is tested on collected human motion data with up to 2 s prediction horizon. The experiments demonstrate that the proposed method improves the prediction accuracy by approximately 14% comparing to the state-of-art on seen situations. It stably adapts to unseen situations by keeping the maximum prediction error under 4 cm, which is 70% lower than other methods. Moreover, it is robust when the arm is partially occluded. The wrist prediction remains the same, while the elbow prediction has 20% less variation.}
+}
+
+@article{liu2021algorithms,
+  id={J9},
+  link = {http://dx.doi.org/10.1561/2400000035},
+  year = {2021},
+  volume = {4},
+  journal = {Foundations and Trends in Optimization},
+  title = {Algorithms for Verifying Deep Neural Networks},
+  doi = {10.1561/2400000035},
+  issn = {2167-3888},
+  number = {3-4},
+  pages = {244-404},
+  author = {Changliu Liu and Tomer Arnon and Christopher Lazarus and Christopher Strong and Clark Barrett and Mykel J. Kochenderfer},
+  url = {https://arxiv.org/pdf/1903.06758},
+  repository = {https://github.com/sisl/NeuralVerification.jl},
+  video = {https://www.youtube.com/embed/on17gZFUP9Y},
+  info= {https://www.youtube.com/playlist?list=PLuUeWtUmP5d5Dx5l982ry8EhtyJyRt6NK},
+  abstract={Deep neural networks are widely used for nonlinear function approximation with applications spanning from computer vision to control. Although these networks involve the composition of simple arithmetic operations, it can be very challenging to verify whether a particular network satisfies certain input-output properties. This article surveys methods that have emerged recently for soundly verifying such properties. These methods borrow insights from reachability analysis, optimization, and search. We discuss fundamental differences and connections between existing algorithms. In addition, we provide pedagogical implementations of existing methods and compare them on a set of benchmark problems.}
 }
 
 @article{grover2021simultaneously,
@@ -751,7 +786,9 @@
   title={Simultaneously learning safety margins and task parameters of multirobot systems},
   author={Grover, Jaskaran Singh and Liu, Changliu and Sycara, Katia},
   journal={RSS BI-MAS Workshop},
-  year={2021}
+  year={2021},
+  url={https://jaskaransgrover.github.io/files/RSS_Workshop.pdf},
+  abstract={We present an algorithm for learning constraint and objective function parameters of optimization-based controllers used in multirobot systems. Our proposed approach uses position-velocity measurements of each robot in the team to perform this inference. The motivation to learn these parameters stems from the need to infer an agent’s intent for accurate predictions of motion in a multiagent system. We develop an extension of our prior work in which we performed task learning assuming constraint parameters were known. In this work, we perform simultaneous learning of constraint and cost function parameters by posing it as a constrained nonconvex optimization problem. The cost function parameters that we learn encode information of the task being performed by each robot in the team whereas the constraint parameters encode information about individual safety margin distances and size of the safe control set for each robot. Our simulation results show the accurate reconstruction of both the constraint and cost function parameters and we analyze some failure cases.}
 }
 
 
@@ -761,7 +798,8 @@
   author={Wei, Tianhao and Liu, Changliu},
   journal={RSS R4P Workshop},
   year={2021},
-  url={https://arxiv.org/abs/2106.12732}
+  url={https://arxiv.org/abs/2106.12732},
+  abstract={Although neural networks are widely used, it remains challenging to formally verify the safety and robustness of neural networks in real-world applications. Existing methods are designed to verify the network before deployment, which are limited to relatively simple specifications and fixed networks. These methods are not ready to be applied to real-world problems with complex and/or dynamically changing specifications and networks. To effectively handle such problems, verification needs to be performed online when these changes take place. However, it is still challenging to run existing verification algorithms online. Our key insight is that we can leverage the temporal dependencies of these changes to accelerate the verification process. This paper establishes a novel framework for scalable online verification to solve real-world verification problems with dynamically changing specifications and/or networks. We propose three types of acceleration algorithms: Branch Management to reduce repetitive computation, Perturbation Tolerance to tolerate changes, and Incremental Computation to reuse previous results. Experiment results show that our algorithms achieve up to 100× acceleration, and thus show a promising way to extend neural network verification to real-world applications.}
 }
 
 
@@ -771,211 +809,81 @@
   author={Liu, Ruixuan and Liu, Changliu},
   journal={ICML HIIL Workshop},
   year={2021},
-  url={https://arxiv.org/pdf/2108.06871.pdf}
-}
-
-@article{ma2021joint,
-  title={Joint Synthesis of Safety Certificate and Safe Control Policy using Constrained Reinforcement Learning},
-  author={Ma, Haitong and Liu, Changliu and Li, Shengbo Eben and Zheng, Sifa and Chen, Jianyu},
-  journal={MECC SCLU Workshop},
-  year={2021},
-  url={https://arxiv.org/pdf/2111.07695.pdf}
-}
-
-
-@inproceedings{zhao2021safe,
-  title={A Hierarchical Long Short Term Safety Framework for Efficient Robot Manipulation Under Uncertainty},
-  author={He, Suqin and Zhao, Weiye and Hu, Chuxiong and Zhu, Yu and Liu, Changliu},
-  booktitle={MECC SCLU Workshop},
-  year={2021},
-  url={https://drive.google.com/file/d/1GjHgDfPO23p_3wK38_NNNnfBViCjapvt/view}
+  url={https://arxiv.org/pdf/2108.06871.pdf},
+  abstract={Neural networks (NNs) are widely used for classification tasks for their remarkable performance. However, the robustness and accuracy of NNs heavily depend on the training data. In many applications, massive training data is usually not available. To address the challenge, this paper proposes an iterative adversarial data augmentation (IADA) framework to learn neural network models from an insufficient amount of training data. The method uses formal verification to identify the most "confusing" input samples, and leverages human guidance to safely and iteratively augment the training data with these samples. The proposed framework is applied to an artificial 2D dataset, the MNIST dataset, and a human motion dataset. By applying IADA to fully-connected NN classifiers, we show that our training method can improve the robustness and accuracy of the learned model. By comparing to regular supervised training, on the MNIST dataset, the average perturbation bound improved 107.4%. The classification accuracy improved 1.77%, 3.76%, 10.85% on the 2D dataset, the MNIST dataset, and the human motion dataset respectively.}
 }
 
 @article{wang2021hierarchical,
+  id={W},
   title={Hierarchical Adaptable and Transferable Networks (HATN) for Driving Behavior Prediction},
   author={Wang, Letian and Hu, Yeping and Sun, Liting and Zhan, Wei and Tomizuka, Masayoshi and Liu, Changliu},
   journal={NeurIPS workshop on Machine Learning for Autonomous Driving},
   year={2021},
-  url={https://arxiv.org/pdf/2111.00788.pdf}
+  url={https://arxiv.org/pdf/2111.00788.pdf},
+  abstract={When autonomous vehicles still struggle to solve challenging situations during on-road driving, humans have long mastered the essence of driving with efficient transferable and adaptable driving capability. By mimicking humans' cognition model and semantic understanding during driving, we present HATN, a hierarchical framework to generate high-quality driving behaviors in multi-agent dense-traffic environments. Our method hierarchically consists of a high-level intention identification and low-level action generation policy. With the semantic sub-task definition and generic state representation, the hierarchical framework is transferable across different driving scenarios. Besides, our model is also able to capture variations of driving behaviors among individuals and scenarios by an online adaptation module. We demonstrate our algorithms in the task of trajectory prediction for real traffic data at intersections and roundabouts, where we conducted extensive studies of the proposed method and demonstrated how our method outperformed other methods in terms of prediction accuracy and transferability.}
 }
 
-
 @article{wang2021online,
+  id={W},
   title={Online Adaptation of Neural Network Models by Modified Extended Kalman Filter for Customizable and Transferable Driving Behavior Prediction},
   author={Wang, Letian and Hu, Yeping and Liu, Changliu},
   journal={AAAI Workshop HCSSL},
   year={2021},
-  url={https://paperswithcode.com/paper/online-adaptation-of-neural-network-models-by}
+  url={https://paperswithcode.com/paper/online-adaptation-of-neural-network-models-by},
+  abstract={High fidelity behavior prediction of human drivers is crucial for efficient and safe deployment of autonomous vehicles, which is challenging due to the stochasticity, heterogeneity, and time-varying nature of human behaviors. On one hand, the trained prediction model can only capture the motion pattern in an average sense, while the nuances among individuals can hardly be reflected. On the other hand, the prediction model trained on the training set may not generalize to the testing set which may be in a different scenario or data distribution, resulting in low transferability and generalizability. In this paper, we applied a τ-step modified Extended Kalman Filter parameter adaptation algorithm (MEKFλ) to the driving behavior prediction task, which has not been studied before in literature. With the feedback of the observed trajectory, the algorithm is applied to neural-network-based models to improve the performance of driving behavior predictions across different human subjects and scenarios. A new set of metrics is proposed for systematic evaluation of online adaptation performance in reducing the prediction error for different individuals and scenarios. Empirical studies on the best layer in the model and steps of observation to adapt are also provided.}
 }
 
 
 @article{chen2021safe,
+  id = {J10},
   title={Safe and Sample-efficient Reinforcement Learning for Clustered Dynamic Environments},
   author={Chen, Hongyi and Liu, Changliu},
   journal={IEEE Control and Systems Letters},
-  year={2021}
+  year={2021},
+  link={https://ieeexplore.ieee.org/document/9655259},
+  abstract={This study proposes a safe and sample-efficient reinforcement learning (RL) framework to address two major challenges in developing applicable RL algorithms: satisfying safety constraints and efficiently learning with limited samples. To guarantee safety in real-world complex environments, we use the safe set algorithm (SSA) to monitor and modify the nominal controls, and evaluate SSA+RL in a clustered dynamic environment which is challenging to be solved by existing RL algorithms. However, the SSA+RL framework is usually not sample-efficient especially in reward-sparse environments, which has not been addressed in previous safe RL works. To improve the learning efficiency, we propose three techniques: (1) avoiding behaving overly conservative by adapting the SSA; (2) encouraging safe exploration using random network distillation with safety constraints; (3) improving policy convergence by treating SSA as expert demonstrations and directly learn from that. The experimental results show that our framework can achieve better safety performance compare to other safe RL methods during training and solve the task with substantially fewer episodes.}
 }
 
-
-@article{grover2021before,
-author = {Jaskaran Grover and Changliu Liu and Katia Sycara},
-title ={The before, during, and after of multi-robot deadlock},
-journal = {The International Journal of Robotics Research},
-year={2021},
-url={https://journals.sagepub.com/doi/abs/10.1177/02783649221074718?journalCode=ijra}
+@article{tang2021microscopic,
+  id={U},
+  title={A microscopic pandemic simulator for pandemic prediction using scalable million-agent reinforcement learning},
+  author={Tang, Zhenggang and Yan, Kai and Sun, Liting and Zhan, Wei and Liu, Changliu},
+  journal={arXiv:2108.06589},
+  year={2021},
+  url={https://arxiv.org/abs/2108.06589},
+  repository={https://github.com/intelligent-control-lab/Microscopic_Epidemic_Model},
+  abstract={Microscopic epidemic models are powerful tools for government policy makers to predict and simulate epidemic outbreaks, which can capture the impact of individual behaviors on the macroscopic phenomenon. However, existing models only consider simple rule-based individual behaviors, limiting their applicability. This paper proposes a deep-reinforcement-learning-powered microscopic model named Microscopic Pandemic Simulator (MPS). By replacing rule-based agents with rational agents whose behaviors are driven to maximize rewards, the MPS provides a better approximation of real world dynamics. To efficiently simulate with massive amounts of agents in MPS, we propose Scalable Million-Agent DQN (SMADQN). The MPS allows us to efficiently evaluate the impact of different government strategies. This paper first calibrates the MPS against real-world data in Allegheny, US, then demonstratively evaluates two government strategies: information disclosure and quarantine. The results validate the effectiveness of the proposed method. As a broad impact, this paper provides novel insights for the application of DRL in large scale agent-based networks such as economic and social networks.}
 }
 
-
-@article{grover2021parameter,
-author = {Jaskaran Grover and Changliu Liu and Katia Sycara},
-title ={Parameter Identification for Multirobot Systems Using Optimization-based Controllers},
-journal = {International Symposium on Multi-Robot and Multi-Agent Systems (MRS)},
-year={2021},
-url={https://arxiv.org/pdf/2009.13817.pdf}
+@article{bak2021second,
+  id={U},
+  title={The second international verification of neural networks competition (VNN-COMP 2021): summary and results. CoRR abs/2109.00498 (2021)},
+  author={Bak, Stanley and Liu, Changliu and Johnson, Taylor T},
+  journal={arXiv:2109.00498},
+  year={2021},
+  url={https://arxiv.org/abs/2109.00498},
+  abstract={This report summarizes the second International Verification of Neural Networks Competition (VNN-COMP 2021), held as a part of the 4th Workshop on Formal Methods for ML-Enabled Autonomous Systems that was collocated with the 33rd International Conference on Computer-Aided Verification (CAV). Twelve teams participated in this competition. The goal of the competition is to provide an objective comparison of the state-of-the-art methods in neural network verification, in terms of scalability and speed. Along this line, we used standard formats (ONNX for neural networks and VNNLIB for specifications), standard hardware (all tools are run by the organizers on AWS), and tool parameters provided by the tool authors. This report summarizes the rules, benchmarks, participating tools, results, and lessons learned from this competition.}
 }
 
-
-@inproceedings{liu2022safe2,
-author = {Simin Liu and Changliu Liu and John Dolan},
-title ={Safe Control Under Input Limits with Neural Control Barrier Functions},
-journal = {Conference on Robot Learning},
-year={2022},
-url={https://arxiv.org/abs/2211.11056}
+@article{yin2021iloc,
+  id = {U},
+  title={iLoc: Condition and Viewpoint Invariant Additive Feature Extractor for Appearance-based Visual Localization},
+  author={Yin, Peng and Ge, Ruohai and Xu, Lingyun and Liu, Changliu and Zhang, Ji and Choset, Howie and Scherer, Sebastian},
+  year={2021},
+  url={https://www.researchgate.net/publication/356422459_iLoc_Condition_and_Viewpoint_Invariant_Additive_Feature_Extractor_for_Appearance-based_Visual_Localization}
 }
 
-@inproceedings{deka2022actor,
-author = {Ankur Deka and Changliu Liu and Katia Sycara},
-title ={ARC - Actor Residual Critic for Adversarial Imitation Learning},
-journal = {Conference on Robot Learning},
-year={2022},
-url={https://arxiv.org/abs/2206.02095}
-}
-
-
-@article{grover2022distributed,
-author = {Nishant Mohanty and Jaskaran Grover and Changliu Liu and Katia Sycara},
-title ={Distributed Multirobot Control for Non-Cooperative Herding},
-journal = {Distributed Autonomous Robotic Systems (DARS)},
-year={2022},
-url={https://jaskaransgrover.github.io/files/DARS.pdf}
-}
-
-
-@article{liu2022task,
-author = {Ruixuan Liu and Rui Chen and Changliu Liu},
-title ={Task-agnostic Adaptation for Safe Human-robot Handover},
-journal = {4th IFAC Workshop on Cyber-Physical Human Systems},
-year={2022},
-url={https://arxiv.org/abs/2209.09418}
-}
-
-@article{grover2022semantically,
-author = {Jaskaran Grover and Yiwei Lyu and Wenhao Luo and Changliu Liu and John Dolan and Katia Sycara},
-title ={Semantically-Aware Pedestrian Intent Prediction With Barrier Functions and Mixed-Integer Quadratic Programming},
-journal = {4th IFAC Workshop on Cyber-Physical Human Systems},
-year={2022},
-url={https://webpages.charlotte.edu/wluo4/publications/IFAC_CPHS_2022_Pedestrian_Intent_Prediction.pdf}
-}
-
-
-@article{he2022characterizing,
-author = {Haoyu He and Tianhao Wei and Huan Zhang and Changliu Liu and Cheng Tan},
-title ={Characterizing Neural Network Verification for Systems with NN4SYSBENCH},
-journal = {ICML Workshop on Formal Verification of Machine Learning},
-year={2022},
-url={https://naizhengtan.github.io/doc/papers/characterizing22haoyu.pdf}
-}
-
-
-@inproceedings{grover2022noncooperative,
-author = {Jaskaran Grover and Nishant Mohanty and Wenhao Luo and Changliu Liu and Katia Sycara},
-title ={Noncooperative Herding With Control Barrier Functions: Theory and Experiments},
-journal = {IEEE Conference on Decision and Control},
-year={2022},
-url={https://arxiv.org/pdf/2204.10945.pdf}
-}
-
-
-@ARTICLE{li2022efficient,
-  author={Li, Chenran and Trinh, Tu and Wang, Letian and Liu, Changliu and Tomizuka, Masayoshi and Zhan, Wei},
-  journal={IEEE Robotics and Automation Letters}, 
-  title={Efficient Game-Theoretic Planning With Prediction Heuristic for Socially-Compliant Autonomous Driving}, 
-  year={2022},
-  url={https://ieeexplore.ieee.org/document/9830854}}
-
-
-@inproceedings{pandya2022safe,
-  url = {https://arxiv.org/abs/2208.01103},
-  author = {Pandya, Ravi and Liu, Changliu},
-  title = {Safe and Efficient Exploration of Human Models During Human-Robot Interaction},
-  year = {2022},
-  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems},
-  video = {https://www.youtube.com/embed/XQ8MJiVzSF4},
-}
-
-@inproceedings{chen2022composable,
-  url = {https://arxiv.org/abs/2203.03017},
-  author = {Chen, Rui and Wang, Chenxi and Wei, Tianhao and Liu, Changliu},
-  title = {A Composable Framework for Policy Design, Learning, and Transfer Toward Safe and Efficient Industrial Insertion},
-  year = {2022},
-  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems},
-  video = {https://www.youtube.com/embed/658vHXza9UA},
-}
-
-
-@article{liu2022task,
-author = {Ruixuan Liu and Rui Chen and Changliu Liu},
-title ={Task-agnostic Adaptation for Safe Human-robot Handover},
-journal = {RSS Workshop on Close-Proximity Human-Robot Collaboration},
-year={2022},
-url={https://arxiv.org/abs/2209.09418}
-}
-
-
-
-@article{zhao2022provably,
-  title={Provably Safe Tolerance Estimation for Robot Arms via Sum-of-Squares Programming},
-  author={Zhao, Weiye and He, Suqin and Liu, Changliu},
-  journal={IEEE Control Systems Letters},
-  year={2022},
-  publisher={IEEE},
-  url={https://ieeexplore.ieee.org/document/9790841},
-  video={https://www.youtube.com/embed/12lgDxBZKHY}
-}
-
-
-@inproceedings{liu2022jerk,  
-author={Liu, Ruixuan and Chen, Rui and Sun, Yifan and Zhao, Yu and Liu, Changliu},  
-booktitle={2022 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM)},   
-title={Jerk-bounded Position Controller with Real-Time Task Modification for Interactive Industrial Robots},   
-year={2022},  
-url={https://ieeexplore.ieee.org/document/9863251},
-video = {https://youtu.be/bha6pHhytZA}
-}
-
-@inproceedings{jessica2022,  
-author={Jessica Leu and Yujiao Cheng and Changliu Liu and Masayoshi Tomizuka},  
-booktitle={International Symposium on Flexible Automation},   
-title={Robust Task Planning for Assembly Lines with Human-Robot Collaboration},   
-year={2022},  
-url={https://arxiv.org/abs/2204.07936}}
-
-@inproceedings{liu2022safe,
-  url = {https://arxiv.org/abs/2204.03038},
-  author = {Liu, Ruixuan and Chen, Rui and Liu, Changliu},
-  title = {Safe Interactive Industrial Robots using Jerk-based Safe Set Algorithm},
-  year = {2022},
-  journal = {International Symposium on Flexible Automation},
-  video = {https://www.youtube.com/embed/lJvyZ5iRvVQ}
-}
+%%%%%%%%%%%%%%%2022%%%%%%%%%%%%%%%%%%
 
 @inproceedings{wei2022safe,
   id = {C40},
-  title = 	 {Safe Control with Neural Network Dynamic Models},
+  title =    {Safe Control with Neural Network Dynamic Models},
   author =       {Wei, Tianhao and Liu, Changliu},
-  booktitle = 	 {Learning for Dynamics and Control Conference},
-  year = 	 {2022},
-  url = 	 {https://proceedings.mlr.press/v168/wei22a.html},
+  booktitle =    {Learning for Dynamics and Control Conference},
+  year =   {2022},
+  url =    {https://proceedings.mlr.press/v168/wei22a.html},
+  repository = {https://github.com/intelligent-control-lab/NNDM-safe-control},
+  abstract={Safety is critical in autonomous robotic systems. A safe control law should ensure forward invariance of a safe set (a subset in the state space). It has been extensively studied regarding how to derive a safe control law with a control-affine analytical dynamic model. However, how to formally derive a safe control law with Neural Network Dynamic Models (NNDM) remains unclear due to the lack of computationally tractable methods to deal with these black-box functions. In fact, even finding the control that minimizes an objective for NNDM without any safety constraint is still challenging. In this work, we propose MIND-SIS (Mixed Integer for Neural network Dynamic model with Safety Index Synthesis), the first method to synthesize safe control for NNDM. The method includes two parts: 1) SIS: an algorithm for the offline synthesis of the safety index (also called as a barrier function), which uses evolutionary methods and 2) MIND: an algorithm for online computation of the optimal and safe control signal, which solves a constrained optimization using a computationally efficient encoding of neural networks. It has been theoretically proved that MIND-SIS guarantees forward invariance and finite convergence to a subset of the user-defined safe set. And it has been numerically validated that MIND-SIS achieves safe and optimal control of NNDM. The optimality gap is less than 10−8, and the safety constraint violation is 0.}
 }
 
 @inproceedings{ma2022joint,
@@ -985,84 +893,178 @@ url={https://arxiv.org/abs/2204.07936}}
   booktitle =    {Learning for Dynamics and Control Conference},
   year =   {2022},
   url =    {https://proceedings.mlr.press/v168/ma22a.html},
-  video = {https://www.youtube.com/embed/DZkiF9Nsjmw}
+  video = {https://www.youtube.com/embed/DZkiF9Nsjmw},
+  award = {Best Paper Finalist},
+  abstract = {Safety is the major consideration in controlling complex dynamical systems using reinforcement learning (RL), where the safety certificates can provide provable safety guarantees. A valid safety certificate is an energy function indicating that safe states are with low energy, and there exists a corresponding safe control policy that allows the energy function to always dissipate. The safety certificates and the safe control policies are closely related to each other and both challenging to synthesize. Therefore, existing learning-based studies treat either of them as prior knowledge to learn the other, limiting their applicability to general systems with unknown dynamics. This paper proposes a novel approach that simultaneously synthesizes the energy-function-based safety certificates and learns the safe control policies with constrained reinforcement learning (CRL). We do not rely on prior knowledge about either a prior control law or a perfect safety certificate. In particular, we formulate a loss function to optimize the safety certificate parameters by minimizing the occurrence of energy increases. By adding this optimization procedure as an outer loop to the Lagrangian-based CRL, we jointly update the policy and safety certificate parameters, and prove that they will converge to their respective local optima, the optimal safe policies and valid safety certificates. Finally, we evaluate our algorithms on multiple safety-critical benchmark environments. The results show that the proposed algorithm learns solidly safe policies with no constraint violation. The validity, or feasibility of synthesized safety certificates is also verified numerically.}
 }
 
-@article{liu2020microscopic,
-  id = {U},
-  title={A microscopic epidemic model and pandemic prediction using multi-agent reinforcement learning},
-  author={Liu, Changliu},
-  journal={arXiv:2004.12959},
-  year={2020}
+@inproceedings{liu2022safe,
+  id ={C42},
+  url = {https://arxiv.org/abs/2204.03038},
+  author = {Liu, Ruixuan and Chen, Rui and Liu, Changliu},
+  title = {Safe Interactive Industrial Robots using Jerk-based Safe Set Algorithm},
+  year = {2022},
+  journal = {International Symposium on Flexible Automation},
+  video = {https://www.youtube.com/embed/lJvyZ5iRvVQ},
+  repository = {https://github.com/intelligent-control-lab/Stream_Motion_Controller},
+  abstract = {The need to increase the flexibility of production lines is calling for robots to collaborate with human workers. However, existing interactive industrial robots only guarantee intrinsic safety (reduce collision impact), but not interactive safety (collision avoidance), which greatly limited their flexibility. The issue arises from two limitations in existing control software for industrial robots: 1) lack of support for real-time trajectory modification; 2) lack of intelligent safe control algorithms with guaranteed collision avoidance under robot dynamics constraints. To address the first issue, a jerk-bounded position controller (JPC) was developed previously. This paper addresses the second limitation, on top of the JPC. Specifically, we introduce a jerk-based safe set algorithm (JSSA) to ensure collision avoidance while considering the robot dynamics constraints. The JSSA greatly extends the scope of the original safe set algorithm, which has only been applied for second-order systems with unbounded accelerations. The JSSA is implemented on the FANUC LR Mate 200id/7L robot and validated with HRI tasks. Experiments show that the JSSA can consistently keep the robot at a safe distance from the human while executing the designated task.}
 }
 
-@inproceedings{grover2020deadlock,
-  title={Deadlock Analysis and Resolution for Multi-Robot Systems},
-  author={Grover, Jaskaran Singh and Liu, Changliu and Sycara, Katia},
-  booktitle={International Workshop on the Algorithmic Foundations of Robotics (WAFR)},
-  year={2020}
+@inproceedings{jessica2022,  
+  id = {C43},
+  author={Jessica Leu and Yujiao Cheng and Changliu Liu and Masayoshi Tomizuka},  
+  booktitle={International Symposium on Flexible Automation},   
+  title={Robust Task Planning for Assembly Lines with Human-Robot Collaboration},   
+  year={2022},  
+  pages={188--195},
+  organization={The Institute of Systems, Control and Information Engineers},
+  url={https://arxiv.org/abs/2204.07936},
+  abstract={Efficient and robust task planning for a human-robot collaboration (HRC) system remains challenging. The human-aware task planner needs to assign jobs to both robots and human workers so that they can work collaboratively to achieve better time efficiency. However, the complexity of the tasks and the stochastic nature of the human collaborators bring challenges to such task planning. To reduce the complexity of the planning problem, we utilize the hierarchical task model, which explicitly captures the sequential and parallel relationships of the task. We model human movements with the sigma-lognormal functions to account for human-induced uncertainties. A human action model adaptation scheme is applied during run-time, and it provides a measure for modeling the human-induced uncertainties. We propose a sampling-based method to estimate human job completion time uncertainties. Next, we propose a robust task planner, which formulates the planning problem as a robust optimization problem by considering the task structure and the uncertainties. We conduct simulations of a robot arm collaborating with a human worker in an electronics assembly setting. The results show that our proposed planner can reduce task completion time when human-induced uncertainties occur compared to the baseline planner.}
 }
 
-@article{abuduweili2021robust,
-  title={Robust nonlinear adaptation algorithms for multitask prediction networks},
-  author={Abuduweili, Abulikemu and Liu, Changliu},
-  journal={International Journal of Adaptive Control and Signal Processing},
-  volume={35},
-  number={3},
-  pages={314--341},
-  year={2021},
-  url={https://onlinelibrary.wiley.com/doi/abs/10.1002/acs.3198},
+@inproceedings{liu2022jerk,  
+  id = {C44},
+  author={Liu, Ruixuan and Chen, Rui and Sun, Yifan and Zhao, Yu and Liu, Changliu},  
+  booktitle={IEEE/ASME International Conference on Advanced Intelligent Mechatronics},   
+  title={Jerk-bounded Position Controller with Real-Time Task Modification for Interactive Industrial Robots},   
+  year={2022},  
+  link={https://ieeexplore.ieee.org/document/9863251},
+  video = {https://youtu.be/bha6pHhytZA},
+  repository = {https://github.com/intelligent-control-lab/Stream_Motion_Controller},
+  abstract ={Industrial robots are widely used in many applications with structured and deterministic environments. However, the contemporary need requires industrial robots to intelligently operate in dynamic environments. It is challenging to design a safe and efficient robotic system with industrial robots in a dynamic environment for several reasons. First, most industrial robots require the input to have specific formats, which takes additional efforts to convert from task-level user commands. Second, existing robot drivers do not support overwriting ongoing tasks in real-time, which hinders the robot from responding to the dynamic environment. Third, most industrial robots only expose motion-level control, making it challenging to enforce dynamic constraints during trajectory tracking. To resolve the above challenges, this paper presents a jerk-bounded position control driver (JPC) for industrial robots. JPC provides a unified interface for tracking complex trajectories and is able to enforce dynamic constraints using motion-level control, without accessing servo-level control. Most importantly, JPC enables real-time trajectory modification. Users can overwrite the ongoing task with a new one without violating dynamic constraints. The proposed JPC is implemented and tested on the FANUC LR Mate 200id/7L robot with both artificially generated data and an interactive robot handover task. Experiments show that the proposed JPC can track complex trajectories accurately within dynamic limits and seamlessly switch to new trajectory references before the ongoing task ends.}
 }
 
-
-@article{tang2021microscopic,
-  title={A microscopic pandemic simulator for pandemic prediction using scalable million-agent reinforcement learning},
-  author={Tang, Zhenggang and Yan, Kai and Sun, Liting and Zhan, Wei and Liu, Changliu},
-  journal={arXiv:2108.06589},
-  year={2021}
+@inproceedings{chen2022composable,
+  id = {C45},
+  url = {https://arxiv.org/abs/2203.03017},
+  author = {Chen, Rui and Wang, Chenxi and Wei, Tianhao and Liu, Changliu},
+  title = {A Composable Framework for Policy Design, Learning, and Transfer Toward Safe and Efficient Industrial Insertion},
+  year = {2022},
+  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  video = {https://www.youtube.com/embed/658vHXza9UA},
+  abstract = {Delicate industrial insertion tasks (e.g., PC board assembly) remain challenging for industrial robots. The challenges include low error tolerance, delicacy of the components, and large task variations with respect to the components to be inserted. To deliver a feasible robotic solution for these insertion tasks, we also need to account for hardware limits of existing robotic systems and minimize the integration effort. This paper proposes a composable framework for efficient integration of a safe insertion policy on existing robotic platforms to accomplish these insertion tasks. The policy has an interpretable modularized design and can be learned efficiently on hardware and transferred to new tasks easily. In particular, the policy includes a safe insertion agent as a baseline policy for insertion, an optimal configurable Cartesian tracker as an interface to robot hardware, a probabilistic inference module to handle component variety and insertion errors, and a safe learning module to optimize the parameters in the aforementioned modules to achieve the best performance on designated hardware. The experiment results on a UR10 robot show that the proposed framework achieves safety (for the delicacy of components), accuracy (for low tolerance), robustness (against perception error and component defection), adaptability and transferability (for task variations), as well as task efficiency during execution plus data and time efficiency during learning.}
 }
-
-@article{he2023hierarchical,
-  title={A hierarchical long short term safety framework for efficient robot manipulation under uncertainty},
-  author={He, Suqin and Zhao, Weiye and Hu, Chuxiong and Zhu, Yu and Liu, Changliu},
-  journal={Robotics and Computer-Integrated Manufacturing},
-  volume={82},
-  pages={102522},
-  year={2023},
-  publisher={Pergamon}
-}
-
-@inproceedings{deka2023arc,
-  title={ARC-Actor Residual Critic for Adversarial Imitation Learning},
-  author={Deka, Ankur and Liu, Changliu and Sycara, Katia P},
-  booktitle={Conference on Robot Learning},
-  pages={1446--1456},
-  year={2023},
-  organization={PMLR}
-}
-
 
 @inproceedings{pandya2022safe,
-  title={Safe and efficient exploration of human models during human-robot interaction},
-  author={Pandya, Ravi and Liu, Changliu},
-  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  id = {C46},
+  url = {https://arxiv.org/abs/2208.01103},
+  author = {Pandya, Ravi and Liu, Changliu},
+  title = {Safe and Efficient Exploration of Human Models During Human-Robot Interaction},
+  year = {2022},
   pages={6708--6715},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  video = {https://www.youtube.com/embed/XQ8MJiVzSF4},
+  abstract = {Many collaborative human-robot tasks require the robot to stay safe and work efficiently around humans. Since the robot can only stay safe with respect to its own model of the human, we want the robot to learn a good model of the human in order to act both safely and efficiently. This paper studies methods that enable a robot to safely explore the space of a human-robot system to improve the robot's model of the human, which will consequently allow the robot to access a larger state space and better work with the human. In particular, we introduce active exploration under the framework of energy-function based safe control, investigate the effect of different active exploration strategies, and finally analyze the effect of safe active exploration on both analytical and neural network human models.}
+}
+
+@inproceedings{chen2022safe,
+  id = {C47},
+  title={Safe hierarchical navigation in crowded dynamic uncertain environments},
+  author={Chen, Hongyi and Feng, Shiyu and Zhao, Ye and Liu, Changliu and Vela, Patricio A},
+  booktitle={IEEE Conference on Decision and Control},
+  pages={1174--1181},
   year={2022},
   organization={IEEE}
 }
 
+@inproceedings{grover2022noncooperative,
+  id = {C48},
+  author = {Jaskaran Grover and Nishant Mohanty and Wenhao Luo and Changliu Liu and Katia Sycara},
+  title ={Noncooperative Herding With Control Barrier Functions: Theory and Experiments},
+  journal = {IEEE Conference on Decision and Control},
+  year={2022},
+  url={https://arxiv.org/pdf/2204.10945.pdf}
+}
+
+@article{grover2022semantically,
+  id = {C49},
+  author = {Jaskaran Grover and Yiwei Lyu and Wenhao Luo and Changliu Liu and John Dolan and Katia Sycara},
+  title ={Semantically-Aware Pedestrian Intent Prediction With Barrier Functions and Mixed-Integer Quadratic Programming},
+  journal = {IFAC Workshop on Cyber-Physical Human Systems},
+  year={2022},
+  url={https://webpages.charlotte.edu/wluo4/publications/IFAC_CPHS_2022_Pedestrian_Intent_Prediction.pdf},
+  award = {Best Student Paper Finalist}
+}
+
+@article{liu2022task,
+  id = {C50},
+  author = {Ruixuan Liu and Rui Chen and Changliu Liu},
+  title ={Task-agnostic Adaptation for Safe Human-robot Handover},
+  journal = {IFAC Workshop on Cyber-Physical Human Systems},
+  year={2022},
+  url={https://arxiv.org/abs/2209.09418},
+  award = {Best Student Paper Award}
+}
+
+@inproceedings{mohanty2022distributed,
+  id = {C51},
+  title={Distributed multirobot control for non-cooperative herding},
+  author={Mohanty, Nishant and Grover, Jaskaran and Liu, Changliu and Sycara, Katia},
+  booktitle={International Symposium on Distributed Autonomous Robotic Systems},
+  pages={317--332},
+  year={2022},
+  organization={Springer Nature Switzerland Cham},
+  url={https://arxiv.org/abs/2301.03293},
+  abstract={In this paper, we consider the problem of protecting a high-value area from being breached by sheep agents by crafting motions for dog robots. We use control barrier functions to pose constraints on the dogs' velocities that induce repulsion in the sheep relative to the high-value area. This paper extends the results developed in our prior work on the same topic in three ways. Firstly, we implement and validate our previously developed centralized herding algorithm on many robots. We show herding of up to five sheep agents using three dog robots. Secondly, as an extension to the centralized approach, we develop two distributed herding algorithms, one favoring feasibility while the other favoring optimality. In the first algorithm, we allocate a unique sheep to a unique dog, making that dog responsible for herding its allocated sheep away from the protected zone. We provide feasibility proof for this approach, along with numerical simulations. In the second algorithm, we develop an iterative distributed reformulation of the centralized algorithm, which inherits the optimality (i.e. budget efficiency) from the centralized approach. Lastly, we conduct real-world experiments of these distributed algorithms and demonstrate herding of up to five sheep agents using five dog robots.}
+}
+
+@inproceedings{deka2022actor,
+  id = {C52},
+  author = {Ankur Deka and Changliu Liu and Katia Sycara},
+  title ={ARC - Actor Residual Critic for Adversarial Imitation Learning},
+  journal = {Conference on Robot Learning},
+  year={2022},
+  pages={1446--1456},
+  organization={PMLR},
+  url={https://arxiv.org/abs/2206.02095}
+}
+
+@inproceedings{liu2022safe2,
+  id = {C53},
+  author = {Simin Liu and Changliu Liu and John Dolan},
+  title ={Safe Control Under Input Limits with Neural Control Barrier Functions},
+  journal = {Conference on Robot Learning},
+  year={2022},
+  url={https://arxiv.org/abs/2211.11056}
+}
+
+@article{grover2022before,
+  id = {J11},
+  author = {Jaskaran Grover and Changliu Liu and Katia Sycara},
+  title ={The before, during, and after of multi-robot deadlock},
+  journal = {The International Journal of Robotics Research},
+  year={2022},
+  url={https://arxiv.org/abs/2206.01781},
+  link={https://journals.sagepub.com/doi/abs/10.1177/02783649221074718?journalCode=ijra},
+  abstract={Collision avoidance for multirobot systems is a well-studied problem. Recently, control barrier functions (CBFs) have been proposed for synthesizing controllers that guarantee collision avoidance and goal stabilization for multiple robots. However, it has been noted that reactive control synthesis methods (such as CBFs) are prone to \textit{deadlock}, an equilibrium of system dynamics that causes the robots to stall before reaching their goals. In this paper, we analyze the closed-loop dynamics of robots using CBFs, to characterize controller parameters, initial conditions, and goal locations that invariably lead the system to deadlock. Using tools from duality theory, we derive geometric properties of robot configurations of an N robot system once it is in deadlock and we justify them using the mechanics interpretation of KKT conditions. Our key deductions are that 1) system deadlock is characterized by a force-equilibrium on robots and 2) deadlock occurs to ensure safety when safety is on the brink of being violated. These deductions allow us to interpret deadlock as a subset of the state space, and we show that this set is non-empty and located on the boundary of the safe set. By exploiting these properties, we analyze the number of admissible robot configurations in deadlock and develop a provably-correct decentralized algorithm for deadlock resolution to safely deliver the robots to their goals. This algorithm is validated in simulations as well as experimentally on Khepera-IV robots.}
+}
+
+@article{zhao2022provably,
+  id = {J12},
+  title={Provably Safe Tolerance Estimation for Robot Arms via Sum-of-Squares Programming},
+  author={Zhao, Weiye and He, Suqin and Liu, Changliu},
+  journal={IEEE Control Systems Letters},
+  year={2022},
+  publisher={IEEE},
+  url={https://ieeexplore.ieee.org/document/9790841},
+  video={https://www.youtube.com/embed/12lgDxBZKHY}
+}
+
 @article{li2022efficient,
-  title={Efficient game-theoretic planning with prediction heuristic for socially-compliant autonomous driving},
+  id = {J13},
   author={Li, Chenran and Trinh, Tu and Wang, Letian and Liu, Changliu and Tomizuka, Masayoshi and Zhan, Wei},
-  journal={IEEE Robotics and Automation Letters},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Efficient Game-Theoretic Planning With Prediction Heuristic for Socially-Compliant Autonomous Driving}, 
   volume={7},
   number={4},
   pages={10248--10255},
   year={2022},
-  publisher={IEEE}
+  publisher={IEEE},
+  url={https://ieeexplore.ieee.org/document/9830854}
 }
 
 @article{wang2022social,
+  id = {J14},
   title={Social interactions for autonomous driving: A review and perspectives},
   author={Wang, Wenshuo and Wang, Letian and Zhang, Chengyuan and Liu, Changliu and Sun, Lijun and others},
   journal={Foundations and Trends in Robotics},
@@ -1073,63 +1075,8 @@ url={https://arxiv.org/abs/2204.07936}}
   publisher={Now Publishers, Inc.}
 }
 
-@article{grover2022control,
-  title={Control barrier functions-based semi-definite programs (cbf-sdps): Robust safe control for dynamic systems with relative degree two safety indices},
-  author={Grover, Jaskaran Singh and Liu, Changliu and Sycara, Katia},
-  journal={arXiv:2208.12252},
-  year={2022}
-}
-
-@inproceedings{zhao2023safety,
-  title={Safety index synthesis via sum-of-squares programming},
-  author={Zhao, Weiye and He, Tairan and Wei, Tianhao and Liu, Simin and Liu, Changliu},
-  booktitle={American Control Conference},
-  pages={732--737},
-  year={2023},
-  organization={IEEE}
-}
-
-@inproceedings{zhao2023probabilistic,
-  title={Probabilistic safeguard for reinforcement learning using safety index guided gaussian process models},
-  author={Zhao, Weiye and He, Tairan and Liu, Changliu},
-  booktitle={Learning for Dynamics and Control Conference},
-  pages={783--796},
-  year={2023},
-  organization={PMLR}
-}
-
-@article{liu2021data,
-  title={Data efficient human intention prediction: Leveraging neural network verification and expert guidance},
-  author={Liu, Ruixuan and Liu, Changliu},
-  journal={arXiv:2108.06871},
-  year={2021}
-}
-
-@inproceedings{he2022characterizing,
-  title={Characterizing neural network verification for systems with NN4SYSBench},
-  author={He, Haoyu and Wei, Tianhao and Zhang, Huan and Liu, Changliu and Tan, Cheng},
-  booktitle={1st Workshop on Formal Verification of Machine Learning},
-  year={2022}
-}
-
-@article{muller2022third,
-  title={The third international verification of neural networks competition (vnn-comp 2022): Summary and results},
-  author={M{\"u}ller, Mark Niklas and Brix, Christopher and Bak, Stanley and Liu, Changliu and Johnson, Taylor T},
-  journal={arXiv:2212.10376},
-  year={2022}
-}
-
-@inproceedings{he2023autocost,
-  title={Autocost: Evolving intrinsic cost for zero-violation reinforcement learning},
-  author={He, Tairan and Zhao, Weiye and Liu, Changliu},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  volume={37},
-  number={12},
-  pages={14847--14855},
-  year={2023}
-}
-
 @article{wei2022persistently,
+  id = {J15},
   title={Persistently feasible robust safe control by safety index synthesis and convex semi-infinite programming},
   author={Wei, Tianhao and Kang, Shucheng and Zhao, Weiye and Liu, Changliu},
   journal={IEEE Control Systems Letters},
@@ -1139,25 +1086,176 @@ url={https://arxiv.org/abs/2204.07936}}
   publisher={IEEE}
 }
 
-@inproceedings{mohanty2022distributed,
-  title={Distributed multirobot control for non-cooperative herding},
-  author={Mohanty, Nishant and Grover, Jaskaran and Liu, Changliu and Sycara, Katia},
-  booktitle={International Symposium on Distributed Autonomous Robotic Systems},
-  pages={317--332},
-  year={2022},
-  organization={Springer Nature Switzerland Cham}
+@article{grover2022control,
+  id = {U},
+  title={Control barrier functions-based semi-definite programs (cbf-sdps): Robust safe control for dynamic systems with relative degree two safety indices},
+  author={Grover, Jaskaran Singh and Liu, Changliu and Sycara, Katia},
+  journal={arXiv:2208.12252},
+  year={2022}
 }
 
-@inproceedings{chen2022safe,
-  title={Safe hierarchical navigation in crowded dynamic uncertain environments},
-  author={Chen, Hongyi and Feng, Shiyu and Zhao, Ye and Liu, Changliu and Vela, Patricio A},
-  booktitle={IEEE Conference on Decision and Control},
-  pages={1174--1181},
+@article{muller2022third,
+  id = {U},
+  title={The third international verification of neural networks competition (vnn-comp 2022): Summary and results},
+  author={M{\"u}ller, Mark Niklas and Brix, Christopher and Bak, Stanley and Liu, Changliu and Johnson, Taylor T},
+  journal={arXiv:2212.10376},
+  year={2022}
+}
+
+@article{yin2022general,
+  id = {U},
+  title={General place recognition survey: Towards the real-world autonomy age},
+  author={Yin, Peng and Zhao, Shiqi and Cisneros, Ivan and Abuduweili, Abulikemu and Huang, Guoquan and Milford, Micheal and Liu, Changliu and Choset, Howie and Scherer, Sebastian},
+  journal={arXiv:2209.04497},
   year={2022},
+  url={https://arxiv.org/abs/2405.04812},
+}
+
+
+%%%%%%%%%%%%%%%%2023%%%%%%%%%%%%%%%%%%
+
+@article{he2023hierarchical,
+  id = {J16},
+  title={A hierarchical long short term safety framework for efficient robot manipulation under uncertainty},
+  author={He, Suqin and Zhao, Weiye and Hu, Chuxiong and Zhu, Yu and Liu, Changliu},
+  journal={Robotics and Computer-Integrated Manufacturing},
+  volume={82},
+  pages={102522},
+  year={2023},
+  publisher={Pergamon}
+}
+
+@inproceedings{he2023autocost,
+  id = {C54},
+  title={Autocost: Evolving intrinsic cost for zero-violation reinforcement learning},
+  author={He, Tairan and Zhao, Weiye and Liu, Changliu},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={37},
+  number={12},
+  pages={14847--14855},
+  year={2023}
+}
+
+@inproceedings{shek2023learning,
+  id = {C55},
+  title={Learning from physical human feedback: An object-centric one-shot adaptation method},
+  author={Shek, Alvin and Su, Bo Ying and Chen, Rui and Liu, Changliu},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  pages={9910--9916},
+  year={2023},
+  organization={IEEE},
+  award={Outstanding Interaction Paper}
+}
+
+@inproceedings{zhao2023safety,
+  id = {C56},
+  title={Safety index synthesis via sum-of-squares programming},
+  author={Zhao, Weiye and He, Tairan and Wei, Tianhao and Liu, Simin and Liu, Changliu},
+  booktitle={American Control Conference},
+  pages={732--737},
+  year={2023},
   organization={IEEE}
 }
 
+@inproceedings{zhao2023probabilistic,
+  id = {C57},
+  title={Probabilistic safeguard for reinforcement learning using safety index guided gaussian process models},
+  author={Zhao, Weiye and He, Tairan and Liu, Changliu},
+  booktitle={Learning for Dynamics and Control Conference},
+  pages={783--796},
+  year={2023},
+  organization={PMLR}
+}
+
+@inproceedings{chari2023space,
+  id = {C58},
+  title={Space-Time Conflict Spheres for Constrained Multi-Agent Motion Planning},
+  author={Chari, Anirudh and Chen, Rui and Liu, Changliu},
+  booktitle={IEEE Intelligent Vehicles Symposium},
+  pages={1--6},
+  year={2023},
+  organization={IEEE}
+}
+
+@inproceedings{tseng2023consensus,
+  id = {C59},
+  title={Consensus-Based Fault-Tolerant Platooning for Connected and Autonomous Vehicles},
+  author={Tseng, Tzu-Yen and Huang, Ding-Jiun and Lin, Jia-You and Chang, Po-Jui and Lin, Chung-Wei and Liu, Changliu},
+  booktitle={IEEE Intelligent Vehicles Symposium},
+  pages={1--8},
+  year={2023},
+  organization={IEEE}
+}
+
+@inproceedings{zhao2023state,
+  id = {C60},
+  title={State-wise safe reinforcement learning: A survey},
+  author={Zhao, Weiye and He, Tairan and Chen, Rui and Wei, Tianhao and Liu, Changliu},
+  booktitle={International Joint Conferences on Artificial Intelligence},
+  year={2023}
+}
+
+@inproceedings{wei2023building,
+  id = {C61},
+  title={Building Verified Neural Networks for Computer Systems with Ouroboros},
+  author={Wei, Tianhao and Jia, Zhihao and Liu, Changliu and Tan, Cheng},
+  booktitle={Sixth Conference on Machine Learning and Systems},
+  year={2023},
+  organization={Sixth Conference on Machine Learning and Systems}
+}
+
+@inproceedings{liu2023proactive,
+  id = {C62},
+  title={Proactive human-robot co-assembly: Leveraging human intention prediction and robust safe control},
+  author={Liu, Ruixuan and Chen, Rui and Abuduweili, Abulikemu and Liu, Changliu},
+  booktitle={IEEE Conference on Control Technology and Applications},
+  pages={339--345},
+  year={2023},
+  organization={IEEE}
+}
+
+@inproceedings{wei2023zero,
+  id = {C63},
+  title={Zero-shot Transferable and Persistently Feasible Safe Control for High Dimensional Systems by Consistent Abstraction},
+  author={Wei, Tianhao and Kang, Shucheng and Liu, Ruixuan and Liu, Changliu},
+  booktitle={IEEE Conference on Decision and Control},
+  pages={8614--8619},
+  year={2023},
+  organization={IEEE}
+}
+
+@inproceedings{zhang2023interactive,
+  id = {C64},
+  title={Interactive Car-Following: Matters but NOT Always},
+  author={Zhang, Chengyuan and Chen, Rui and Zhu, Jiacheng and Wang, Wenshuo and Liu, Changliu and Sun, Lijun},
+  booktitle={IEEE International Conference on Intelligent Transportation Systems},
+  pages={5120--5125},
+  year={2023},
+  organization={IEEE}
+}
+
+@inproceedings{abuduweili2023online,
+  id = {C65},
+  title={Online Model Adaptation with Feedforward Compensation},
+  author={Abuduweili, Abulikemu and Liu, Changliu},
+  booktitle={Conference on Robot Learning},
+  pages={3687--3709},
+  year={2023},
+  organization={PMLR},
+  url={https://proceedings.mlr.press/v229/abuduweili23a}
+}
+
+@article{chen2023robust,
+  id = {J17},
+  title={Robust and context-aware real-time collaborative robot handling via dynamic gesture commands},
+  author={Chen, Rui and Shek, Alvin and Liu, Changliu},
+  journal={IEEE Robotics and Automation Letters},
+  year={2023},
+  publisher={IEEE}
+}
+
 @article{brix2023first,
+  id = {J18},
   title={First three years of the international verification of neural networks competition (VNN-COMP)},
   author={Brix, Christopher and M{\"u}ller, Mark Niklas and Bak, Stanley and Johnson, Taylor T and Liu, Changliu},
   journal={International Journal on Software Tools for Technology Transfer},
@@ -1168,75 +1266,46 @@ url={https://arxiv.org/abs/2204.07936}}
   publisher={Springer Berlin Heidelberg Berlin/Heidelberg}
 }
 
-@inproceedings{chari2023space,
-  title={Space-Time Conflict Spheres for Constrained Multi-Agent Motion Planning},
-  author={Chari, Anirudh and Chen, Rui and Liu, Changliu},
-  booktitle={IEEE Intelligent Vehicles Symposium},
-  pages={1--6},
+@article{su2023customizing,
+  id = {J19},
+  title={Customizing Textile and Tactile Skins for Interactive Industrial Robots},
+  author={Su, Bo Ying and Wei, Zhongqi and McCann, James and Yuan, Wenzhen and Liu, Changliu},
+  journal={ASME Letters in Dynamic Systems and Control},
+  volume={3},
+  number={3},
   year={2023},
-  organization={IEEE}
+  publisher={American Society of Mechanical Engineers Digital Collection}
 }
 
-@inproceedings{zhao2023state,
-  title={State-wise safe reinforcement learning: A survey},
-  author={Zhao, Weiye and He, Tairan and Chen, Rui and Wei, Tianhao and Liu, Changliu},
-  booktitle={International Joint Conferences on Artificial Intelligence},
-  year={2023}
-}
-
-@inproceedings{wei2023zero,
-  title={Zero-shot Transferable and Persistently Feasible Safe Control for High Dimensional Systems by Consistent Abstraction},
-  author={Wei, Tianhao and Kang, Shucheng and Liu, Ruixuan and Liu, Changliu},
-  booktitle={IEEE Conference on Decision and Control},
-  pages={8614--8619},
+@article{yin2023bioslam,
+  id = {J20},
+  title={Bioslam: A bioinspired lifelong memory system for general place recognition},
+  author={Yin, Peng and Abuduweili, Abulikemu and Zhao, Shiqi and Xu, Lingyun and Liu, Changliu and Scherer, Sebastian},
+  journal={IEEE Transactions on Robotics},
   year={2023},
-  organization={IEEE}
+  publisher={IEEE},
+  url={https://ieeexplore.ieee.org/abstract/document/10242249},
+  video={https://www.youtube.com/embed/2qJYXMNUuyI}
 }
 
-@article{bak2021second,
-  title={The second international verification of neural networks competition (VNN-COMP 2021): summary and results. CoRR abs/2109.00498 (2021)},
-  author={Bak, Stanley and Liu, Changliu and Johnson, Taylor T},
-  journal={arXiv:2109.00498},
-  year={2021}
-}
-
-@inproceedings{sun2023hybrid,
-  title={Hybrid Task Constrained Incremental Planner for Robot Manipulators in Confined Environments},
-  author={Sun, Yifan and Zhao, Weiye and Liu, Changliu},
-  booktitle={American Control Conference},
-  year={2024}
-}
-
-@article{chen2023robust,
-  title={Robust and context-aware real-time collaborative robot handling via dynamic gesture commands},
-  author={Chen, Rui and Shek, Alvin and Liu, Changliu},
-  journal={IEEE Robotics and Automation Letters},
-  year={2023},
-  publisher={IEEE}
-}
-
-@article{yin2022general,
-  title={General place recognition survey: Towards the real-world autonomy age},
-  author={Yin, Peng and Zhao, Shiqi and Cisneros, Ivan and Abuduweili, Abulikemu and Huang, Guoquan and Milford, Micheal and Liu, Changliu and Choset, Howie and Scherer, Sebastian},
-  journal={arXiv:2209.04497},
-  year={2022},
-  url={https://arxiv.org/abs/2405.04812},
-}
-
-@article{zhao2024guard,
-  title={Guard: A safe reinforcement learning benchmark},
-  author={Zhao, Weiye and Chen, Rui and Sun, Yifan and Liu, Ruixuan and Wei, Tianhao and Liu, Changliu},
+@article{abuduweili2023optical,
+  id = {J21},
+  title={An Optical Control Environment for Benchmarking Reinforcement Learning Algorithms},
+  author={Abuduweili, Abulikemu and Liu, Changliu},
   journal={Transactions on Machine Learning Research},
-  year={2024}
+  year={2023},
+  url={https://openreview.net/forum?id=61TKzU9B96},
+  notes={Also presented at ICML-AI4Science Workshop, 2022}
 }
 
-@inproceedings{shek2023learning,
-  title={Learning from physical human feedback: An object-centric one-shot adaptation method},
-  author={Shek, Alvin and Su, Bo Ying and Chen, Rui and Liu, Changliu},
-  booktitle={IEEE International Conference on Robotics and Automation},
-  pages={9910--9916},
+@incollection{lin2023distributed,
+  id = {B2},
+  title={Distributed Coordination and Centralized Scheduling for Automobiles at Intersections},
+  author={Lin, Yi-Ting and Lin, Chung-Wei and Jiang, Iris Hui-Ru and Liu, Changliu},
+  booktitle={Machine Learning and Optimization Techniques for Automotive Cyber-Physical Systems},
+  pages={81--117},
   year={2023},
-  organization={IEEE}
+  publisher={Springer International Publishing Cham}
 }
 
 @article{liu2023robotic,
@@ -1248,302 +1317,63 @@ url={https://arxiv.org/abs/2204.07936}}
   repository = {https://github.com/intelligent-control-lab/Robotic_LEGO_Assembly_and_Disassembly_from_Human_Demonstration}
 }
 
-@inproceedings{wei2023building,
-  title={Building Verified Neural Networks for Computer Systems with Ouroboros},
-  author={Wei, Tianhao and Jia, Zhihao and Liu, Changliu and Tan, Cheng},
-  booktitle={Sixth Conference on Machine Learning and Systems},
-  year={2023},
-  organization={Sixth Conference on Machine Learning and Systems}
-}
-
-@inproceedings{leu2022robust,
-  title={Robust task planning for assembly lines with human-robot collaboration},
-  author={Leu, Jessica and Cheng, Yujiao and Tomizuka, Masayoshi and Liu, Changliu},
-  booktitle={Proceedings of the International Symposium on Flexible Automation 2022 International Symposium on Flexible Automation},
-  pages={188--195},
-  year={2022},
-  organization={The Institute of Systems, Control and Information Engineers}
-}
-
-@article{zhao2024state,
-  title={State-wise Constrained Policy Optimization},
-  author={Zhao, Weiye and Chen, Rui and Sun, Yifan and Wei, Tianhao and Liu, Changliu},
-  journal={Transactions on Machine Learning Research},
-  year={2024}
-}
-
-
-
-@article{su2023customizing,
-  title={Customizing Textile and Tactile Skins for Interactive Industrial Robots},
-  author={Su, Bo Ying and Wei, Zhongqi and McCann, James and Yuan, Wenzhen and Liu, Changliu},
-  journal={ASME Letters in Dynamic Systems and Control},
-  volume={3},
-  number={3},
-  year={2023},
-  publisher={American Society of Mechanical Engineers Digital Collection}
-}
-
-
-@article{luo2023robotic,
-  title={Decomposition-based Hierarchical Task Allocation and Planning for Multi-Robots under Hierarchical Temporal Logic Specifications},
-  author={Luo, Xusheng and Xu, Shaojun and Liu, Ruixuan and Liu, Changliu},
-  journal={IEEE Robotics and Automation Letters},
-  year={2024}
-}
-
-
-@article{zhao2023learn,
-  title={Learn With Imagination: Safe Set Guided State-wise Constrained Policy Optimization},
-  author={Zhao, Weiye and Sun, Yifan and Li, Feihan and Chen, Rui and Wei, Tianhao and Liu, Changliu},
-  journal={arXiv:2308.13140},
-  year={2023}
-}
-
-@incollection{lin2023distributed,
-  title={Distributed Coordination and Centralized Scheduling for Automobiles at Intersections},
-  author={Lin, Yi-Ting and Lin, Chung-Wei and Jiang, Iris Hui-Ru and Liu, Changliu},
-  booktitle={Machine Learning and Optimization Techniques for Automotive Cyber-Physical Systems},
-  pages={81--117},
-  year={2023},
-  publisher={Springer International Publishing Cham}
-}
-
 @inproceedings{hu2023robustness,
+  id = {W},
   title={Robustness verification for perception models against camera motion perturbations},
   author={Hu, Hanjiang and Liu, Changliu and Zhao, Ding},
   booktitle={ICML Workshop on Formal Verification of Machine Learning (WFVML)},
   year={2023}
 }
 
-@article{yin2023bioslam,
-  title={Bioslam: A bioinspired lifelong memory system for general place recognition},
-  author={Yin, Peng and Abuduweili, Abulikemu and Zhao, Shiqi and Xu, Lingyun and Liu, Changliu and Scherer, Sebastian},
-  journal={IEEE Transactions on Robotics},
-  year={2023},
-  publisher={IEEE},
-  url={https://ieeexplore.ieee.org/abstract/document/10242249},
-  video={https://www.youtube.com/embed/2qJYXMNUuyI}
-}
-
-@inproceedings{liu2023proactive,
-  title={Proactive human-robot co-assembly: Leveraging human intention prediction and robust safe control},
-  author={Liu, Ruixuan and Chen, Rui and Abuduweili, Abulikemu and Liu, Changliu},
-  booktitle={IEEE Conference on Control Technology and Applications},
-  pages={339--345},
-  year={2023},
-  organization={IEEE}
-}
-
-@inproceedings{chen2024safety,
-  title={Safety Index Synthesis with State-dependent Control Space},
-  author={Chen, Rui and Zhao, Weiye and Liu, Changliu},
-  booktitle={American Control Conference},
-  year={2024}
-}
-
-@inproceedings{chari2024optimal,
-  title={An Optimal Control Framework for Influencing Human Driving Behavior in Mixed-Autonomy Traffic},
-  author={Chari, Anirudh and Chen, Rui and Grover, Jaskaran and Liu, Changliu},
-  booktitle={American Control Conference},
-  year={2024}
-}
-
-@article{wei2023robust,
-  title={Robust Safe Control with Multi-Modal Uncertainty},
-  author={Wei, Tianhao and Ma, Liqian and Pandya, Ravi and Liu, Changliu},
-  journal={arXiv:2309.16830},
-  year={2023}
-}
-
-@inproceedings{zhang2023interactive,
-  title={Interactive Car-Following: Matters but NOT Always},
-  author={Zhang, Chengyuan and Chen, Rui and Zhu, Jiacheng and Wang, Wenshuo and Liu, Changliu and Sun, Lijun},
-  booktitle={IEEE International Conference on Intelligent Transportation Systems},
-  pages={5120--5125},
-  year={2023},
-  organization={IEEE}
-}
-
-@inproceedings{zhao2024absolute,
-  title={Absolute Policy Optimization: Enhancing Lower Probability Bound of Performance with High Confidence},
-  author={Zhao, Weiye and Li, Feihan and Sun, Yifan and Chen, Rui and Wei, Tianhao and Liu, Changliu},
-  booktitle={International Conference on Machine Learning},
-  year={2024}
-}
-
-@article{abuduweili2023optical,
-  title={An Optical Control Environment for Benchmarking Reinforcement Learning Algorithms},
-  author={Abuduweili, Abulikemu and Liu, Changliu},
-  journal={Transactions on Machine Learning Research},
-  year={2023},
-  url={https://openreview.net/forum?id=61TKzU9B96},
-}
-
-
-@inproceedings{abuduweili2023online,
-  title={Online Model Adaptation with Feedforward Compensation},
-  author={Abuduweili, Abulikemu and Liu, Changliu},
-  booktitle={Conference on Robot Learning},
-  pages={3687--3709},
-  year={2023},
-  organization={PMLR},
-  url={https://proceedings.mlr.press/v229/abuduweili23a}
-}
-
-@inproceedings{liu2024synthesis,
-  title={Synthesis and verification of robust-adaptive safe controllers},
-  author={Liu, Simin and Yun, Kai S and Dolan, John M and Liu, Changliu},
-  booktitle={European Control Conference},
-  year={2024}
-}
-
-@inproceedings{pandya2024towards,
-  title={Towards Proactive Safe Human-Robot Collaborations via Data-Efficient Conditional Behavior Prediction},
-  author={Pandya, Ravi and Wang, Zhuoyuan and Nakahira, Yorie and Liu, Changliu},
-  booktitle={IEEE International Conference on Robotics and Automation},
-  year={2024}
-}
-
-@article{li2023learning,
-  title={Learning predictive safety filter via decomposition of robust invariant set},
-  author={Li, Zeyang and Hu, Chuxiong and Zhao, Weiye and Liu, Changliu},
-  journal={arXiv:2311.06769},
-  year={2023}
-}
-
-@inproceedings{pandya2024multi,
-  title={Multi-Agent Strategy Explanations for Human-Robot Collaboration},
-  author={Pandya, Ravi and Zhao, Michelle and Liu, Changliu and Simmons, Reid and Admoni, Henny},
-  booktitle={IEEE International Conference on Robotics and Automation},
-  year={2024}
-}
-
-@inproceedings{pandya2024multimodal,
-  title={Multimodal Safe Control for Human-Robot Interaction},
-  author={Pandya, Ravi and Wei, Tianhao and Liu, Changliu},
-  booktitle={American Control Conference},
-  year={2024}
-}
-
-@article{brix2023fourth,
-  title={The fourth international verification of neural networks competition (vnn-comp 2023): Summary and results},
-  author={Brix, Christopher and Bak, Stanley and Liu, Changliu and Johnson, Taylor T},
-  journal={arXiv:2312.16760},
-  year={2023}
-}
-
-@article{ma2024learn,
-  title={Learn Zero-Constraint-Violation Safe Policy in Model-Free Constrained Reinforcement Learning},
-  author={Ma, Haitong and Liu, Changliu and Li, Shengbo Eben and Zheng, Sifa and Sun, Wenchao and Chen, Jianyu},
-  journal={IEEE Transactions on Neural Networks and Learning Systems},
-  year={2024},
-  publisher={IEEE}
-}
-
-@article{
-wei2024improve,
-title={Improve Certified Training with Signal-to-Noise Ratio Loss to Decrease Neuron Variance and Increase Neuron Stability},
-author={Tianhao Wei and Ziwei Wang and Peizhi Niu and Abulikemu Abuduweili and Weiye Zhao and Casidhe Hutchison and Eric Sample and Changliu Liu},
-journal={Transactions on Machine Learning Research},
-issn={2835-8856},
-year={2024},
-url={https://openreview.net/forum?id=iV0jktFZ5Y},
-}
-
-@inproceedings{
-chen2024korol,
-title={{KOROL}: Learning Visualizable Object Feature with Koopman Operator Rollout for Manipulation},
-author={Hongyi Chen and Abulikemu Abuduweili and Aviral Agrawal and Yunhai Han and Harish Ravichandar and Changliu Liu and Jeffrey Ichnowski},
-booktitle={Conference on Robot Learning},
-year={2024},
-url={https://openreview.net/forum?id=A6ikGJRaKL}
-}
-
-@inproceedings{
-abuduweili2024estimating,
-title={Estimating Neural Network Robustness via Lipschitz Constant and Architecture Sensitivity},
-author={Abulikemu Abuduweili and Changliu Liu},
-booktitle={CoRL Workshop on Safe and Robust Robot Learning for Operation in the Real World},
-year={2024},
-url={https://openreview.net/forum?id=Mk2pq3Gjq1}
-}
-
-@inproceedings{
-abuduweili2024revisiting,
-title={Revisiting the Initial Steps in Adaptive Gradient Descent Optimization},
-author={Abulikemu Abuduweili and Changliu Liu},
-booktitle={OPT 2024: Optimization for Machine Learning},
-year={2024},
-url={https://openreview.net/forum?id=Xe0dVlWU2q}
-}
-
-
-@article{liu2024stablelego,
-  title={StableLego: Stability Analysis of Block Stacking Assembly},
-  author={Liu, Ruixuan and Deng, Kangle and Wang, Ziwei and Liu, Changliu},
-  journal={IEEE Robotics and Automation Letters},
-  year={2024}
-}
-
-@misc{muller2022third,
-  title={The third international verification of neural networks competition (VNN-COMP 2022): Summary and results. CoRR abs/2212.10376 (2022)},
-  author={M{\"u}ller, Mark Niklas and Brix, Christopher and Bak, Stanley and Liu, Changliu and Johnson, Taylor T},
-  year={2022}
-}
-
-@article{wei2021online,
-  title={Online Verification of Deep Neural Networks under Domain Shift or Network Updates},
-  author={Wei, Tianhao and Liu, Changliu},
-  journal={arXiv:2106.12732},
-  year={2021}
-}
-
-@article{yiniloc,
-  title={iLoc: Condition and Viewpoint Invariant Additive Feature Extractor for Appearance-based Visual Localization},
-  author={Yin, Peng and Ge, Ruohai and Xu, Lingyun and Liu, Changliu and Zhang, Ji and Choset, Howie and Scherer, Sebastian}
-}
-
-@inproceedings{tseng2023consensus,
-  title={Consensus-Based Fault-Tolerant Platooning for Connected and Autonomous Vehicles},
-  author={Tseng, Tzu-Yen and Huang, Ding-Jiun and Lin, Jia-You and Chang, Po-Jui and Lin, Chung-Wei and Liu, Changliu},
-  booktitle={IEEE Intelligent Vehicles Symposium},
-  pages={1--8},
-  year={2023},
-  organization={IEEE}
-}
-
-
-@article{lu2023thinkbot,
-  title={ThinkBot: Embodied Instruction Following with Thought Chain Reasoning},
-  author={Lu, Guanxing and Wang, Ziwei and Liu, Changliu and Lu, Jiwen and Tang, Yansong},
-  journal={arXiv:2312.07062},
-  year={2023}
-}
-
-@article{luo2024simultaneous,
-  title={Simultaneous Task Allocation and Planning for Multi-Robots under Hierarchical Temporal Logic Specifications},
-  author={Luo, Xusheng and Liu, Changliu},
-  journal={arXiv:2401.04003},
-  year={2024}
-}
-
 @inproceedings{luo2023obtaining,
+  id = {W},
   title={Obtaining hierarchy from human instructions: an llms-based approach},
   author={Luo, Xusheng and Xu, Shaojun and Liu, Changliu},
   booktitle={CoRL 2023 Workshop on Learning Effective Abstractions for Planning (LEAP)},
   year={2023}
 }
 
-@inproceedings{liu2024lightweight,
-  title={A Lightweight and Transferable Design for Robust LEGO Manipulation},
-  author={Liu, Ruixuan and Sun, Yifan and Liu, Changliu},
-  booktitle={International Symposium of Flexible Automation},
-  video = {https://www.youtube.com/embed/CqrBryAGsd0&t=2s},
-  year={2024}
+@article{wei2023robust,
+  id = {U},
+  title={Robust Safe Control with Multi-Modal Uncertainty},
+  author={Wei, Tianhao and Ma, Liqian and Pandya, Ravi and Liu, Changliu},
+  journal={arXiv:2309.16830},
+  year={2023}
+}
+
+@article{zhao2023learn,
+  id = {U},
+  title={Learn With Imagination: Safe Set Guided State-wise Constrained Policy Optimization},
+  author={Zhao, Weiye and Sun, Yifan and Li, Feihan and Chen, Rui and Wei, Tianhao and Liu, Changliu},
+  journal={arXiv:2308.13140},
+  year={2023}
+}
+
+@article{li2023learning,
+  id = {U},
+  title={Learning predictive safety filter via decomposition of robust invariant set},
+  author={Li, Zeyang and Hu, Chuxiong and Zhao, Weiye and Liu, Changliu},
+  journal={arXiv:2311.06769},
+  year={2023}
+}
+@article{brix2023fourth,
+  id = {U},
+  title={The fourth international verification of neural networks competition (vnn-comp 2023): Summary and results},
+  author={Brix, Christopher and Bak, Stanley and Liu, Changliu and Johnson, Taylor T},
+  journal={arXiv:2312.16760},
+  year={2023}
+}
+
+@article{lu2023thinkbot,
+  id = {U},
+  title={ThinkBot: Embodied Instruction Following with Thought Chain Reasoning},
+  author={Lu, Guanxing and Wang, Ziwei and Liu, Changliu and Lu, Jiwen and Tang, Yansong},
+  journal={arXiv:2312.07062},
+  year={2023}
 }
 
 @article{liu2023simulation,
+  id = {U},
   title={Simulation-aided Learning from Demonstration for Robotic LEGO Construction},
   author={Liu, Ruixuan and Chen, Alan and Luo, Xusheng and Liu, Changliu},
   journal={arXiv:2309.11010},
@@ -1551,35 +1381,107 @@ url={https://openreview.net/forum?id=Xe0dVlWU2q}
   year={2023}
 }
 
-@article{he2024learning,
-  title={Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation},
-  author={He, Tairan and Luo, Zhengyi and Xiao, Wenli and Zhang, Chong and Kitani, Kris and Liu, Changliu and Shi, Guanya},
-  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems},
+%%%%%%%%%%%%%%%%2024%%%%%%%%%%%%%%%%%%%%
+
+@article{ma2024learn,
+  id = {J22},
+  title={Learn Zero-Constraint-Violation Safe Policy in Model-Free Constrained Reinforcement Learning},
+  author={Ma, Haitong and Liu, Changliu and Li, Shengbo Eben and Zheng, Sifa and Sun, Wenchao and Chen, Jianyu},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  year={2024},
+  publisher={IEEE},
+  link={https://ieeexplore.ieee.org/document/10402567}
+}
+
+@article{zhao2024guard,
+  id = {J23},
+  title={Guard: A safe reinforcement learning benchmark},
+  author={Zhao, Weiye and Chen, Rui and Sun, Yifan and Liu, Ruixuan and Wei, Tianhao and Liu, Changliu},
+  journal={Transactions on Machine Learning Research},
   year={2024}
 }
 
-@article{he2024agile,
-  title={Agile But Safe: Learning Collision-Free High-Speed Legged Locomotion},
-  author={He, Tairan and Zhang, Chong and Xiao, Wenli and He, Guanqi and Liu, Changliu and Shi, Guanya},
-  journal={Robotics: Science and Systems (RSS)},
+@article{zhao2024state,
+  id = {J24},
+  title={State-wise Constrained Policy Optimization},
+  author={Zhao, Weiye and Chen, Rui and Sun, Yifan and Wei, Tianhao and Liu, Changliu},
+  journal={Transactions on Machine Learning Research},
   year={2024}
 }
 
-@inproceedings{hu2024real,
-  title={Real-Time Safe Control of Neural Network Dynamic Models with Sound Approximation},
-  author={Hu, Hanjiang and Lan, Jianglin and Liu, Changliu},
-  booktitle={Learning for Dynamics and Control Conference},
+@article{luo2024robotic,
+  id = {J25},
+  title={Decomposition-based Hierarchical Task Allocation and Planning for Multi-Robots under Hierarchical Temporal Logic Specifications},
+  author={Luo, Xusheng and Xu, Shaojun and Liu, Ruixuan and Liu, Changliu},
+  journal={IEEE Robotics and Automation Letters},
   year={2024}
 }
 
-@inproceedings{lu2024manigaussian,
-  title={ManiGaussian: Dynamic Gaussian Splatting for Multi-task Robotic Manipulation},
-  author={Lu, Guanxing and Zhang, Shiyi and Wang, Ziwei and Liu, Changliu and Lu, Jiwen and Tang, Yansong},
-  booktitle={European Conference on Computer Vision},
+@article{wei2024improve,
+  id = {J26},
+  title={Improve Certified Training with Signal-to-Noise Ratio Loss to Decrease Neuron Variance and Increase Neuron Stability},
+  author={Tianhao Wei and Ziwei Wang and Peizhi Niu and Abulikemu Abuduweili and Weiye Zhao and Casidhe Hutchison and Eric Sample and Changliu Liu},
+  journal={Transactions on Machine Learning Research},
+  issn={2835-8856},
+  year={2024},
+  url={https://openreview.net/forum?id=iV0jktFZ5Y},
+}
+
+@article{liu2024stablelego,
+  id = {J27},
+  title={StableLego: Stability Analysis of Block Stacking Assembly},
+  author={Liu, Ruixuan and Deng, Kangle and Wang, Ziwei and Liu, Changliu},
+  journal={IEEE Robotics and Automation Letters},
+  year={2024}
+}
+
+@article{zheng2024efficient,
+  id = {J28},
+  author={Wu, Zheng and Li, Yichuan and Zhan, Wei and Liu, Changliu and Liu, Yun-Hui and Tomizuka, Masayoshi},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Efficient Reinforcement Learning of Task Planners for Robotic Palletization Through Iterative Action Masking Learning}, 
+  year={2024},
+  volume={9},
+  number={11},
+  pages={9303-9310},
+  keywords={Three-dimensional displays;Task analysis;Pallets;Training;Thermal stability;Reinforcement learning;Iterative methods;Supply chain management;Robot control;Action space masking;reinforcement learning;robotic palletization},
+  doi={10.1109/LRA.2024.3440731}
+}
+
+@inproceedings{pandya2024multimodal,
+  id = {C66},
+  title={Multimodal Safe Control for Human-Robot Interaction},
+  author={Pandya, Ravi and Wei, Tianhao and Liu, Changliu},
+  booktitle={American Control Conference},
+  year={2024}
+}
+
+@inproceedings{chen2024safety,
+  id = {C67},
+  title={Safety Index Synthesis with State-dependent Control Space},
+  author={Chen, Rui and Zhao, Weiye and Liu, Changliu},
+  booktitle={American Control Conference},
+  year={2024}
+}
+
+@inproceedings{chari2024optimal,
+  id = {C68},
+  title={An Optimal Control Framework for Influencing Human Driving Behavior in Mixed-Autonomy Traffic},
+  author={Chari, Anirudh and Chen, Rui and Grover, Jaskaran and Liu, Changliu},
+  booktitle={American Control Conference},
+  year={2024}
+}
+
+@inproceedings{sun2024hybrid,
+  id = {C69},
+  title={Hybrid Task Constrained Incremental Planner for Robot Manipulators in Confined Environments},
+  author={Sun, Yifan and Zhao, Weiye and Liu, Changliu},
+  booktitle={American Control Conference},
   year={2024}
 }
 
 @inproceedings{chen2024real,
+  id = {C70},
   title={Real-time Safety Index Adaptation for Parameter-varying Systems via Determinant Gradient Ascend},
   author={Chen, Rui and Zhao, Weiye and Liu, Ruixuan and Zhang, Weiyang  and Liu, Changliu},
   booktitle={American control Conference},
@@ -1587,36 +1489,180 @@ url={https://openreview.net/forum?id=Xe0dVlWU2q}
 }
 
 @inproceedings{bo2024optimizing,
+  id = {C71},
   title={Optimizing Multi-Touch Textile and Tactile Skin Sensing Through Circuit Parameter Estimation},
-  author={Bo Ying, Su, Yuchen Wu, Chengtao Wen and Changliu Liu},
+  author={Bo Ying, Su and Yuchen Wu and Chengtao Wen and Changliu Liu},
   booktitle={IEEE International Conference on Robotics and Automation},
   year={2024}
 }
 
+@inproceedings{pandya2024towards,
+  id = {C72},
+  title={Towards Proactive Safe Human-Robot Collaborations via Data-Efficient Conditional Behavior Prediction},
+  author={Pandya, Ravi and Wang, Zhuoyuan and Nakahira, Yorie and Liu, Changliu},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  year={2024}
+}
+
+@inproceedings{pandya2024multi,
+  id = {C73},
+  title={Multi-Agent Strategy Explanations for Human-Robot Collaboration},
+  author={Pandya, Ravi and Zhao, Michelle and Liu, Changliu and Simmons, Reid and Admoni, Henny},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  year={2024}
+}
+
+@inproceedings{liu2024synthesis,
+  id = {C74},
+  title={Synthesis and verification of robust-adaptive safe controllers},
+  author={Liu, Simin and Yun, Kai S and Dolan, John M and Liu, Changliu},
+  booktitle={European Control Conference},
+  year={2024}
+}
+
+@inproceedings{hu2024real,
+  id = {C75},
+  title={Real-Time Safe Control of Neural Network Dynamic Models with Sound Approximation},
+  author={Hu, Hanjiang and Lan, Jianglin and Liu, Changliu},
+  booktitle={Learning for Dynamics and Control Conference},
+  year={2024}
+}
+
+@inproceedings{liu2024lightweight,
+  id = {C76},
+  title={A Lightweight and Transferable Design for Robust LEGO Manipulation},
+  author={Liu, Ruixuan and Sun, Yifan and Liu, Changliu},
+  booktitle={International Symposium of Flexible Automation},
+  video = {https://www.youtube.com/embed/CqrBryAGsd0&t=2s},
+  year={2024}
+}
+
+@inproceedings{zhao2024absolute,
+  id = {C77},
+  title={Absolute Policy Optimization: Enhancing Lower Probability Bound of Performance with High Confidence},
+  author={Zhao, Weiye and Li, Feihan and Sun, Yifan and Chen, Rui and Wei, Tianhao and Liu, Changliu},
+  booktitle={International Conference on Machine Learning},
+  year={2024}
+}
+
+@inproceedings{he2024agile,
+  id = {C78},
+  title={Agile But Safe: Learning Collision-Free High-Speed Legged Locomotion},
+  author={He, Tairan and Zhang, Chong and Xiao, Wenli and He, Guanqi and Liu, Changliu and Shi, Guanya},
+  booktitle={Robotics: Science and Systems},
+  year={2024},
+  award={Outstanding Student Paper Award Finalist}
+}
+
+@inproceedings{he2024learning,
+  id = {C79},
+  title={Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation},
+  author={He, Tairan and Luo, Zhengyi and Xiao, Wenli and Zhang, Chong and Kitani, Kris and Liu, Changliu and Shi, Guanya},
+  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  year={2024}
+}
+
+@inproceedings{lu2024manigaussian,
+  id = {C80},
+  title={ManiGaussian: Dynamic Gaussian Splatting for Multi-task Robotic Manipulation},
+  author={Lu, Guanxing and Zhang, Shiyi and Wang, Ziwei and Liu, Changliu and Lu, Jiwen and Tang, Yansong},
+  booktitle={European Conference on Computer Vision},
+  year={2024}
+}
+
+@inproceedings{hu2024verification,
+  id = {C81},
+  title={Verification of Neural Control Barrier Functions with Symbolic Derivative Bounds Propagation},
+  author={Hanjiang Hu and Yujie Yang and Tianhao Wei and Changliu Liu},
+  booktitle={8th Annual Conference on Robot Learning},
+  year={2024},
+  repository={https://github.com/intelligent-control-lab/verify-neural-CBF},
+  url={https://openreview.net/forum?id=jnubz7wB2w},
+  abstract={Control barrier functions (CBFs) are important in safety-critical systems and robot control applications. Neural networks have been used to parameterize and synthesize CBFs with bounded control input for complex systems. However, it is still challenging to verify pre-trained neural networks CBFs (neural CBFs) in an efficient symbolic manner. To this end, we propose a new efficient verification framework for ReLU-based neural CBFs through symbolic derivative bound propagation by combining the linearly bounded nonlinear dynamic system and the gradient bounds of neural CBFs. Specifically, with Heaviside step function form for derivatives of activation functions, we show that the symbolic bounds can be propagated through the inner product of neural CBF Jacobian and nonlinear system dynamics. Through extensive experiments on different robot dynamics, our results outperform the interval arithmetic-based baselines in verified rate and verification time along the CBF boundary, validating the effectiveness and efficiency of the proposed method with different model complexity. The code can be found at https://github.com/intelligent-control-lab/verify-neural-CBF.}  
+}
 
 @article{he2024omnih2o,
+      id = {C82},
       title={OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning},
       author={He, Tairan and Luo, Zhengyi and He, Xialin and Xiao, Wenli and Zhang, Chong and Zhang, Weinan and Kitani, Kris and Liu, Changliu and Shi, Guanya},
       journal={Conference on Robot Learning},
       year={2024}
     }
 
+@inproceedings{wei2024metacontrol,
+  id = {C83},
+  title={Meta-Control: Automatic Model-based Control Synthesis for Heterogeneous Robot Skills},
+  author={Tianhao Wei and Liqian Ma and Rui Chen and Weiye Zhao and Changliu Liu},
+  booktitle={8th Annual Conference on Robot Learning},
+  year={2024},
+  video={https://www.youtube.com/embed/YKKbGnWYKsg?si=SXn_rrQCFEsXnU9f},
+  url={https://openreview.net/forum?id=cvVEkS5yij},
+  info={https://meta-control-paper.github.io},
+  abstract={The requirements for real-world manipulation tasks are diverse and often conflicting; some tasks require precise motion while others require force compliance; some tasks require avoidance of certain regions while others require convergence to certain states. Satisfying these varied requirements with a fixed state-action representation and control strategy is challenging, impeding the development of a universal robotic foundation model. In this work, we propose Meta-Control, the first LLM-enabled automatic control synthesis approach that creates customized state representations and control strategies tailored to specific tasks. Our core insight is that a meta-control system can be built to automate the thought process that human experts use to design control systems. Specifically, human experts heavily use a model-based, hierarchical (from abstract to concrete) thought model, then compose various dynamic models and controllers together to form a control system. Meta-Control mimics the thought model and harnesses LLM's extensive control knowledge with Socrates' "art of midwifery" to automate the thought process. Meta-Control stands out for its fully model-based nature, allowing rigorous analysis, generalizability, robustness, efficient parameter tuning, and reliable real-time execution.}
+}
+
+@inproceedings{chen2024korol,
+  id = {C84},
+  title={{KOROL}: Learning Visualizable Object Feature with Koopman Operator Rollout for Manipulation},
+  author={Hongyi Chen and Abulikemu Abuduweili and Aviral Agrawal and Yunhai Han and Harish Ravichandar and Changliu Liu and Jeffrey Ichnowski},
+  booktitle={Conference on Robot Learning},
+  year={2024},
+  url={https://openreview.net/forum?id=A6ikGJRaKL}
+}
+
+@inproceedings{lin2024nnsysbench,
+  id = {C85},
+  title={{NN}4SysBench: Characterizing Neural Network Verification for Computer Systems},
+  author={Shuyi Lin and Haoyu He and Tianhao Wei and Kaidi Xu and Huan Zhang and Gagandeep Singh and Changliu Liu and Cheng Tan},
+  booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  year={2024},
+  url={https://openreview.net/forum?id=mhjRudcHcB},
+  notes={Also presented at ICML Workshop on Formal Verification of Machine Learning 2022 under the title "Characterizing Neural Network Verification for Systems with NN4SYSBENCH". Link: https://naizhengtan.github.io/doc/papers/characterizing22haoyu.pdf}
+}
+
+@inproceedings{abuduweili2024estimating,
+  id = {W},
+  title={Estimating Neural Network Robustness via Lipschitz Constant and Architecture Sensitivity},
+  author={Abulikemu Abuduweili and Changliu Liu},
+  booktitle={CoRL Workshop on Safe and Robust Robot Learning for Operation in the Real World},
+  year={2024},
+  url={https://openreview.net/forum?id=Mk2pq3Gjq1}
+}
+
+@inproceedings{abuduweili2024revisiting,
+  id = {W},
+  title={Revisiting the Initial Steps in Adaptive Gradient Descent Optimization},
+  author={Abulikemu Abuduweili and Changliu Liu},
+  booktitle={OPT 2024: Optimization for Machine Learning},
+  year={2024},
+  url={https://openreview.net/forum?id=Xe0dVlWU2q}
+}
+
+@article{luo2024simultaneous,
+  id = {U},
+  title={Simultaneous Task Allocation and Planning for Multi-Robots under Hierarchical Temporal Logic Specifications},
+  author={Luo, Xusheng and Liu, Changliu},
+  journal={arXiv:2401.04003},
+  year={2024}
+}
+
+
 @article{he2024hover,
+  id = {U},
       title={HOVER: Versatile Neural Whole-Body Controller for Humanoid Robots},
       author={He, Tairan and Xiao, Wenli and Lin, Toru and Luo, Zhengyi and Xu, Zhenjia and Jiang, Zhenyu and Liu, Changliu and Shi, Guanya and Wang, Xiaolong and Fan, Linxi and Zhu, Yuke},
       journal={arXiv:2410.21229},
       year={2024}
     }
 
-@misc{li2024continuallearningliftingkoopman,
+@article{li2024continuallearningliftingkoopman,
+  id = {U},
       title={Continual Learning and Lifting of Koopman Dynamics for Linear Control of Legged Robots}, 
       author={Feihan Li and Abulikemu Abuduweili and Yifan Sun and Rui Chen and Weiye Zhao and Changliu Liu},
       year={2024},
-      eprint={2411.14321},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
+      journal={arXiv:2411.14321},
       url={https://arxiv.org/abs/2411.14321}, 
-      page={https://intelligent-control-lab.github.io/Incremental-Koopman/},
+      info={https://intelligent-control-lab.github.io/Incremental-Koopman/},
       video = {https://www.youtube.com/embed/5tsSdKkTc4M}
 }
 
