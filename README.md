@@ -6,7 +6,7 @@ This repository host the publications from ICL. The data is used on [this page](
 # Data Format
 
 In addition to including normal BibTeX fields such as `key`, `author`, `title`, `year`, we added the following entries:
-1. `id`: a unique number following a character. The character specifies catagories and the number follows chronical order. We use the following categories.
+1. `index`: a unique number following a character. The character specifies catagories and the number follows chronical order. We use the following categories.
 ```
 C: conference
 J: journal
@@ -43,7 +43,7 @@ https://www.youtube.com/watch?v=5tsSdKkTc4M
 
 ```
 @inproceedings{lin2024nnsysbench,
-  id = {C85},
+  index = {C85},
   title={{NN}4SysBench: Characterizing Neural Network Verification for Computer Systems},
   author={Shuyi Lin and Haoyu He and Tianhao Wei and Kaidi Xu and Huan Zhang and Gagandeep Singh and Changliu Liu and Cheng Tan},
   booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
