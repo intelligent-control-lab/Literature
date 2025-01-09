@@ -807,9 +807,9 @@
   index={W},
   title={IADA: Iterative Adversarial Data Augmentation Using Formal Verification and Expert Guidance},
   author={Liu, Ruixuan and Liu, Changliu},
-  journal={ICML HIIL Workshop},
+  journal={ICML Workshop on Human in the Loop Learning},
   year={2021},
-  url={https://arxiv.org/pdf/2108.06871.pdf},
+  url={https://arxiv.org/abs/2108.06871},
   abstract={Neural networks (NNs) are widely used for classification tasks for their remarkable performance. However, the robustness and accuracy of NNs heavily depend on the training data. In many applications, massive training data is usually not available. To address the challenge, this paper proposes an iterative adversarial data augmentation (IADA) framework to learn neural network models from an insufficient amount of training data. The method uses formal verification to identify the most "confusing" input samples, and leverages human guidance to safely and iteratively augment the training data with these samples. The proposed framework is applied to an artificial 2D dataset, the MNIST dataset, and a human motion dataset. By applying IADA to fully-connected NN classifiers, we show that our training method can improve the robustness and accuracy of the learned model. By comparing to regular supervised training, on the MNIST dataset, the average perturbation bound improved 107.4%. The classification accuracy improved 1.77%, 3.76%, 10.85% on the 2D dataset, the MNIST dataset, and the human motion dataset respectively.}
 }
 
@@ -906,6 +906,7 @@
   year = {2022},
   journal = {International Symposium on Flexible Automation},
   video = {https://www.youtube.com/embed/lJvyZ5iRvVQ},
+  link = {https://www.jstage.jst.go.jp/article/isfa/2022/0/2022_196/_article/-char/ja/},
   repository = {https://github.com/intelligent-control-lab/Stream_Motion_Controller},
   abstract = {The need to increase the flexibility of production lines is calling for robots to collaborate with human workers. However, existing interactive industrial robots only guarantee intrinsic safety (reduce collision impact), but not interactive safety (collision avoidance), which greatly limited their flexibility. The issue arises from two limitations in existing control software for industrial robots: 1) lack of support for real-time trajectory modification; 2) lack of intelligent safe control algorithms with guaranteed collision avoidance under robot dynamics constraints. To address the first issue, a jerk-bounded position controller (JPC) was developed previously. This paper addresses the second limitation, on top of the JPC. Specifically, we introduce a jerk-based safe set algorithm (JSSA) to ensure collision avoidance while considering the robot dynamics constraints. The JSSA greatly extends the scope of the original safe set algorithm, which has only been applied for second-order systems with unbounded accelerations. The JSSA is implemented on the FANUC LR Mate 200id/7L robot and validated with HRI tasks. Experiments show that the JSSA can consistently keep the robot at a safe distance from the human while executing the designated task.}
 }
@@ -929,7 +930,7 @@
   title={Jerk-bounded Position Controller with Real-Time Task Modification for Interactive Industrial Robots},   
   year={2022},  
   link={https://ieeexplore.ieee.org/document/9863251},
-  video = {https://youtu.be/bha6pHhytZA},
+  video = {https://www.youtube.com/embed/bha6pHhytZA?si=7y0emW_2_XeWZuyd},
   repository = {https://github.com/intelligent-control-lab/Stream_Motion_Controller},
   abstract ={Industrial robots are widely used in many applications with structured and deterministic environments. However, the contemporary need requires industrial robots to intelligently operate in dynamic environments. It is challenging to design a safe and efficient robotic system with industrial robots in a dynamic environment for several reasons. First, most industrial robots require the input to have specific formats, which takes additional efforts to convert from task-level user commands. Second, existing robot drivers do not support overwriting ongoing tasks in real-time, which hinders the robot from responding to the dynamic environment. Third, most industrial robots only expose motion-level control, making it challenging to enforce dynamic constraints during trajectory tracking. To resolve the above challenges, this paper presents a jerk-bounded position control driver (JPC) for industrial robots. JPC provides a unified interface for tracking complex trajectories and is able to enforce dynamic constraints using motion-level control, without accessing servo-level control. Most importantly, JPC enables real-time trajectory modification. Users can overwrite the ongoing task with a new one without violating dynamic constraints. The proposed JPC is implemented and tested on the FANUC LR Mate 200id/7L robot with both artificially generated data and an interactive robot handover task. Experiments show that the proposed JPC can track complex trajectories accurately within dynamic limits and seamlessly switch to new trajectory references before the ongoing task ends.}
 }
@@ -992,8 +993,9 @@
   title ={Task-agnostic Adaptation for Safe Human-robot Handover},
   journal = {IFAC Workshop on Cyber-Physical Human Systems},
   year={2022},
-  url={https://arxiv.org/abs/2209.09418},
-  award = {Best Student Paper Award}
+  link={https://www.sciencedirect.com/science/article/pii/S2405896323001295},
+  award = {Best Student Paper Award},
+  video={https://drive.google.com/file/d/1giDKCwyQC5-IRmw8ZLYpdqZNPuibM65c/preview}
 }
 
 @inproceedings{mohanty2022distributed,
@@ -1211,7 +1213,9 @@
   booktitle={IEEE Conference on Control Technology and Applications},
   pages={339--345},
   year={2023},
-  organization={IEEE}
+  organization={IEEE},
+  link={https://ieeexplore.ieee.org/abstract/document/10252579},
+  info={http://icontrol.ri.cmu.edu/news/2022FordDemo.html},
 }
 
 @inproceedings{wei2023zero,
@@ -1221,6 +1225,7 @@
   booktitle={IEEE Conference on Decision and Control},
   pages={8614--8619},
   year={2023},
+  link={https://ieeexplore.ieee.org/abstract/document/10383515},
   organization={IEEE}
 }
 
@@ -1314,6 +1319,8 @@
   author={Liu, Ruixuan and Sun, Yifan and Liu, Changliu},
   journal={ACC Workshop on Recent Advancement of Human Autonomy Interaction and Integration},
   year={2023},
+  url={https://arxiv.org/abs/2305.15667},
+  video={https://www.youtube.com/embed/CRIKbV_0TvU?si=uBjQNxoIZC3q7kd0},
   repository = {https://github.com/intelligent-control-lab/Robotic_LEGO_Assembly_and_Disassembly_from_Human_Demonstration}
 }
 
@@ -1377,7 +1384,8 @@
   title={Simulation-aided Learning from Demonstration for Robotic LEGO Construction},
   author={Liu, Ruixuan and Chen, Alan and Luo, Xusheng and Liu, Changliu},
   journal={arXiv:2309.11010},
-  video = {https://www.youtube.com/embed/yT8NqFHpnLs&t=8s},
+  video = {https://www.youtube.com/embed/yT8NqFHpnLs?si=n80Ow4CRqbtElkNi},
+  url={https://arxiv.org/abs/2309.11010},
   year={2023}
 }
 
@@ -1398,6 +1406,7 @@
   title={Guard: A safe reinforcement learning benchmark},
   author={Zhao, Weiye and Chen, Rui and Sun, Yifan and Liu, Ruixuan and Wei, Tianhao and Liu, Changliu},
   journal={Transactions on Machine Learning Research},
+  url={https://arxiv.org/abs/2305.13681},
   year={2024}
 }
 
@@ -1414,6 +1423,8 @@
   title={Decomposition-based Hierarchical Task Allocation and Planning for Multi-Robots under Hierarchical Temporal Logic Specifications},
   author={Luo, Xusheng and Xu, Shaojun and Liu, Ruixuan and Liu, Changliu},
   journal={IEEE Robotics and Automation Letters},
+  link={https://ieeexplore.ieee.org/abstract/document/10552885},
+  video={https://www.youtube.com/embed/YbmYmq1RmhI?si=NLdkNURVko0ZA_CM},
   year={2024}
 }
 
@@ -1432,7 +1443,9 @@
   title={StableLego: Stability Analysis of Block Stacking Assembly},
   author={Liu, Ruixuan and Deng, Kangle and Wang, Ziwei and Liu, Changliu},
   journal={IEEE Robotics and Automation Letters},
-  year={2024}
+  year={2024},
+  link={https://ieeexplore.ieee.org/document/10556686},
+  repository={https://github.com/intelligent-control-lab/StableLego},
 }
 
 @article{zheng2024efficient,
@@ -1486,7 +1499,8 @@
   title={Real-time Safety Index Adaptation for Parameter-varying Systems via Determinant Gradient Ascend},
   author={Chen, Rui and Zhao, Weiye and Liu, Ruixuan and Zhang, Weiyang  and Liu, Changliu},
   booktitle={American control Conference},
-  year={2024}
+  year={2024},
+  url={https://arxiv.org/abs/2403.14968}
 }
 
 @inproceedings{bo2024optimizing,
@@ -1535,7 +1549,8 @@
   author={Liu, Ruixuan and Sun, Yifan and Liu, Changliu},
   booktitle={International Symposium of Flexible Automation},
   video = {https://www.youtube.com/embed/CqrBryAGsd0},
-  year={2024}
+  year={2024},
+  link={https://asmedigitalcollection.asme.org/ISFA/proceedings-abstract/ISFA2024/1204971}
 }
 
 @inproceedings{zhao2024absolute,
@@ -1667,3 +1682,39 @@
       video = {https://www.youtube.com/embed/5tsSdKkTc4M}
 }
 
+@article{liu2024physicsawarecombinatorialassemblysequence,
+  index = {U},
+      title={Physics-Aware Combinatorial Assembly Sequence Planning using Data-free Action Masking}, 
+      author={Ruixuan Liu and Alan Chen and Weiye Zhao and Changliu Liu},
+      year={2024},
+      journal={arXiv:2408.10162},
+      url={https://arxiv.org/abs/2408.10162}, 
+      video = {https://drive.google.com/file/d/1v97aLn_GlV_rvxVLNBQv3EOwr9afqw-Y/preview}
+}
+
+@article{chen2024automatingrobotfailurerecovery,
+  index = {U},
+      title={Automating Robot Failure Recovery Using Vision-Language Models With Optimized Prompts}, 
+      author={Hongyi Chen and Yunchao Yao and Ruixuan Liu and Changliu Liu and Jeffrey Ichnowski},
+      year={2024},
+      journal={arXiv:2409.03966},
+      url={https://arxiv.org/abs/2409.03966}
+}
+
+@article{chen2024automatingrobotfailurerecovery,
+  index = {U},
+      title={Robustifying Long-term Human-Robot Collaboration through a Hierarchical and Multimodal Framework}, 
+      author={Peiqi Yu and Abulikemu Abuduweili and Ruixuan Liu and Changliu Liu},
+      year={2024},
+      journal={arXiv:2411.15711},
+      url={https://arxiv.org/abs/2411.15711}
+}
+
+@article{xu2024nl2hltl2planscalingnaturallanguage,
+  index = {U},
+      title={Nl2Hltl2Plan: Scaling Up Natural Language Understanding for Multi-Robots Through Hierarchical Temporal Logic Task Representation}, 
+      author={Shaojun Xu and Xusheng Luo and Yutong Huang and Letian Leng and Ruixuan Liu and Changliu Liu},
+      year={2024},
+      journal={arXiv:2408.08188},
+      url={https://arxiv.org/abs/2408.08188}
+}
