@@ -1429,7 +1429,9 @@
   journal={IEEE Robotics and Automation Letters},
   link={https://ieeexplore.ieee.org/abstract/document/10552885},
   video={https://www.youtube.com/embed/YbmYmq1RmhI?si=NLdkNURVko0ZA_CM},
-  year={2024}
+  repository={https://github.com/XushengLuo92/Hierarchical-LTL},
+  year={2024},
+  abstract={Past research into robotic planning with temporal logic specifications, notably Linear Temporal Logic (LTL), was largely based on a single formula for individual or groups of robots. But with increasing task complexity, LTL formulas unavoidably grow lengthy, complicating interpretation and specification generation, and straining the computational capacities of the planners. A recent development has been the hierarchical representation of LTL (Luo et al., 2024) that contains multiple temporal logic specifications, providing a more interpretable framework. However, the proposed planning algorithm assumes the independence of robots within each specification, limiting their application to multi-robot coordination with complex temporal constraints. In this work, we formulated a decomposition-based hierarchical framework. At the high level, each specification is first decomposed into a set of atomic sub-tasks. We further infer the temporal relations among the sub-tasks of different specifications to construct a task network. Subsequently, a Mixed Integer Linear Program is used to assign sub-tasks to various robots. At the lower level, domain-specific controllers are employed to execute sub-tasks. Our approach was experimentally applied to domains of navigation and manipulation. The simulation demonstrated that our approach can find better solutions using less runtimes.}
 }
 
 @article{wei2024improve,
@@ -1667,8 +1669,11 @@
   index = {U},
   title={Simultaneous Task Allocation and Planning for Multi-Robots under Hierarchical Temporal Logic Specifications},
   author={Luo, Xusheng and Liu, Changliu},
+  url={https://arxiv.org/abs/2401.04003},
+  repository={https://github.com/XushengLuo92/Hierarchical-LTL-STAP},
   journal={arXiv:2401.04003},
-  year={2024}
+  year={2024},
+  abstract={Research in robotic planning with temporal logic specifications, such as syntactically co-safe Linear Temporal Logic (sc-LTL), has relied on single formulas. However, as task complexity increases, sc-LTL formulas become lengthy, making them difficult to interpret and generate, and straining the computational capacities of planners. To address this, we introduce a hierarchical structure to sc-LTL specifications with both syntax and semantics, proving it to be more expressive than flat counterparts. We conducted a user study that compared the flat sc-LTL with our hierarchical version and found that users could more easily comprehend complex tasks using the hierarchical structure. We develop a search-based approach to synthesize plans for multi-robot systems, achieving simultaneous task allocation and planning. This method approximates the search space by loosely interconnected sub-spaces, each corresponding to an sc-LTL specification. The search primarily focuses on a single sub-space, transitioning to another under conditions determined by the decomposition of automatons. We develop multiple heuristics to significantly expedite the search. Our theoretical analysis, conducted under mild assumptions, addresses completeness and optimality. Compared to existing methods used in various simulators for service tasks, our approach improves planning times while maintaining comparable solution quality.}
 }
 
 
@@ -1726,7 +1731,9 @@
   author={Shaojun Xu and Xusheng Luo and Yutong Huang and Letian Leng and Ruixuan Liu and Changliu Liu},
   year={2024},
   journal={arXiv:2408.08188},
-  url={https://arxiv.org/abs/2408.08188}
+  url={https://arxiv.org/abs/2408.08188},
+  info={https://nl2hltl2plan.github.io},
+  abstract={To enable non-experts to specify long-horizon, multi-robot collaborative tasks, language models are increasingly used to translate natural language commands into formal specifications. However, because translation can occur in multiple ways, such translations may lack accuracy or lead to inefficient multi-robot planning. Our key insight is that concise hierarchical specifications can simplify planning while remaining straightforward to derive from human instructions. We propose Nl2Hltl2Plan, a framework that translates natural language commands into hierarchical Linear Temporal Logic (LTL) and solves the corresponding planning problem. The translation involves two steps leveraging Large Language Models (LLMs). First, an LLM transforms instructions into a Hierarchical Task Tree, capturing logical and temporal relations. Next, a fine-tuned LLM converts sub-tasks into flat LTL formulas, which are aggregated into hierarchical specifications, with the lowest level corresponding to ordered robot actions. These specifications are then used with off-the-shelf planners. Our Nl2Hltl2Plan demonstrates the potential of LLMs in hierarchical reasoning for multi-robot task planning. Evaluations in simulation and real-world experiments with human participants show that Nl2Hltl2Plan outperforms existing methods, handling more complex instructions while achieving higher success rates and lower costs in task allocation and planning.}
 }
 
 @article{wei2024modelverification,
