@@ -96,7 +96,6 @@ Note that some paper may be on arXiv in an earlier year than its actual publicat
 
 ## Issues
 
-1. Missing PhD Thesis from Jaskaran, Weiye, Tianhao
-2. Missing all master thesis
+1. Missing all master thesis
 2. Missing detailed information for publications starting in 2022
 
