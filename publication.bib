@@ -1,4 +1,4 @@
-% id:
+% index:
 %   C: conference
 %   J: journal
 %   B: book/book chapter
@@ -1683,15 +1683,6 @@
   abstract={Research in robotic planning with temporal logic specifications, such as syntactically co-safe Linear Temporal Logic (sc-LTL), has relied on single formulas. However, as task complexity increases, sc-LTL formulas become lengthy, making them difficult to interpret and generate, and straining the computational capacities of planners. To address this, we introduce a hierarchical structure to sc-LTL specifications with both syntax and semantics, proving it to be more expressive than flat counterparts. We conducted a user study that compared the flat sc-LTL with our hierarchical version and found that users could more easily comprehend complex tasks using the hierarchical structure. We develop a search-based approach to synthesize plans for multi-robot systems, achieving simultaneous task allocation and planning. This method approximates the search space by loosely interconnected sub-spaces, each corresponding to an sc-LTL specification. The search primarily focuses on a single sub-space, transitioning to another under conditions determined by the decomposition of automatons. We develop multiple heuristics to significantly expedite the search. Our theoretical analysis, conducted under mild assumptions, addresses completeness and optimality. Compared to existing methods used in various simulators for service tasks, our approach improves planning times while maintaining comparable solution quality.}
 }
 
-
-@article{he2024hover,
-  index = {U},
-  title={HOVER: Versatile Neural Whole-Body Controller for Humanoid Robots},
-  author={He, Tairan and Xiao, Wenli and Lin, Toru and Luo, Zhengyi and Xu, Zhenjia and Jiang, Zhenyu and Liu, Changliu and Shi, Guanya and Wang, Xiaolong and Fan, Linxi and Zhu, Yuke},
-  journal={arXiv:2410.21229},
-  year={2024}
-}
-
 @article{li2024continuallearningliftingkoopman,
   index = {U},
   title={Continual Learning and Lifting of Koopman Dynamics for Linear Control of Legged Robots}, 
@@ -1711,15 +1702,6 @@
   journal={arXiv:2408.10162},
   url={https://arxiv.org/abs/2408.10162}, 
   video = {https://drive.google.com/file/d/1v97aLn_GlV_rvxVLNBQv3EOwr9afqw-Y/preview}
-}
-
-@article{chen2024automatingrobotfailurerecovery,
-  index = {U},
-  title={Automating Robot Failure Recovery Using Vision-Language Models With Optimized Prompts}, 
-  author={Hongyi Chen and Yunchao Yao and Ruixuan Liu and Changliu Liu and Jeffrey Ichnowski},
-  year={2024},
-  journal={arXiv:2409.03966},
-  url={https://arxiv.org/abs/2409.03966}
 }
 
 @article{chen2024automatingrobotfailurerecovery,
@@ -1817,6 +1799,8 @@
   These tools enable the provision of formal safety guarantees with partially known or unknown dynamic models in uncertain, interactive environments, achieving state-of-the-art control safety and neural network safety. This allows robot arms to perform various tasks efficiently and safely, advancing the development of reliable and trustworthy general-purpose robots.  }
 }
 
+%%%%%%%%%%%%%%%%2025%%%%%%%%%%%%%%%%%%%%
+
 @inproceedings{lu2025thinkbot,
   index = {C86},
   title={ThinkBot: Embodied Instruction Following with Thought Chain Reasoning},
@@ -1833,5 +1817,14 @@
   booktitle={American Control Conference},
   url={https://arxiv.org/abs/2409.03966},
   abstract={Current robot autonomy struggles to operate beyond the assumed Operational Design Domain (ODD), the specific set of conditions and environments in which the system is designed to function, while the real-world is rife with uncertainties that may lead to failures. Automating recovery remains a significant challenge. Traditional methods often rely on human intervention to manually address failures or require exhaustive enumeration of failure cases and the design of specific recovery policies for each scenario, both of which are labor-intensive. Foundational Vision-Language Models (VLMs), which demonstrate remarkable common-sense generalization and reasoning capabilities, have broader, potentially unbounded ODDs. However, limitations in spatial reasoning continue to be a common challenge for many VLMs when applied to robot control and motion-level error recovery. In this paper, we investigate how optimizing visual and text prompts can enhance the spatial reasoning of VLMs, enabling them to function effectively as black-box controllers for both motion-level position correction and task-level recovery from unknown failures. Specifically, the optimizations include identifying key visual elements in visual prompts, highlighting these elements in text prompts for querying, and decomposing the reasoning process for failure detection and control generation. In experiments, prompt optimizations significantly outperform pre-trained Vision-Language-Action Models in correcting motion-level position errors and improve accuracy by 65.78% compared to VLMs with unoptimized prompts. Additionally, for task-level failures, optimized prompts enhanced the success rate by 5.8%, 5.8%, and 7.5% in VLMs' abilities to detect failures, analyze issues, and generate recovery plans, respectively, across a wide range of unknown errors in Lego assembly.},
+  year={2025}
+}
+
+@inproceedings{he2025hover,
+  index = {C88},
+  title={HOVER: Versatile Neural Whole-Body Controller for Humanoid Robots},
+  author={He, Tairan and Xiao, Wenli and Lin, Toru and Luo, Zhengyi and Xu, Zhenjia and Jiang, Zhenyu and Liu, Changliu and Shi, Guanya and Wang, Xiaolong and Fan, Linxi and Zhu, Yuke},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  url={https://arxiv.org/abs/2410.21229},
   year={2025}
 }
