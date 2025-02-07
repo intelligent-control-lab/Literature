@@ -1,4 +1,4 @@
-% id:
+% index:
 %   C: conference
 %   J: journal
 %   B: book/book chapter
@@ -122,7 +122,7 @@
 }
 
 @phdthesis{liu2017designing,
-  index={T},
+  index={T0},
   title={Designing robot behavior in human-robot interactions},
   author={Liu, Changliu},
   year={2017},
@@ -1375,14 +1375,6 @@
   year={2023}
 }
 
-@article{lu2023thinkbot,
-  index = {U},
-  title={ThinkBot: Embodied Instruction Following with Thought Chain Reasoning},
-  author={Lu, Guanxing and Wang, Ziwei and Liu, Changliu and Lu, Jiwen and Tang, Yansong},
-  journal={arXiv:2312.07062},
-  year={2023}
-}
-
 @article{liu2023simulation,
   index = {U},
   title={Simulation-aided Learning from Demonstration for Robotic LEGO Construction},
@@ -1391,6 +1383,21 @@
   video = {https://www.youtube.com/embed/yT8NqFHpnLs?si=n80Ow4CRqbtElkNi},
   url={https://arxiv.org/abs/2309.11010},
   year={2023}
+}
+
+@article{grover2023,
+  index = {T1},
+  author = {Jaskaran Singh Grover},
+  title = {System Identification and Control of Multiagent Systems Through Interactions},
+  year = {2023},
+  month = {6},
+  link = {https://kilthub.cmu.edu/articles/thesis/System_Identification_and_Control_of_Multiagent_Systems_Through_Interactions/23401898},
+  doi = {10.1184/R1/23401898.v1},
+  booktitle = {PhD Thesis},
+  abstract = {This thesis investigates the problem of inferring the underlying dynamic model of individual agents of a multiagent system (MAS) and using these models to shape the MAS's behavior using robots extrinsic to the MAS. We investigate (a) how an observer can infer the latent task and inter-agent interaction constraints from the agents' motion and (b) how the observer can elicit a desired behavior out of the MAS by orchestrating its interactions with robots. The ability to learn individual dynamics models of an aggregated system has several applications such as learning local rules in biological swarms that give rise to emergent behavior and learning tactics of an adversarial multirobot team. Likewise, the ability to shape behavior using extrinsic robots can be used to defend against an adversarial team of robots and guide humans using robots as in social navigation.
+
+  The first part of this thesis focuses on the model learning problem. We model agents as integrators that solve a reactive optimization to calculate velocities for mediating between goal-directed motions and collision avoidance with other agents. We develop several estimators that allow an observer to infer this model's parameters and show that the learned parameters indeed rationalize the observed motions. Necessary identifiability conditions are derived that guarantee correct inference. Our proposed estimators include adaptive observers, Kalman filters and several inverse optimization algorithms that are robust to both measurement noise and model mismatch. To demonstrate this robustness, we evaluate these estimators on a pedestrian dataset and learn each pedestrian's desired velocity, aggressiveness coefficients and safety margins with walls, obstacles and other pedestrians.
+  The second part of this thesis focuses on eliciting a desired behavior out of the MAS by inducing interactions with robots. While the theory we develop is general, we consider the dog-sheep herding problem as a use case that requires controlling dog robots to repel sheep agents from a critical zone. We incorporate non-collocated feedback linearization in an optimization-based framework to compute the desired controls for the dogs. Both centralized and distributed implementations are developed to cater to the scalability, feasibility and budget-efficiency objectives. We validate the correctness of these controllers in multiple experiments on the CMU multirobot arena. We also develop a robust extension of these controllers, which we term control-barrier function based semidefinite programs (CBF-SDPs), that guarantee zone defense despite uncertainty in the sheep's dynamics. Finally, we conclude this thesis with an integration of the robust model learning algorithms with robust control algorithms followed by experimental validation on the multirobot arena. }
 }
 
 %%%%%%%%%%%%%%%%2024%%%%%%%%%%%%%%%%%%%%
@@ -1601,10 +1608,10 @@
   index = {C81},
   title={Verification of Neural Control Barrier Functions with Symbolic Derivative Bounds Propagation},
   author={Hanjiang Hu and Yujie Yang and Tianhao Wei and Changliu Liu},
-  booktitle={8th Annual Conference on Robot Learning},
+  booktitle={Conference on Robot Learning},
   year={2024},
   repository={https://github.com/intelligent-control-lab/verify-neural-CBF},
-  url={https://openreview.net/forum?index=jnubz7wB2w},
+  url={https://openreview.net/forum?id=jnubz7wB2w},
   abstract={Control barrier functions (CBFs) are important in safety-critical systems and robot control applications. Neural networks have been used to parameterize and synthesize CBFs with bounded control input for complex systems. However, it is still challenging to verify pre-trained neural networks CBFs (neural CBFs) in an efficient symbolic manner. To this end, we propose a new efficient verification framework for ReLU-based neural CBFs through symbolic derivative bound propagation by combining the linearly bounded nonlinear dynamic system and the gradient bounds of neural CBFs. Specifically, with Heaviside step function form for derivatives of activation functions, we show that the symbolic bounds can be propagated through the inner product of neural CBF Jacobian and nonlinear system dynamics. Through extensive experiments on different robot dynamics, our results outperform the interval arithmetic-based baselines in verified rate and verification time along the CBF boundary, validating the effectiveness and efficiency of the proposed method with different model complexity. The code can be found at https://github.com/intelligent-control-lab/verify-neural-CBF.}  
 }
 
@@ -1620,10 +1627,10 @@
   index = {C83},
   title={Meta-Control: Automatic Model-based Control Synthesis for Heterogeneous Robot Skills},
   author={Tianhao Wei and Liqian Ma and Rui Chen and Weiye Zhao and Changliu Liu},
-  booktitle={8th Annual Conference on Robot Learning},
+  booktitle={Conference on Robot Learning},
   year={2024},
   video={https://www.youtube.com/embed/YKKbGnWYKsg?si=SXn_rrQCFEsXnU9f},
-  url={https://openreview.net/forum?index=cvVEkS5yij},
+  url={https://openreview.net/forum?id=cvVEkS5yij},
   info={https://meta-control-paper.github.io},
   abstract={The requirements for real-world manipulation tasks are diverse and often conflicting; some tasks require precise motion while others require force compliance; some tasks require avoidance of certain regions while others require convergence to certain states. Satisfying these varied requirements with a fixed state-action representation and control strategy is challenging, impeding the development of a universal robotic foundation model. In this work, we propose Meta-Control, the first LLM-enabled automatic control synthesis approach that creates customized state representations and control strategies tailored to specific tasks. Our core insight is that a meta-control system can be built to automate the thought process that human experts use to design control systems. Specifically, human experts heavily use a model-based, hierarchical (from abstract to concrete) thought model, then compose various dynamic models and controllers together to form a control system. Meta-Control mimics the thought model and harnesses LLM's extensive control knowledge with Socrates' "art of midwifery" to automate the thought process. Meta-Control stands out for its fully model-based nature, allowing rigorous analysis, generalizability, robustness, efficient parameter tuning, and reliable real-time execution.}
 }
@@ -1676,15 +1683,6 @@
   abstract={Research in robotic planning with temporal logic specifications, such as syntactically co-safe Linear Temporal Logic (sc-LTL), has relied on single formulas. However, as task complexity increases, sc-LTL formulas become lengthy, making them difficult to interpret and generate, and straining the computational capacities of planners. To address this, we introduce a hierarchical structure to sc-LTL specifications with both syntax and semantics, proving it to be more expressive than flat counterparts. We conducted a user study that compared the flat sc-LTL with our hierarchical version and found that users could more easily comprehend complex tasks using the hierarchical structure. We develop a search-based approach to synthesize plans for multi-robot systems, achieving simultaneous task allocation and planning. This method approximates the search space by loosely interconnected sub-spaces, each corresponding to an sc-LTL specification. The search primarily focuses on a single sub-space, transitioning to another under conditions determined by the decomposition of automatons. We develop multiple heuristics to significantly expedite the search. Our theoretical analysis, conducted under mild assumptions, addresses completeness and optimality. Compared to existing methods used in various simulators for service tasks, our approach improves planning times while maintaining comparable solution quality.}
 }
 
-
-@article{he2024hover,
-  index = {U},
-  title={HOVER: Versatile Neural Whole-Body Controller for Humanoid Robots},
-  author={He, Tairan and Xiao, Wenli and Lin, Toru and Luo, Zhengyi and Xu, Zhenjia and Jiang, Zhenyu and Liu, Changliu and Shi, Guanya and Wang, Xiaolong and Fan, Linxi and Zhu, Yuke},
-  journal={arXiv:2410.21229},
-  year={2024}
-}
-
 @article{li2024continuallearningliftingkoopman,
   index = {U},
   title={Continual Learning and Lifting of Koopman Dynamics for Linear Control of Legged Robots}, 
@@ -1704,15 +1702,6 @@
   journal={arXiv:2408.10162},
   url={https://arxiv.org/abs/2408.10162}, 
   video = {https://drive.google.com/file/d/1v97aLn_GlV_rvxVLNBQv3EOwr9afqw-Y/preview}
-}
-
-@article{chen2024automatingrobotfailurerecovery,
-  index = {U},
-  title={Automating Robot Failure Recovery Using Vision-Language Models With Optimized Prompts}, 
-  author={Hongyi Chen and Yunchao Yao and Ruixuan Liu and Changliu Liu and Jeffrey Ichnowski},
-  year={2024},
-  journal={arXiv:2409.03966},
-  url={https://arxiv.org/abs/2409.03966}
 }
 
 @article{yu2024robustifying,
@@ -1765,3 +1754,98 @@
   url={https://arxiv.org/abs/2408.00117},
   abstract={This work addresses the certification of the local robustness of vision-based two-stage 6D object pose estimation. The two-stage method for object pose estimation achieves superior accuracy by first employing deep neural network-driven keypoint regression and then applying a Perspective-n-Point (PnP) technique. Despite advancements, the certification of these methods' robustness remains scarce. This research aims to fill this gap with a focus on their local robustness on the system level--the capacity to maintain robust estimations amidst semantic input perturbations. The core idea is to transform the certification of local robustness into neural network verification for classification tasks. The challenge is to develop model, input, and output specifications that align with off-the-shelf verification tools. To facilitate verification, we modify the keypoint detection model by substituting nonlinear operations with those more amenable to the verification processes. Instead of injecting random noise into images, as is common, we employ a convex hull representation of images as input specifications to more accurately depict semantic perturbations. Furthermore, by conducting a sensitivity analysis, we propagate the robustness criteria from pose to keypoint accuracy, and then formulating an optimal error threshold allocation problem that allows for the setting of a maximally permissible keypoint deviation thresholds. Viewing each pixel as an individual class, these thresholds result in linear, classification-akin output specifications. Under certain conditions, we demonstrate that the main components of our certification framework are both sound and complete, and validate its effects through extensive evaluations on realistic perturbations. To our knowledge, this is the first study to certify the robustness of large-scale, keypoint-based pose estimation given images in real-world scenarios.}
 }
+
+@article{zhao2024absolutestatewiseconstrainedpolicy,
+  index    = {U},
+  title    = {Absolute State-wise Constrained Policy Optimization: High-Probability State-wise Constraints Satisfaction},
+  author   = {Weiye Zhao and Feihan Li and Yifan Sun and Yujie Wang and Rui Chen and Tianhao Wei and Changliu Liu},
+  journal  = {arXiv:2410.01212},
+  year     = {2024},
+  url      = {https://arxiv.org/abs/2410.01212},
+  abstract = {Enforcing state-wise safety constraints is critical for the application of reinforcement learning (RL) in real-world problems, such as autonomous driving and robot manipulation. However, existing safe RL methods only enforce state-wise constraints in expectation or enforce hard state-wise constraints with strong assumptions. The former does not exclude the probability of safety violations, while the latter is impractical. Our insight is that although it is intractable to guarantee hard state-wise constraints in a model-free setting, we can enforce state-wise safety with high probability while excluding strong assumptions. To accomplish the goal, we propose Absolute State-wise Constrained Policy Optimization (ASCPO), a novel general-purpose policy search algorithm that guarantees high-probability state-wise constraint satisfaction for stochastic systems. We demonstrate the effectiveness of our approach by training neural network policies for extensive robot locomotion tasks, where the agent must adhere to various state-wise safety constraints. Our results show that ASCPO significantly outperforms existing methods in handling state-wise constraints across challenging continuous control tasks, highlighting its potential for real-world applications.}
+}
+
+@article{zhao2024,
+  index = {T2},
+  author = {Weiye Zhao},
+  title = {State-wise Safe Learning and Control},
+  year = {2024},
+  month = {10},
+  link = {https://kilthub.cmu.edu/articles/thesis/State-wise_Safe_Learning_and_Control/26939875},
+  doi = {10.1184/R1/26939875.v1},
+  booktitle={PhD Thesis},
+  abstract = {Ensuring safety by persistently satisfying hard state constraints is a critical capability in the fields of reinforcement learning (RL) and control. While RL and control have achieved impressive feats in performing challenging tasks, the lack of safety assurance remains a significant obstacle for real-world applications. Consequently, the research focus has shifted towards developing methods that meet stringent safety specifications in uncertain environments, driving the field of safe learning and control. 
+
+  In the realm of safe control, energy function-based methodologies allocate diminished energy levels to safe states while orchestrating secure control laws to dissipate energy. However, prevailing safe control methods necessitate explicit analytical models of the dynamic system, a constraint often unmet in real-world scenarios. Moreover, current safe control techniques typically presuppose an unbounded control space, a premise divergent from the bounded nature of actual control spaces in reality. This incongruity can lead to the possibility of an empty set of safe controls, thereby jeopardizing the assurance of state-wise safety. 
+
+  In the sphere of safe RL, extensive endeavors have been undertaken to address safety within the framework of Constrained Markov Decision Processes (CMDP), which is not capable of handling state-wise safety constraints. Furthermore, existing safe RL algorithms predominantly acquire policy learning through trial-and-error, a process that introduces inevitable unsafe exploration. This characteristic renders them unsuitable for training in real-world, safety-critical applications. 
+
+  In this thesis, we present groundbreaking advancements in RL and control, ensuring state-wise safety by effectively addressing these challenges: (i) For safe control, we design energy functions to ensure a nonempty set of safe controls under dynamics limits and different knowledge levels of system dynamics, which can achieve forward invariance and finite time convergence. (ii) In safe learning, we propose a set of novel policy search algorithms for state-wise constrained RL. Specifically, (a) State-wise Constrained Policy Optimization (SCPO) guarantees state-wise constraint satisfaction in expectation per iteration, (b) Absolute Policy Optimization (APO) guarantees monotonic improvement of worst-case performance per iteration, and (c) Absolute State-wise Constrained Policy Optimization (ASCPO) guarantees worst-case state-wise constraint satisfaction per iteration. The proposed approaches accommodates high-dimensional neural network policies. Furthermore, we combine benefits from safe control and learning to pioneer an algorithm generating state-wise safe optimal policies with zero training violations, a learning-without-mistakes paradigm. (iii) Lastly, we introduce a comprehensive and adaptable benchmark, the first of its kind, for safe RL and control. This benchmark caters to diverse agents, tasks, and safety constraints, while offering unified implementations of cutting-edge safe learning and control algorithms within a controlled environment. }
+}
+
+@article{wei2024,
+  index = {T3},
+  author = {Tianhao Wei},
+  title = {Safeguarding and Empowering General Purpose Robots through Abstraction and Constraint Certification},
+  year = {2024},
+  month = {10},
+  link = {https://kilthub.cmu.edu/articles/thesis/Safeguarding_and_Empowering_General_Purpose_Robots_through_Abstraction_and_Constraint_Certification/26939821},
+  doi = {10.1184/R1/26939821.v1},
+  booktitle={PhD Thesis},
+  abstract = {Robots are increasingly deployed across various domains, from industrial automation to domestic assistance. Ensuring that robots operate safely and intelligently is crucial to preventing potential risks such as injury, loss of life, and economic costs. This thesis addresses key challenges in deploying robots in complex real-world environments, including providing formal safety guarantees in uncertain conditions, scaling safety guarantees to realistic high-dimensional systems, allowing the robot to behave intelligently while remaining explainable and trustworthy, and ensuring the robustness of neural network components. 
+
+  This thesis introduces a suite of tools to tackle these challenges. The first tool, Meta-Control, synthesizes heterogeneous robot skills with a hiearchical control approach, which could decompose system-level safety requirements into module-level constraints. These constraints are categorized into control and neural network constraints. For control constraints, the toolset introduces Abstract Safe Control for hierarchical safety guarantees, Robust Safe Control for handling model uncertainty through a control-limits aware robust framework, Neural Network Dynamic Models (NNDM) Safe Control for integrating data-driven models with safety guarantees, and Benchmark of Interactive Safety for benchmarking and unifying different safe control algorithms. For neural network constraints, the toolset introduces ModelVerification.jl toolbox for verifying neural network safety specifications, online verification for online assurance under domain shifts and network update, and the Signal-to-Noise Ratio (SNR) loss method to enhance stability and robustness of neural networks. 
+
+  These tools enable the provision of formal safety guarantees with partially known or unknown dynamic models in uncertain, interactive environments, achieving state-of-the-art control safety and neural network safety. This allows robot arms to perform various tasks efficiently and safely, advancing the development of reliable and trustworthy general-purpose robots.  }
+}
+
+%%%%%%%%%%%%%%%%2025%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{lu2025thinkbot,
+  index = {C86},
+  title={ThinkBot: Embodied Instruction Following with Thought Chain Reasoning},
+  author={Lu, Guanxing and Wang, Ziwei and Liu, Changliu and Lu, Jiwen and Tang, Yansong},
+  booktitle={International Conference on Learning Representations},
+  url={https://openreview.net/forum?id=tFDTHA3odg},
+  year={2025}
+}
+
+@inproceedings{chen2024automating,
+  index = {C87},
+  title={Automating Robot Failure Recovery Using Vision-Language Models With Optimized Prompts},
+  author={Chen, Hongyi and Yao, Yunchao and Liu, Ruixuan and Liu, Changliu and Ichnowski, Jeffrey},
+  booktitle={American Control Conference},
+  url={https://arxiv.org/abs/2409.03966},
+  abstract={Current robot autonomy struggles to operate beyond the assumed Operational Design Domain (ODD), the specific set of conditions and environments in which the system is designed to function, while the real-world is rife with uncertainties that may lead to failures. Automating recovery remains a significant challenge. Traditional methods often rely on human intervention to manually address failures or require exhaustive enumeration of failure cases and the design of specific recovery policies for each scenario, both of which are labor-intensive. Foundational Vision-Language Models (VLMs), which demonstrate remarkable common-sense generalization and reasoning capabilities, have broader, potentially unbounded ODDs. However, limitations in spatial reasoning continue to be a common challenge for many VLMs when applied to robot control and motion-level error recovery. In this paper, we investigate how optimizing visual and text prompts can enhance the spatial reasoning of VLMs, enabling them to function effectively as black-box controllers for both motion-level position correction and task-level recovery from unknown failures. Specifically, the optimizations include identifying key visual elements in visual prompts, highlighting these elements in text prompts for querying, and decomposing the reasoning process for failure detection and control generation. In experiments, prompt optimizations significantly outperform pre-trained Vision-Language-Action Models in correcting motion-level position errors and improve accuracy by 65.78% compared to VLMs with unoptimized prompts. Additionally, for task-level failures, optimized prompts enhanced the success rate by 5.8%, 5.8%, and 7.5% in VLMs' abilities to detect failures, analyze issues, and generate recovery plans, respectively, across a wide range of unknown errors in Lego assembly.},
+  year={2025}
+}
+
+@inproceedings{he2025hover,
+  index = {C88},
+  title={HOVER: Versatile Neural Whole-Body Controller for Humanoid Robots},
+  author={He, Tairan and Xiao, Wenli and Lin, Toru and Luo, Zhengyi and Xu, Zhenjia and Jiang, Zhenyu and Liu, Changliu and Shi, Guanya and Wang, Xiaolong and Fan, Linxi and Zhu, Yuke},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  url={https://arxiv.org/abs/2410.21229},
+  year={2025}
+}
+
+@inproceedings{pandya2025robots,
+  index = {C89},
+  title={Robots that Learn to Safely Influence via Prediction-Informed Reach-Avoid Dynamic Games},
+  author={Pandya, Ravi and Liu, Changliu and Bajcsy, Andrea},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  year={2025},
+  url={https://arxiv.org/abs/2409.12153},
+  abstract={Robots can influence people to accomplish their tasks more efficiently: autonomous cars can inch forward at an intersection to pass through, and tabletop manipulators can go for an object on the table first. However, a robot's ability to influence can also compromise the safety of nearby people if naively executed. In this work, we pose and solve a novel robust reach-avoid dynamic game which enables robots to be maximally influential, but only when a safety backup control exists. On the human side, we model the human's behavior as goal-driven but conditioned on the robot's plan, enabling us to capture influence. On the robot side, we solve the dynamic game in the joint physical and belief space, enabling the robot to reason about how its uncertainty in human behavior will evolve over time. We instantiate our method, called SLIDE (Safely Leveraging Influence in Dynamic Environments), in a high-dimensional (39-D) simulated human-robot collaborative manipulation task solved via offline game-theoretic reinforcement learning. We compare our approach to a robust baseline that treats the human as a worst-case adversary, a safety controller that does not explicitly reason about influence, and an energy-function-based safety shield. We find that SLIDE consistently enables the robot to leverage the influence it has on the human when it is safe to do so, ultimately allowing the robot to be less conservative while still ensuring a high safety rate during task execution.}
+}
+
+@inproceedings{yun2025siadog,
+  index = {C90},
+  title={Safe Control of Quadruped in Varying Dynamics via Safety Index Adaptation},
+  author={Yun, Kai S. and Chen, Rui and Dunaway, Chase and Dolan, John M. and Liu, Changliu},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  year={2025},
+  organization={IEEE},
+  url={https://www.arxiv.org/abs/2409.09882}
+}
+
