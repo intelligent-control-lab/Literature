@@ -52,7 +52,7 @@ https://www.youtube.com/watch?v=5tsSdKkTc4M
   notes={Also presented at ICML Workshop on Formal Verification of Machine Learning 2022 under the title "Characterizing Neural Network Verification for Systems with NN4SYSBENCH". Link: https://naizhengtan.github.io/doc/papers/characterizing22haoyu.pdf}
 }
 ```
-10. `teaser`: an image or gif to highlight the work. This will be displayed in a drop down window on the ICL publication page. Only supports local files for now.
+10. `teaser`: an image or gif to highlight the work. This will be displayed in a drop down window on the ICL publication page.
 
 Additionally, we use the following conventions:
 
