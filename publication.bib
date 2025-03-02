@@ -1352,14 +1352,6 @@
   url={https://arxiv.org/abs/2309.16830}
 }
 
-@article{zhao2023learn,
-  index = {U},
-  title={Learn With Imagination: Safe Set Guided State-wise Constrained Policy Optimization},
-  author={Zhao, Weiye and Sun, Yifan and Li, Feihan and Chen, Rui and Wei, Tianhao and Liu, Changliu},
-  journal={arXiv:2308.13140},
-  year={2023}
-}
-
 @article{li2023learning,
   index = {U},
   title={Learning predictive safety filter via decomposition of robust invariant set},
@@ -1676,18 +1668,6 @@
   abstract={Research in robotic planning with temporal logic specifications, such as syntactically co-safe Linear Temporal Logic (sc-LTL), has relied on single formulas. However, as task complexity increases, sc-LTL formulas become lengthy, making them difficult to interpret and generate, and straining the computational capacities of planners. To address this, we introduce a hierarchical structure to sc-LTL specifications with both syntax and semantics, proving it to be more expressive than flat counterparts. We conducted a user study that compared the flat sc-LTL with our hierarchical version and found that users could more easily comprehend complex tasks using the hierarchical structure. We develop a search-based approach to synthesize plans for multi-robot systems, achieving simultaneous task allocation and planning. This method approximates the search space by loosely interconnected sub-spaces, each corresponding to an sc-LTL specification. The search primarily focuses on a single sub-space, transitioning to another under conditions determined by the decomposition of automatons. We develop multiple heuristics to significantly expedite the search. Our theoretical analysis, conducted under mild assumptions, addresses completeness and optimality. Compared to existing methods used in various simulators for service tasks, our approach improves planning times while maintaining comparable solution quality.}
 }
 
-@article{li2024continuallearningliftingkoopman,
-  index = {U},
-  title={Continual Learning and Lifting of Koopman Dynamics for Linear Control of Legged Robots}, 
-  author={Feihan Li and Abulikemu Abuduweili and Yifan Sun and Rui Chen and Weiye Zhao and Changliu Liu},
-  year={2024},
-  journal={arXiv:2411.14321},
-  url={https://arxiv.org/abs/2411.14321}, 
-  info={https://intelligent-control-lab.github.io/Incremental-Koopman/},
-  video = {https://www.youtube.com/embed/5tsSdKkTc4M},
-  abstract={The control of legged robots, particularly humanoid and quadruped robots, presents significant challenges due to their high-dimensional and nonlinear dynamics. While linear systems can be effectively controlled using methods like Model Predictive Control (MPC), the control of nonlinear systems remains complex. One promising solution is the Koopman Operator, which approximates nonlinear dynamics with a linear model, enabling the use of proven linear control techniques. However, achieving accurate linearization through data-driven methods is difficult due to issues like approximation error, domain shifts, and the limitations of fixed linear state-space representations. These challenges restrict the scalability of Koopman-based approaches. This paper addresses these challenges by proposing a continual learning algorithm designed to iteratively refine Koopman dynamics for high-dimensional legged robots. The key idea is to progressively expand the dataset and latent space dimension, enabling the learned Koopman dynamics to converge towards accurate approximations of the true system dynamics. Theoretical analysis shows that the linear approximation error of our method converges monotonically. Experimental results demonstrate that our method achieves high control performance on robots like Unitree G1/H1/A1/Go2 and ANYmal D, across various terrains using simple linear MPC controllers. This work is the first to successfully apply linearized Koopman dynamics for locomotion control of high-dimensional legged robots, enabling a scalable model-based control solution.}
-}
-
 @article{liu2024physicsawarecombinatorialassemblysequence,
   index = {U},
   title={Physics-Aware Combinatorial Assembly Sequence Planning using Data-free Action Masking}, 
@@ -1863,6 +1843,38 @@
   url={https://arxiv.org/abs/2412.02153}
 }
 
+@inproceedings{hu2025boundary,
+  index={C93},
+  title={On the Boundary Feasibility for PDE Control with Neural Operators}, 
+  author={Hanjiang Hu and Changliu Liu},
+  year={2025},
+  booktitle={Learning for Dynamics and Control Conference},
+  url={https://arxiv.org/abs/2411.15643}, 
+  abstract={The physical world dynamics are generally governed by underlying partial differential equations (PDEs) with unknown analytical forms in science and engineering problems. Neural network based data-driven approaches have been heavily studied in simulating and solving PDE problems in recent years, but it is still challenging to move forward from understanding to controlling the unknown PDE dynamics. PDE boundary control instantiates a simplified but important problem by only focusing on PDE boundary conditions as the control input and output. However, current model-free PDE controllers cannot ensure the boundary output satisfies some given user-specified safety constraint. To this end, we propose a safety filtering framework to guarantee the boundary output stays within the safe set for current model-free controllers. Specifically, we first introduce a general neural boundary control barrier function (BCBF) to ensure the feasibility of the trajectorywise constraint satisfaction of boundary output. Based on a neural operator modeling the transfer function from boundary control input to output trajectories, we show that the change in the BCBF depends linearly on the change in input boundary, so quadratic programming-based safety filtering can be done for pre-trained model-free controllers. Extensive experiments under challenging hyperbolic, parabolic and Navier-Stokes PDE dynamics environments validate the effectiveness of the proposed method in achieving better general performance and boundary constraint satisfaction compared to the model-free controller baselines.}
+}
+
+@inproceedings{li2025learn,
+  index = {C94},
+  title={Learn With Imagination: Safe Set Guided State-wise Constrained Policy Optimization},
+  author={Li, Feihan and Sun, Yifan and Zhao, Weiye and Chen, Rui and Wei, Tianhao and Liu, Changliu},
+  booktitle={Learning for Dynamics and Control Conference},
+  url={https://arxiv.org/abs/2308.13140},
+  year={2025},
+  abstract={Deep reinforcement learning (RL) excels in various control tasks, yet the absence of safety guarantees hampers its real-world applicability. In particular, explorations during learning usually results in safety violations, while the RL agent learns from those mistakes. On the other hand, safe control techniques ensure persistent safety satisfaction but demand strong priors on system dynamics, which is usually hard to obtain in practice. To address these problems, we present Safe Set Guided State-wise Constrained Policy Optimization (S-3PO), a pioneering algorithm generating state-wise safe optimal policies with zero training violations, i.e., learning without mistakes. S-3PO first employs a safety-oriented monitor with black-box dynamics to ensure safe exploration. It then enforces an "imaginary" cost for the RL agent to converge to optimal behaviors within safety constraints. S-3PO outperforms existing methods in high-dimensional robotics tasks, managing state-wise constraints with zero training violation. This innovation marks a significant stride towards real-world safe RL deployment.},
+}
+
+@inproceedings{li2024continuallearningliftingkoopman,
+  index = {C95},
+  title={Continual Learning and Lifting of Koopman Dynamics for Linear Control of Legged Robots}, 
+  author={Feihan Li and Abulikemu Abuduweili and Yifan Sun and Rui Chen and Weiye Zhao and Changliu Liu},
+  year={2025},
+  booktitle={Learning for Dynamics and Control Conference},
+  url={https://arxiv.org/abs/2411.14321}, 
+  info={https://intelligent-control-lab.github.io/Incremental-Koopman/},
+  video = {https://www.youtube.com/embed/5tsSdKkTc4M},
+  abstract={The control of legged robots, particularly humanoid and quadruped robots, presents significant challenges due to their high-dimensional and nonlinear dynamics. While linear systems can be effectively controlled using methods like Model Predictive Control (MPC), the control of nonlinear systems remains complex. One promising solution is the Koopman Operator, which approximates nonlinear dynamics with a linear model, enabling the use of proven linear control techniques. However, achieving accurate linearization through data-driven methods is difficult due to issues like approximation error, domain shifts, and the limitations of fixed linear state-space representations. These challenges restrict the scalability of Koopman-based approaches. This paper addresses these challenges by proposing a continual learning algorithm designed to iteratively refine Koopman dynamics for high-dimensional legged robots. The key idea is to progressively expand the dataset and latent space dimension, enabling the learned Koopman dynamics to converge towards accurate approximations of the true system dynamics. Theoretical analysis shows that the linear approximation error of our method converges monotonically. Experimental results demonstrate that our method achieves high control performance on robots like Unitree G1/H1/A1/Go2 and ANYmal D, across various terrains using simple linear MPC controllers. This work is the first to successfully apply linearized Koopman dynamics for locomotion control of high-dimensional legged robots, enabling a scalable model-based control solution.}
+}
+
 @inproceedings{huang2025apexmr,
   index = {U},
   title = {APEX-MR: Multi-Robot Asynchronous Planning and Execution for Cooperative Assembly},
@@ -1885,7 +1897,7 @@
   url={https://arxiv.org/pdf/2502.03132},
   video={https://www.youtube.com/embed/vIzeQ31YbCM},
   repository={https://github.com/intelligent-control-lab/spark},
-  abstract={This paper introduces the Safe Protective and Assistive Robot Kit (SPARK), a comprehensive benchmark designed to ensure safety in humanoid autonomy and teleoperation. Humanoid robots pose significant safety risks due to their physical capabilities of interacting with complex environments. The physical structures of humanoid robots further add complexity to the design of general safety solutions. To facilitate the safe deployment of complex robot systems, SPARK can be used as a toolbox that comes with state-of-the-art safe control algorithms in a modular and composable robot control framework. Users can easily configure safety criteria and sensitivity levels to optimize the balance between safety and performance. To accelerate humanoid safety research and development, SPARK provides a simulation benchmark that compares safety approaches in a variety of environments, tasks, and robot models. Furthermore, SPARK allows quick deployment of synthesized safe controllers on real robots. For hardware deployment, SPARK supports Apple Vision Pro (AVP) or a Motion Capture System as external sensors, while also offering interfaces for seamless integration with alternative hardware setups. This paper demonstrates SPARK's capability with both simulation experiments and case studies with a Unitree G1 humanoid robot. Leveraging these advantages of SPARK, users and researchers can significantly improve the safety of their humanoid systems as well as accelerate relevant research. The open-source code is available at (https://github.com/intelligent-control-lab/spark)},
+  abstract={This paper introduces the Safe Protective and Assistive Robot Kit (SPARK), a comprehensive benchmark designed to ensure safety in humanoid autonomy and teleoperation. Humanoid robots pose significant safety risks due to their physical capabilities of interacting with complex environments. The physical structures of humanoid robots further add complexity to the design of general safety solutions. To facilitate the safe deployment of complex robot systems, SPARK can be used as a toolbox that comes with state-of-the-art safe control algorithms in a modular and composable robot control framework. Users can easily configure safety criteria and sensitivity levels to optimize the balance between safety and performance. To accelerate humanoid safety research and development, SPARK provides a simulation benchmark that compares safety approaches in a variety of environments, tasks, and robot models. Furthermore, SPARK allows quick deployment of synthesized safe controllers on real robots. For hardware deployment, SPARK supports Apple Vision Pro (AVP) or a Motion Capture System as external sensors, while also offering interfaces for seamless integration with alternative hardware setups. This paper demonstrates SPARK's capability with both simulation experiments and case studies with a Unitree G1 humanoid robot. Leveraging these advantages of SPARK, users and researchers can significantly improve the safety of their humanoid systems as well as accelerate relevant research. The open-source code is available at (https://github.com/intelligent-control-lab/spark)}
 }
 
 @article{chen2025dexterous,
