@@ -14,7 +14,7 @@ B: book/book chapter
 T: thesis
 W: workshop
 U: unpublished
-P: Pattern
+P: Patent
 ```
 For example, `C50` is the 50th conference paper published by ICL members.
 
