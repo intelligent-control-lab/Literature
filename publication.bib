@@ -1865,6 +1865,7 @@
   url={https://arxiv.org/abs/2411.14321}, 
   info={https://intelligent-control-lab.github.io/Incremental-Koopman/},
   video = {https://www.youtube.com/embed/5tsSdKkTc4M},
+  repository={https://github.com/intelligent-control-lab/Incremental-Koopman},
   abstract={The control of legged robots, particularly humanoid and quadruped robots, presents significant challenges due to their high-dimensional and nonlinear dynamics. While linear systems can be effectively controlled using methods like Model Predictive Control (MPC), the control of nonlinear systems remains complex. One promising solution is the Koopman Operator, which approximates nonlinear dynamics with a linear model, enabling the use of proven linear control techniques. However, achieving accurate linearization through data-driven methods is difficult due to issues like approximation error, domain shifts, and the limitations of fixed linear state-space representations. These challenges restrict the scalability of Koopman-based approaches. This paper addresses these challenges by proposing a continual learning algorithm designed to iteratively refine Koopman dynamics for high-dimensional legged robots. The key idea is to progressively expand the dataset and latent space dimension, enabling the learned Koopman dynamics to converge towards accurate approximations of the true system dynamics. Theoretical analysis shows that the linear approximation error of our method converges monotonically. Experimental results demonstrate that our method achieves high control performance on robots like Unitree G1/H1/A1/Go2 and ANYmal D, across various terrains using simple linear MPC controllers. This work is the first to successfully apply linearized Koopman dynamics for locomotion control of high-dimensional legged robots, enabling a scalable model-based control solution.}
 }
 
@@ -1876,7 +1877,9 @@
   journal={IEEE Robotics and Automation Letters},
   url={https://arxiv.org/abs/2408.10162}, 
   video = {https://drive.google.com/file/d/1v97aLn_GlV_rvxVLNBQv3EOwr9afqw-Y/preview},
-  teaser={https://github.com/waynekyrie/waynekyrie.github.io/blob/master/images/PAasp.gif?raw=true}
+  teaser={https://github.com/waynekyrie/waynekyrie.github.io/blob/master/images/PAasp.gif?raw=true},
+  repository={https://github.com/intelligent-control-lab/PhysicsAwareCombinatorialASP},
+  abstract={Combinatorial assembly uses standardized unit primitives to build objects that satisfy user specifications. This paper studies assembly sequence planning (ASP) for physical combinatorial assembly. Given the shape of the desired object, the goal is to find a sequence of actions for placing unit primitives to build the target object. In particular, we aim to ensure the planned assembly sequence is physically executable. However, ASP for combinatorial assembly is particularly challenging due to its combinatorial nature. To address the challenge, we employ deep reinforcement learning to learn a construction policy for placing unit primitives sequentially to build the desired object. Specifically, we design an online physics-aware action mask that filters out invalid actions, which effectively guides policy learning and ensures violation-free deployment. In the end, we apply the proposed method to Lego assembly with more than 250 3D structures. The experiment results demonstrate that the proposed method plans physically valid assembly sequences to build all structures, achieving a 100% success rate, whereas the best comparable baseline fails more than 40 structures.}
 }
 
 @article{huang2025apexmr,
@@ -1932,6 +1935,6 @@
   year={2025},
   journal={arXiv preprint arXiv:2503.00187},
   url={https://arxiv.org/abs/2503.00187}, 
-  code={https://github.com/HanjiangHu/NBF-LLM},
+  repository={https://github.com/HanjiangHu/NBF-LLM},
   abstract={Large language models (LLMs) are highly vulnerable to jailbreaking attacks, wherein adversarial prompts are designed to elicit harmful responses. While existing defenses effectively mitigate single-turn attacks by detecting and filtering unsafe inputs, they fail against multi-turn jailbreaks that exploit contextual drift over multiple interactions, gradually leading LLMs away from safe behavior. To address this challenge, we propose a safety steering framework grounded in safe control theory, ensuring invariant safety in multi-turn dialogues. Our approach models the dialogue with LLMs using state-space representations and introduces a novel neural barrier function (NBF) to detect and filter harmful queries emerging from evolving contexts proactively. Our method achieves invariant safety at each turn of dialogue by learning a safety predictor that accounts for adversarial queries, preventing potential context drift toward jailbreaks. Extensive experiments under multiple LLMs show that our NBF-based safety steering outperforms safety alignment baselines, offering stronger defenses against multi-turn jailbreaks while maintaining a better trade-off between safety and helpfulness under different multi-turn jailbreak methods.}
 }
