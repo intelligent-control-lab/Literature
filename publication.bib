@@ -1924,3 +1924,13 @@
   url={https://arxiv.org/abs/2503.06848},
   abstract={Manipulation and insertion of small and tight-toleranced objects in robotic assembly remain a critical challenge for vision-based robotics systems due to the required precision and cluttered environment. Conventional global or wrist-mounted cameras often suffer from occlusions when either assembling or disassembling from an existing structure. To address the challenge, this paper introduces "Eye-in-Finger", a novel tool design approach that enhances robotic manipulation by embedding low-cost, high-resolution perception directly at the tool tip. We validate our approach using LEGO assembly and disassembly tasks, which require the robot to manipulate in a cluttered environment and achieve sub-millimeter accuracy and robust error correction due to the tight tolerances. Experimental results demonstrate that our proposed system enables real-time, fine corrections to alignment error, increasing the tolerance of calibration error from 0.4mm to up to 2.0mm for the LEGO manipulation robot.},
 }
+
+@article{hu2025steering,
+  title={Steering Dialogue Dynamics for Robustness against Multi-turn Jailbreaking Attacks}, 
+  author={Hanjiang Hu and Alexander Robey and Changliu Liu},
+  year={2025},
+  journal={arXiv preprint arXiv:2503.00187},
+  url={https://arxiv.org/abs/2503.00187}, 
+  code={https://github.com/HanjiangHu/NBF-LLM},
+  abstract={Large language models (LLMs) are highly vulnerable to jailbreaking attacks, wherein adversarial prompts are designed to elicit harmful responses. While existing defenses effectively mitigate single-turn attacks by detecting and filtering unsafe inputs, they fail against multi-turn jailbreaks that exploit contextual drift over multiple interactions, gradually leading LLMs away from safe behavior. To address this challenge, we propose a safety steering framework grounded in safe control theory, ensuring invariant safety in multi-turn dialogues. Our approach models the dialogue with LLMs using state-space representations and introduces a novel neural barrier function (NBF) to detect and filter harmful queries emerging from evolving contexts proactively. Our method achieves invariant safety at each turn of dialogue by learning a safety predictor that accounts for adversarial queries, preventing potential context drift toward jailbreaks. Extensive experiments under multiple LLMs show that our NBF-based safety steering outperforms safety alignment baselines, offering stronger defenses against multi-turn jailbreaks while maintaining a better trade-off between safety and helpfulness under different multi-turn jailbreak methods.}
+}
