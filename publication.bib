@@ -452,6 +452,8 @@
   year={2019},
   url={https://arxiv.org/abs/1909.05089},
   video={https://www.youtube.com/embed/LgtkWJ_oCR0},
+  repository={https://github.com/intelligent-control-lab/Intent_Traj_Prediction},
+  abstract={To engender safe and efficient human-robot collaboration, it is critical to generate high-fidelity predictions of human behavior. The challenges in making accurate predictions lie in the stochasticity and heterogeneity in human behaviors. This paper introduces a method for human trajectory and intention prediction through a multi-task model that is adaptable across different human subjects. We develop a nonlinear recursive least square parameter adaptation algorithm (NRLS-PAA) to achieve online adaptation. The effectiveness and flexibility of the proposed method has been validated in experiments. In particular, online adaptation can reduce the trajectory prediction error by more than 28% for a new human subject. The proposed human prediction method has high flexibility, data efficiency, and generalizability, which can support fast integration of HRC systems for user-specified tasks.},
 }
 
 @article{lin2019graph,
@@ -560,8 +562,9 @@
   url = {https://arxiv.org/pdf/1912.01790},
   pdf =    {http://proceedings.mlr.press/v120/abuduweili20a/abuduweili20a.pdf},
   link =   {http://proceedings.mlr.press/v120/abuduweili20a.html},
-  abstract =   {High fidelity behavior prediction of intelligent agents is critical in many applications. However, the prediction model trained on the training set may not generalize to the testing set due to domain shift and time variance. The challenge motivates the adoption of online adaptation algorithms to update prediction models in real-time to improve the prediction performance. Inspired by Extended Kalman Filter (EKF), this paper introduces a series of online adaptation methods, which are applicable to neural network-based models. A base adaptation algorithm Modified EKF with forgetting factor (MEKF_lambda) is introduced first, followed by exponential moving average filtering techniques. Then this paper introduces a dynamic multi-epoch update strategy to effectively utilize samples received in real time. With all these extensions, we propose a robust online adaptation algorithm: MEKF with Exponential Moving Average and Dynamic Multi-Epoch strategy (MEKF_EMA-DME). The proposed algorithm outperforms existing methods as demonstrated in experiments.},
-  video = {https://www.youtube.com/embed/15vXtd5rg70}
+  repository= {https://github.com/intelligent-control-lab/MEKF_MAME},
+  abstract =   {High-fidelity behavior prediction of intelligent agents is critical in many applications. However, the prediction model trained on the training set may not generalize to the testing set due to domain shift and time variance. The challenge motivates the adoption of online adaptation algorithms to update prediction models in real-time to improve the prediction performance. Inspired by the Extended Kalman Filter (EKF), this paper introduces a series of online adaptation methods, which are applicable to neural network-based models. A base adaptation algorithm, Modified EKF with forgetting factor (MEKF_lambda) is introduced first, followed by exponential moving average filtering techniques. Then, this paper introduces a dynamic multi-epoch update strategy to effectively utilize samples received in real time. With all these extensions, we propose a robust online adaptation algorithm: MEKF with Exponential Moving Average and Dynamic Multi-Epoch strategy (MEKF_EMA-DME). The proposed algorithm outperforms existing methods as demonstrated in experiments.},
+  video = {https://www.youtube.com/embed/15vXtd5rg70},
 }
 
 @inproceedings{lin2020dynamic,
@@ -745,7 +748,8 @@
   pages={314--341},
   year={2021},
   link={https://onlinelibrary.wiley.com/doi/abs/10.1002/acs.3198},
-  abstract={High fidelity behavior prediction of intelligent agents is critical in many applications,which is challenging due to the stochasticity, heterogeneity and time-varying natureof agent behaviors. Prediction models that work for one individual may not be appli-cable to another. Besides, the prediction model trained on the training set may notgeneralize to the testing set. These challenges motivate the adoption of online adap-tation algorithms to update prediction models in real-time to improve the predictionperformance. This paper considers online adaptable multi-task prediction for bothintention and trajectory. The goal of online adaptation is to improve the performanceof both intention and trajectory predictions with only the feedback of the observedtrajectory. We first introduce a generic tau-step adaptation algorithm of the multi-taskprediction model that updates the model parameters with the trajectory predictionerror in recent tau steps. Inspired by Extended Kalman Filter (EKF), a base adaptationalgorithm Modified EKF with forgetting factor (MEKFtau) is introduced. In order toimprove the performance of MEKFtau, generalized exponential moving average filter-ing techniques are adopted. Then this paper introduces a dynamic multi-epoch updatestrategy to effectively utilize samples received in real time. With all these exten-sions, we propose a robust online adaptation algorithm: MEKF with Moving Averageand dynamic Multi-Epoch strategy (MEKFMA−ME). We empirically study the bestset of parameters to adapt in the multi-task prediction model and demonstrate theeffectiveness of the proposed adaptation algorithms to reduce the prediction error.}
+  repository= {https://github.com/intelligent-control-lab/MEKF_MAME},
+  abstract={High-fidelity behavior prediction of intelligent agents is critical in many applications, which is challenging due to the stochasticity, heterogeneity, and time-varying nature of agent behaviors. Prediction models that work for one individual may not be applicable to another. Besides, the prediction model trained on the training set may not generalize to the testing set. These challenges motivate the adoption of online adaptation algorithms to update prediction models in real-time to improve the prediction performance. This paper considers online adaptable multi-task prediction for bothintention and trajectory. The goal of online adaptation is to improve the performance of both intention and trajectory predictions with only the feedback of the observed trajectory. We first introduce a generic tau-step adaptation algorithm of the multi-task prediction model that updates the model parameters with the trajectory prediction error in recent tau steps. Inspired by Extended Kalman Filter (EKF), a base adaptationalgorithm Modified EKF with forgetting factor (MEKFtau) is introduced. In order to improve the performance of MEKFtau, generalized exponential moving average filtering techniques are adopted. Then this paper introduces a dynamic multi-epoch update strategy to effectively utilize samples received in real time. With all these extensions, we propose a robust online adaptation algorithm: MEKF with Moving Average and dynamic Multi-Epoch strategy (MEKFMA−ME). We empirically study the best set of parameters to adapt in the multi-task prediction model and demonstrate the effectiveness of the proposed adaptation algorithms to reduce the prediction error.}
 }
 
 @article{liu2021human,
@@ -1111,7 +1115,9 @@
   author={Yin, Peng and Zhao, Shiqi and Cisneros, Ivan and Abuduweili, Abulikemu and Huang, Guoquan and Milford, Micheal and Liu, Changliu and Choset, Howie and Scherer, Sebastian},
   journal={arXiv:2209.04497},
   year={2022},
+  repository = {https://github.com/MetaSLAM/GPRS_Survey},
   url={https://arxiv.org/abs/2405.04812},
+  abstract ={In the realm of robotics, the quest for achieving real-world autonomy, capable of executing large-scale and long-term operations, has positioned place recognition (PR) as a cornerstone technology. Despite the PR community's remarkable strides over the past two decades, garnering attention from fields like computer vision and robotics, the development of PR methods that sufficiently support real-world robotic systems remains a challenge. This paper aims to bridge this gap by highlighting the crucial role of PR within the framework of Simultaneous Localization and Mapping (SLAM) 2.0. This new phase in robotic navigation calls for scalable, adaptable, and efficient PR solutions by integrating advanced artificial intelligence (AI) technologies. For this goal, we provide a comprehensive review of the current state-of-the-art (SOTA) advancements in PR, alongside the remaining challenges, and underscore its broad applications in robotics. This paper begins with an exploration of PR's formulation and key research challenges. We extensively review literature, focusing on related methods on place representation and solutions to various PR challenges. Applications showcasing PR's potential in robotics, key PR datasets, and open-source libraries are discussed. We conclude with a discussion on PR's future directions and provide a summary of the literature covered at: https://github.com/MetaSLAM/GPRS_Survey.}
 }
 
 
@@ -1217,6 +1223,7 @@
   organization={IEEE},
   link={https://ieeexplore.ieee.org/abstract/document/10252579},
   info={http://icontrol.ri.cmu.edu/news/2022FordDemo.html},
+  abstract ={Human-robot collaboration (HRC) is one key component to achieving flexible manufacturing to meet the different needs of customers. However, it is difficult to build intelligent robots that can proactively assist humans in a safe and efficient way due to several challenges. First, it is challenging to achieve efficient collaboration due to diverse human behaviors and data scarcity. Second, it is difficult to ensure interactive safety due to uncertainty in human behaviors. This paper presents an integrated framework for proactive HRC. A robust intention prediction module, which leverages prior task information and human-in-the-loop training, is learned to guide the robot for efficient collaboration. The proposed framework also uses robust safe control to ensure interactive safety under uncertainty. The developed framework is applied to a co-assembly task using a Kinova Gen3 robot. The experiment demonstrates that our solution is robust to environmental changes as well as different human preferences and behaviors. In addition, it improves task efficiency by approximately 15-20%. Moreover, the experiment demonstrates that our solution can guarantee interactive safety during proactive collaboration.},
 }
 
 @inproceedings{wei2023zero,
@@ -1249,7 +1256,9 @@
   year={2023},
   organization={PMLR},
   link={https://proceedings.mlr.press/v229/abuduweili23a},
-  video={https://www.youtube.com/embed/fB9-UE3Q4bE}
+  video={https://www.youtube.com/embed/fB9-UE3Q4bE},
+  repository ={https://github.com/intelligent-control-lab/Feedforward_Adaptation},
+  abstract = {To cope with distribution shifts or non-stationarity in system dynamics, online adaptation algorithms have been introduced to update offline-learned prediction models in real-time. Existing online adaptation methods focus on optimizing the prediction model by utilizing feedback from the latest prediction error. Unfortunately, this feedback-based approach is susceptible to forgetting past information. This work proposes an online adaptation method with feedforward compensation, which uses critical data samples from a memory buffer, instead of the latest samples, to optimize the prediction model. We prove that the proposed approach achieves a smaller error bound compared to previously utilized methods in slow time-varying systems. We conducted experiments on several prediction tasks, which clearly illustrate the superiority of the proposed feedforward adaptation method. Furthermore, our feedforward adaptation technique is capable of estimating an uncertainty bound for predictions.},
 }
 
 @article{chen2023robust,
@@ -1294,7 +1303,8 @@
   year={2023},
   publisher={IEEE},
   link={https://ieeexplore.ieee.org/abstract/document/10242249},
-  video={https://www.youtube.com/embed/2qJYXMNUuyI}
+  video={https://www.youtube.com/embed/2qJYXMNUuyI},
+  abstract = {We present BioSLAM, a lifelong (lifelong simultaneous localization and mapping) SLAM framework for learning various new appearances incrementally and maintaining accurate place recognition for previously visited areas. Unlike humans, artificial neural networks suffer from catastrophic forgetting and may forget the previously visited areas when trained with new arrivals. For humans, researchers discover that there exists a memory replay mechanism in the brain to keep the neuron active for previous events. Inspired by this discovery, BioSLAM designs a gated generative replay to control the robot's learning behavior based on the feedback rewards. Specifically, BioSLAM provides a novel dual-memory mechanism for the maintenance of: 1) a dynamic memory to efficiently learn new observations; and 2) a static memory to balance new–old knowledge. When the agent is encountered with different appearances under new domains, the complete processing pipeline can help to incrementally update the place recognition ability, robust to the increasing complexity of long-term place recognition. We demonstrate BioSLAM in three incremental SLAM scenarios as follows. 1) A 120 km city-scale trajectories with LiDAR-based inputs. 2) A multivisited 4.5 km campus-scale trajectories with LiDAR-vision inputs. 3) An official Oxford dataset with 10 km visual inputs under different environmental conditions. We show that BioSLAM can incrementally update the agent's place recognition ability and outperform the state-of-the-art incremental approach, generative replay, by 24% in terms of place recognition accuracy. To the best of our knowledge, BioSLAM is the first memory-enhanced lifelong SLAM system to help incremental place recognition in long-term navigation tasks.},
 }
 
 @article{abuduweili2023optical,
@@ -1304,7 +1314,9 @@
   journal={Transactions on Machine Learning Research},
   year={2023},
   link={https://openreview.net/forum?id=61TKzU9B96},
-  notes={Also presented at ICML-AI4Science Workshop, 2022}
+  notes={Also presented at ICML-AI4Science Workshop, 2022},
+  repository = {https://github.com/Walleclipse/Reinforcement-Learning-Pulse-Stacking},
+  abstract = {Deep reinforcement learning has the potential to address various scientific problems. In this paper, we implement an optics simulation environment for reinforcement learning based controllers. The environment captures the essence of nonconvexity, nonlinearity, and time-dependent noise inherent in optical systems, offering a more realistic setting. Subsequently, we provide the benchmark results of several reinforcement learning algorithms on the proposed simulation environment. The experimental findings demonstrate the superiority of off-policy reinforcement learning approaches over traditional control algorithms in navigating the intricacies of complex optical control environments.},
 }
 
 @incollection{lin2023distributed,
@@ -1443,6 +1455,7 @@
   issn={2835-8856},
   year={2024},
   link={https://openreview.net/forum?id=iV0jktFZ5Y},
+  abstract = {Neural network robustness is a major concern in safety-critical applications. Certified robustness provides a reliable lower bound on worst-case robustness, and certified training methods have been developed to enhance it. However, certified training methods often suffer from over-regularization, leading to lower certified robustness. This work addresses this issue by introducing the concepts of neuron variance and neuron stability, examining their impact on over-regularization and model robustness. To tackle the problem, we extend the Signal-to-Noise Ratio (SNR) into the realm of model robustness, offering a novel perspective and developing SNR-inspired losses aimed at optimizing neuron variance and stability to mitigate over-regularization. Through both empirical and theoretical analysis, our SNR-based approach demonstrates superior performance over existing methods on the MNIST and CIFAR-10 datasets.  In addition, our exploration of adversarial training uncovers a beneficial correlation between neuron variance and adversarial robustness, leading to an optimized balance between standard and robust accuracy that outperforms baseline methods.},
 }
 
 @article{liu2024stablelego,
@@ -1636,7 +1649,9 @@
   author={Hongyi Chen and Abulikemu Abuduweili and Aviral Agrawal and Yunhai Han and Harish Ravichandar and Changliu Liu and Jeffrey Ichnowski},
   booktitle={Conference on Robot Learning},
   year={2024},
-  link={https://openreview.net/forum?id=A6ikGJRaKL}
+  link={https://openreview.net/forum?id=A6ikGJRaKL},
+  repository = {https://github.com/hychen-naza/KOROL},
+  abstract = {Learning dexterous manipulation skills presents significant challenges due to complex nonlinear dynamics that underlie the interactions between objects and multi-fingered hands. Koopman operators have emerged as a robust method for modeling such nonlinear dynamics within a linear framework. However, current methods rely on runtime access to ground-truth (GT) object states, making them unsuitable for vision-based practical applications. Unlike image-to-action policies that implicitly learn visual features for control, we use a dynamics model, specifically the Koopman operator, to learn visually interpretable object features critical for robotic manipulation within a scene. We construct a Koopman operator using object features predicted by a feature extractor and utilize it to auto-regressively advance system states. We train the feature extractor to embed scene information into object features, thereby enabling the accurate propagation of robot trajectories. We evaluate our approach on simulated and real-world robot tasks, with results showing that it outperformed the model-based imitation learning NDP by 1.08 and the image-to-action Diffusion Policy by 1.16. The results suggest that our method maintains task success rates with learned features and extends applicability to real-world manipulation without GT object states. Project video and code are available at: https://github.com/hychen-naza/KOROL.},
 }
 
 @inproceedings{lin2024nnsysbench,
@@ -1655,7 +1670,8 @@
   author={Abulikemu Abuduweili and Changliu Liu},
   booktitle={CoRL Workshop on Safe and Robust Robot Learning for Operation in the Real World},
   year={2024},
-  url={https://arxiv.org/abs/2410.23382}
+  url={https://arxiv.org/abs/2410.23382},
+  abstract = {Ensuring neural network robustness is essential for the safe and reliable operation of robotic learning systems, especially in perception and decision-making tasks within real-world environments. This paper investigates the robustness of neural networks in perception systems, specifically examining their sensitivity to targeted, small-scale perturbations. We identify the Lipschitz constant as a key metric for quantifying and enhancing network robustness. We derive an analytical expression to compute the Lipschitz constant based on neural network architecture, providing a theoretical basis for estimating and improving robustness. Several experiments reveal the relationship between network design, the Lipschitz constant, and robustness, offering practical insights for developing safer, more robust robot learning systems.},
 }
 
 @article{luo2024simultaneous,
@@ -1676,7 +1692,8 @@
   year={2024},
   journal={arXiv:2411.15711},
   url={https://arxiv.org/abs/2411.15711},
-  video={https://www.youtube.com/embed/2kkANN9ueVY}
+  video={https://www.youtube.com/embed/2kkANN9ueVY},
+  abstract = {Long-term Human-Robot Collaboration (HRC) is crucial for enabling flexible manufacturing systems and integrating companion robots into daily human environments over extended periods. This paper identifies several key challenges for such collaborations, such as accurate recognition of human plan, robustness to disturbances, operational efficiency, adaptability to diverse user behaviors, and sustained human satisfaction. To address these challenges, we model the long-term HRC task through a hierarchical task graph and presents a novel multimodal and hierarchical framework to enable robots to better assist humans to advance on the task graph. In particular, the proposed multimodal framework integrates visual observations with speech commands to facilitate intuitive and flexible human-robot interactions. Additionally, our hierarchical designs for both human pose detection and plan prediction allow better understanding of human behaviors and significantly enhance system accuracy, robustness, and flexibility. Moreover, an online adaptation mechanism enables real-time adjustment to diverse user behaviors. We deploy the proposed framework to KINOVA GEN3 robot and conduct extensive user studies on real-world long-term HRC assembly scenarios. Experimental results show that our approaches reduce task completion time by 15.9%, achieves an average task success rate of 91.8% and an overall user satisfaction score of 84% in long-term HRC tasks, showcasing its applicability in enhancing real-world long-term HRC.},
 }
 
 @article{xu2024nl2hltl2planscalingnaturallanguage,
@@ -1823,7 +1840,21 @@
   author={Abulikemu Abuduweili and Changliu Liu},
   booktitle={Conference on Parsimony and Learning (CPAL)},
   year={2025},
-  url={https://arxiv.org/abs/2412.02153}
+  url={https://arxiv.org/abs/2412.02153},
+  repository = {https://github.com/Walleclipse/Adam_Initialization/},
+  abstract = {Adaptive gradient optimization methods, such as Adam, are prevalent in training deep neural networks across diverse machine learning tasks due to their ability to achieve faster convergence. However, these methods often suffer from suboptimal generalization compared to stochastic gradient descent (SGD) and exhibit instability, particularly when training Transformer models. In this work, we show the standard initialization of the second-order moment estimation (v0=0) as a significant factor contributing to these limitations. We introduce simple yet effective solutions: initializing the second-order moment estimation with non-zero values, using either data-driven or random initialization strategies. Empirical evaluations demonstrate that our approach not only stabilizes convergence but also enhances the final performance of adaptive gradient optimizers. Furthermore, by adopting the proposed initialization strategies, Adam achieves performance comparable to many recently proposed variants of adaptive gradient optimization methods. Our code is available at https://github.com/Walleclipse/Adam_Initialization/.},
+  notes={Also presented at NeurIPS Optimization Workshop (OPT) 2024.}
+}
+
+@article{abuduweili2024enhancing,
+  index = {U},
+  title={Enhancing Sample Generation of Diffusion Models using Noise Level Correction}, 
+  author={Abulikemu Abuduweili and Chenyang Yuan and Changliu Liu and Frank Permenter},
+  year={2024},
+  journal={arXiv preprint arXiv:2412.05488},
+  url={https://arxiv.org/abs/2412.05488}, 
+  abstract = {The denoising process of diffusion models can be interpreted as an approximate projection of noisy samples onto the data manifold. Moreover, the noise level in these samples approximates their distance to the underlying manifold. Building on this insight, we propose a novel method to enhance sample generation by aligning the estimated noise level with the true distance of noisy samples to the manifold. Specifically, we introduce a noise level correction network, leveraging a pre-trained denoising network, to refine noise level estimates during the denoising process. Additionally, we extend this approach to various image restoration tasks by integrating task-specific constraints, including inpainting, deblurring, super-resolution, colorization, and compressed sensing. Experimental results demonstrate that our method significantly improves sample quality in both unconstrained and constrained generation scenarios. Notably, the proposed noise level correction framework is compatible with existing denoising schedulers (e.g., DDIM), offering additional performance improvements.}
+
 }
 
 @inproceedings{hu2025boundary,
