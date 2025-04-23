@@ -1345,7 +1345,8 @@
   title={Robustness verification for perception models against camera motion perturbations},
   author={Hu, Hanjiang and Liu, Changliu and Zhao, Ding},
   booktitle={ICML Workshop on Formal Verification of Machine Learning (WFVML)},
-  year={2023}
+  year={2023},
+  url={https://files.sri.inf.ethz.ch/wfvml23/papers/paper_17.pdf}
 }
 
 @inproceedings{luo2023obtaining,
@@ -1565,7 +1566,10 @@
   title={Real-Time Safe Control of Neural Network Dynamic Models with Sound Approximation},
   author={Hu, Hanjiang and Lan, Jianglin and Liu, Changliu},
   booktitle={Learning for Dynamics and Control Conference},
-  year={2024}
+  year={2024},
+  repository={https://github.com/intelligent-control-lab/BOND},
+  url={https://proceedings.mlr.press/v242/hu24a.html},
+  abstract={Safe control of neural network dynamic models (NNDMs) is important to robotics and many applications. However, it remains challenging to compute an optimal safe control in real time for NNDM. To enable real-time computation, we propose to use a sound approximation of the NNDM in the control synthesis. In particular, we propose Bernstein over-approximated neural dynamics (BOND) based on the Bernstein polynomial over-approximation (BPO) of ReLU activation functions in NNDM. To mitigate the errors introduced by the approximation and to ensure persistent feasibility of the safe control problems, we synthesize a worst-case safety index using the most unsafe approximated state within the BPO relaxation of NNDM offline. For the online real-time optimization, we formulate the first-order Taylor approximation of the nonlinear worst-case safety constraint as an additional linear layer of NNDM with the l2 bounded bias term for the higher-order remainder. Comprehensive experiments with different neural dynamics and safety constraints show that with safety guaranteed, our NNDMs with sound approximation are 10-100 times faster than the safe control baseline that uses mixed integer programming (MIP), validating the effectiveness of the worst-case safety index and scalability of the proposed BOND in real-time large-scale settings.}  
 }
 
 @inproceedings{liu2024lightweight,
@@ -1860,12 +1864,13 @@
 
 @inproceedings{hu2025boundary,
   index={C93},
-  title={On the Boundary Feasibility for PDE Control with Neural Operators}, 
+  title={Safe PDE Boundary Control with Neural Operators}, 
   author={Hanjiang Hu and Changliu Liu},
   year={2025},
   booktitle={Learning for Dynamics and Control Conference},
   url={https://arxiv.org/abs/2411.15643}, 
-  abstract={The physical world dynamics are generally governed by underlying partial differential equations (PDEs) with unknown analytical forms in science and engineering problems. Neural network based data-driven approaches have been heavily studied in simulating and solving PDE problems in recent years, but it is still challenging to move forward from understanding to controlling the unknown PDE dynamics. PDE boundary control instantiates a simplified but important problem by only focusing on PDE boundary conditions as the control input and output. However, current model-free PDE controllers cannot ensure the boundary output satisfies some given user-specified safety constraint. To this end, we propose a safety filtering framework to guarantee the boundary output stays within the safe set for current model-free controllers. Specifically, we first introduce a general neural boundary control barrier function (BCBF) to ensure the feasibility of the trajectorywise constraint satisfaction of boundary output. Based on a neural operator modeling the transfer function from boundary control input to output trajectories, we show that the change in the BCBF depends linearly on the change in input boundary, so quadratic programming-based safety filtering can be done for pre-trained model-free controllers. Extensive experiments under challenging hyperbolic, parabolic and Navier-Stokes PDE dynamics environments validate the effectiveness of the proposed method in achieving better general performance and boundary constraint satisfaction compared to the model-free controller baselines.}
+  repository={https://github.com/intelligent-control-lab/safe-pde-control},
+  abstract={The physical world dynamics are generally governed by underlying partial differential equations (PDEs) with unknown analytical forms in science and engineering problems. Neural network based data-driven approaches have been heavily studied in simulating and solving PDE problems in recent years, but it is still challenging to move forward from understanding to controlling the unknown PDE dynamics. PDE boundary control instantiates a simplified but important problem by only focusing on PDE boundary conditions as the control input and output. However, current model-free PDE controllers cannot ensure the boundary output satisfies some given user-specified safety constraint. To this end, we propose a safety filtering framework to guarantee the boundary output stays within the safe set for current model-free controllers. Specifically, we first introduce a general neural boundary control barrier function (BCBF) to ensure the feasibility of the trajectory-wise constraint satisfaction of boundary output. Based on a neural operator modeling the transfer function from boundary control input to output trajectories, we show that the change in the BCBF depends linearly on the change in input boundary, so quadratic programming-based safety filtering can be done for pre-trained model-free controllers. Extensive experiments under challenging hyperbolic, parabolic and Navier-Stokes PDE dynamics environments validate the effectiveness of the proposed method in achieving better general performance and boundary constraint satisfaction compared to the model-free controller baselines.}
 }
 
 @inproceedings{li2025learn,
