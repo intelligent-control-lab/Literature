@@ -1,6 +1,6 @@
 # ICL Publications
 
-This repository host the publications from ICL. The data is used on [this page](http://icontrol.ri.cmu.edu/publication/publication.html).
+This repository host the publications from ICL. The data is used on [this page](http://icontrol.ri.cmu.edu/publication/).
 
 
 # Data Format
