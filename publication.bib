@@ -1994,6 +1994,17 @@
   abstract={Large language models (LLMs) are shown to be vulnerable to jailbreaking attacks where adversarial prompts are designed to elicit harmful responses. While existing defenses effectively mitigate single-turn attacks by detecting and filtering unsafe inputs, they fail against multi-turn jailbreaks that exploit contextual drift over multiple interactions, gradually leading LLMs away from safe behavior. To address this challenge, we propose a safety steering framework grounded in safe control theory, ensuring invariant safety in multi-turn dialogues. Our approach models the dialogue with LLMs using state-space representations and introduces a novel neural barrier function (NBF) to detect and filter harmful queries emerging from evolving contexts proactively. Our method achieves invariant safety at each turn of dialogue by learning a safety predictor that accounts for adversarial queries, preventing potential context drift toward jailbreaks. Extensive experiments under multiple LLMs show that our NBF-based safety steering outperforms safety alignment, prompt-based steering and lightweight LLM guardrails baselines, offering stronger defenses against multi-turn jailbreaks while maintaining a better trade-off among safety, helpfulness and over-refusal. Check out the  website here \url{https://sites.google.com/view/llm-nbf/home}.}
 }
 
+
+@article{abuduweili2025enhancing,
+ index = {J31},
+title={Enhancing Sample Generation of Diffusion Models using Noise Level Correction},
+author={Abulikemu Abuduweili and Chenyang Yuan and Changliu Liu and Frank Permenter},
+journal={Transactions on Machine Learning Research},
+year={2025},
+url={https://arxiv.org/abs/2412.05488},
+abstract = {The denoising process of diffusion models can be interpreted as an approximate projection of noisy samples onto the data manifold. Moreover, the noise level in these samples approximates their distance to the underlying manifold. Building on this insight, we propose a novel method to enhance sample generation by aligning the estimated noise level with the true distance of noisy samples to the manifold. Specifically, we introduce a noise level correction network, leveraging a pre-trained denoising network, to refine noise level estimates during the denoising process. Additionally, we extend this approach to various image restoration tasks by integrating task-specific constraints, including inpainting, deblurring, super-resolution, colorization, and compressed sensing. Experimental results demonstrate that our method significantly improves sample quality in both unconstrained and constrained generation scenarios. Notably, the proposed noise level correction framework is compatible with existing denoising schedulers (e.g., DDIM), offering additional performance improvements.}
+}
+
 @inproceedings{kapoor2025demonstrating,
   index = {C98},
   title={Demonstrating ViSafe: Vision-enabled Safety for High-speed Detect and Avoid}, 
@@ -2048,3 +2059,15 @@
   info = {https://drive.google.com/file/d/1d-ft1UMwm_gODsWk7Gl1TJmtk5MFfNzs/view?usp=sharing},
   abstract = {Human-AI collaboration is a powerful paradigm in decision-making systems, where humans and AI contribute different strengths with clear complementarity. Yet, achieving optimal team performance depends critically on proper trust in AI, ensuring humans rely on AI appropriately. In real-world scenarios, humans often lack the expertise or performance transparency to judge AI accuracy directly, creating a gap in appropriate trust calibration. In this paper, we address this challenge through three key contributions: (1) we propose a theoretical framework modeling the evolution of human trust in AI over time under AI performance uncertainty, (2) we investigate two self-calibrating trust methods, an instance-based cognitive model and a reinforcement learning (RL) model that learns trust calibration policies from experience, and (3) we conduct simulations comparing both approaches against a rule-based baseline under dynamically varying AI performance. Results show that RL-based trust calibration outperforms others in cumulative performance, while instance-based calibration offers interpretability and sample efficiency. These findings offer pathways for safe and adaptive trust alignment in human-AI collaboration toward trustworthy autonomy.},
 }
+
+
+@article{wang2025deployable,
+  index = {U},
+  title={Deployable and Generalizable Motion Prediction: Taxonomy, Open Challenges and Future Directions},
+  author={Letian Wang and Marc-Antoine Lavoie and Sandro Papais and  Barza Nisar and Yuxiao Chen and Wenhao Ding and Boris Ivanovic and Hao Shao and Abulikemu Abuduweili and Evan Cook and  Yang Zhou and Peter Karkus and Jiachen Li and Changliu Liu and Marco Pavone and Steven Waslander},
+  journal={arXiv preprint arXiv:2505.09074},
+  year={2025},
+  url={https://arxiv.org/abs/2505.09074}, 
+abstract = {Motion prediction, the anticipation of future agent states or scene evolution, is rooted in human cognition, bridging perception and decision-making. It enables intelligent systems, such as robots and self-driving cars, to act safely in dynamic, human-involved environments, and informs broader time-series reasoning challenges. With advances in methods, representations, and datasets, the field has seen rapid progress, reflected in quickly evolving benchmark results. Yet, when state-of-the-art methods are deployed in the real world, they often struggle to generalize to open-world conditions and fall short of deployment standards. This reveals a gap between research benchmarks, which are often idealized or ill-posed, and real-world complexity. To address this gap, this survey revisits the generalization and deployability of motion prediction models, with an emphasis on the applications of robotics, autonomous driving, and human motion. We first offer a comprehensive taxonomy of motion prediction methods, covering representations, modeling strategies, application domains, and evaluation protocols. We then study two key challenges: (1) how to push motion prediction models to be deployable to realistic deployment standards, where motion prediction does not act in a vacuum, but functions as one module of closed-loop autonomy stacks - it takes input from the localization and perception, and informs downstream planning and control. 2) how to generalize motion prediction models from limited seen scenarios/datasets to the open-world settings. Throughout the paper, we highlight critical open challenges to guide future work, aiming to recalibrate the community's efforts, fostering progress that is not only measurable but also meaningful for real-world applications.}
+}
+
