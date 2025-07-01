@@ -30,6 +30,7 @@
 %   AIM: IEEE/ASME International Conference on Advanced Intelligent Mechatronics
 %   CPHS: IFAC Workshop on Cyber-Physical Human Systems
 %   RSS: Robotics: Science and Systems
+%   MECC: Modeling, Estimation, and Control Conference
 
 
 @inproceedings{liu2014modeling,
@@ -69,7 +70,7 @@
   organization={IEEE},
   url={https://www.cs.cmu.edu/&#126;cliu6/files/acc15.pdf},
   repository={https://github.com/changliuliu/PAA_MSEE},
-  abstract={To address the safety issues in human robot interactions (HRI), a safe set algorithm (SSA) was developed previously. However, during HRI, the uncertainty levels are changing in different phases of the interaction, which is not captured by SSA. A safe exploration algorithm (SEA) is proposed in this paper to address the uncertainty levels in the robot control. To estimate the uncertainty levels online, a learning method in the belief space is developed. A comparative study between SSA and SEA is conducted. The simulation results confirm that SEA can capture the uncertainty reduction behavior which is observed in human-human interactions.}
+  abstract={To address the safety issues in human robot interactions (HRI), a  (SSA) was developed previously. However, during HRI, the uncertainty levels are changing in different phases of the interaction, which is not captured by SSA. A safe exploration algorithm (SEA) is proposed in this paper to address the uncertainty levels in the robot control. To estimate the uncertainty levels online, a learning method in the belief space is developed. A comparative study between SSA and SEA is conducted. The simulation results confirm that SEA can capture the uncertainty reduction behavior which is observed in human-human interactions.}
 }
 
 @inproceedings{liu2016algorithmic,
@@ -342,7 +343,7 @@
   journal={arXiv:1808.03983},
   year={2018},
   url={https://arxiv.org/abs/1808.03983},
-  abstract={Human-robot interactions have been recognized to be a key element of future industrial collaborative robots (co-robots). Unlike traditional robots that work in structured and deterministic environments, co-robots need to operate in highly unstructured and stochastic environments. To ensure that co-robots operate efficiently and safely in dynamic uncertain environments, this paper introduces the robot safe interaction system. In order to address the uncertainties during human-robot interactions, a unique parallel planning and control architecture is proposed, which has a long term global planner to ensure efficiency of robot behavior, and a short term local planner to ensure real time safety under uncertainties. In order for the robot to respond immediately to environmental changes, fast algorithms are used for real-time computation, i.e., the convex feasible set algorithm for the long term optimization, and the safe set algorithm for the short term optimization. Several test platforms are introduced for safe evaluation of the developed system in the early phase of deployment. The effectiveness and the efficiency of the proposed method have been verified in experiment with an industrial robot manipulator.}
+  abstract={Human-robot interactions have been recognized to be a key element of future industrial collaborative robots (co-robots). Unlike traditional robots that work in structured and deterministic environments, co-robots need to operate in highly unstructured and stochastic environments. To ensure that co-robots operate efficiently and safely in dynamic uncertain environments, this paper introduces the robot safe interaction system. In order to address the uncertainties during human-robot interactions, a unique parallel planning and control architecture is proposed, which has a long term global planner to ensure efficiency of robot behavior, and a short term local planner to ensure real time safety under uncertainties. In order for the robot to respond immediately to environmental changes, fast algorithms are used for real-time computation, i.e., the convex feasible set algorithm for the long term optimization, and the  for the short term optimization. Several test platforms are introduced for safe evaluation of the developed system in the early phase of deployment. The effectiveness and the efficiency of the proposed method have been verified in experiment with an industrial robot manipulator.}
 }
 
 @article{liu2018serocs,
@@ -432,7 +433,7 @@
   organization={IEEE},
   url={https://arxiv.org/abs/1908.01883},
   repository={https://github.com/intelligent-control-lab/BIS},
-  abstract={Safe autonomy is important in many application domains, especially for applications involving interactions with humans. Existing safe control algorithms are similar to each other in the sense that: they all provide control input to maintain a low value of an energy function that measures safety. In different methods, the energy function is called a potential function, a safety index, or a barrier function. The connections and relative advantages among these methods remain unclear. This paper introduces a unified framework to derive safe control laws using energy functions. We demonstrate how to integrate existing controllers based on potential field method, safe set algorithm, barrier function method, and sliding mode algorithm into this unified framework. In addition to theoretical comparison, this paper also introduces a benchmark which implements and compares existing methods on a variety of problems with different system dynamics and interaction modes. Based on the comparison results, a new method, called the sublevel safe set algorithm, is derived under the unified framework by optimizing the hyperparameters. The proposed algorithm achieves the best performance in terms of safety and efficiency on all benchmark problems.}
+  abstract={Safe autonomy is important in many application domains, especially for applications involving interactions with humans. Existing safe control algorithms are similar to each other in the sense that: they all provide control input to maintain a low value of an energy function that measures safety. In different methods, the energy function is called a potential function, a safety index, or a barrier function. The connections and relative advantages among these methods remain unclear. This paper introduces a unified framework to derive safe control laws using energy functions. We demonstrate how to integrate existing controllers based on potential field method, , barrier function method, and sliding mode algorithm into this unified framework. In addition to theoretical comparison, this paper also introduces a benchmark which implements and compares existing methods on a variety of problems with different system dynamics and interaction modes. Based on the comparison results, a new method, called the sublevel safe set algorithm, is derived under the unified framework by optimizing the hyperparameters. The proposed algorithm achieves the best performance in terms of safety and efficiency on all benchmark problems.}
 }
 
 @inproceedings{liu2019neuralverification,
@@ -1942,11 +1943,11 @@
   abstract={It is critical to ensure safety for humanoid robots in real-world applications without compromising performance. In this paper, we consider the problem of dexterous safety, featuring limb-level geometry constraints for avoiding both external and self-collisions in cluttered environments. Compared to safety with simplified bounding geometries in sprase environments, dexterous safety produces numerous constraints which often lead to infeasible constraint sets when solving for safe robot control. To address this issue, we propose Projected Safe Set Algorithm (p-SSA), an extension of classical safe control algorithms to multi-constraint cases. p-SSA relaxes conflicting constraints in a principled manner, minimizing safety violations to guarantee feasible robot control. We verify our approach in simulation and on a real Unitree G1 humanoid robot performing complex collision avoidance tasks. Results show that p-SSA enables the humanoid to operate robustly in challenging situations with minimal safety violations and directly generalizes to various tasks with zero parameter tuning.},
 }
 
-@article{tang2025eye,
-  index = {U},
+@inproceedings{tang2025eye,
+  index = {C101},
   title={Eye-in-Finger: Smart Fingers for Delicate Assembly and Disassembly of LEGO},
   author={Tang, Zhenran and Liu, Ruixuan and Liu, Changliu},
-  journal={arXiv preprint arXiv:2503.06848},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
   year={2025},
   url={https://arxiv.org/abs/2503.06848},
   abstract={Manipulation and insertion of small and tight-toleranced objects in robotic assembly remain a critical challenge for vision-based robotics systems due to the required precision and cluttered environment. Conventional global or wrist-mounted cameras often suffer from occlusions when either assembling or disassembling from an existing structure. To address the challenge, this paper introduces "Eye-in-Finger", a novel tool design approach that enhances robotic manipulation by embedding low-cost, high-resolution perception directly at the tool tip. We validate our approach using LEGO assembly and disassembly tasks, which require the robot to manipulate in a cluttered environment and achieve sub-millimeter accuracy and robust error correction due to the tight tolerances. Experimental results demonstrate that our proposed system enables real-time, fine corrections to alignment error, increasing the tolerance of calibration error from 0.4mm to up to 2.0mm for the LEGO manipulation robot.},
@@ -2016,12 +2017,42 @@ abstract = {The denoising process of diffusion models can be interpreted as an a
   abstract={Hamilton-Jacobi (HJ) reachability analysis provides a formal method for guaranteeing safety in constrained control problems. It synthesizes a value function to represent a long-term safe set called feasible region. Early synthesis methods based on state space discretization cannot scale to high-dimensional problems, while recent methods that use neural networks to approximate value functions result in unverifiable feasible regions. To achieve both scalability and verifiability, we propose a framework for synthesizing verified neural value functions for HJ reachability analysis. Our framework consists of three stages: pre-training, adversarial training, and verification-guided training. We design three techniques to address three challenges to improve scalability respectively: boundary-guided backtracking (BGB) to improve counterexample search efficiency, entering state regularization (ESR) to enlarge feasible region, and activation pattern alignment (APA) to accelerate neural network verification. We also provide a neural safety certificate synthesis and verification benchmark called Cersyve-9, which includes nine commonly used safe control tasks and supplements existing neural network verification benchmarks. Our framework successfully synthesizes verified neural value functions on all tasks, and our proposed three techniques exhibit superior scalability and efficiency compared with existing methods.}
 }
 
-@article{pun2025generating,
-  index = {U},
+@article{zhao2024implicit,
+  index = {J34},
+  title={Implicit Safe Set Algorithm for Provably Safe Reinforcement Learning}, 
+  author={Weiye Zhao and Tairan He and Feihan Li and Changliu Liu},
+  journal={Journal of Artificial Intelligence Research},
+  year={2025},
+  url={https://arxiv.org/abs/2405.02754}, 
+  abstract={Deep reinforcement learning (DRL) has demonstrated remarkable performance in many continuous control tasks. However, a significant obstacle to the real-world application of DRL is the lack of safety guarantees. Although DRL agents can satisfy system safety in expectation through reward shaping, designing agents to consistently meet hard constraints (e.g., safety specifications) at every time step remains a formidable challenge. In contrast, existing work in the field of safe control provides guarantees on persistent satisfaction of hard safety constraints. However, these methods require explicit analytical system dynamics models to synthesize safe control, which are typically inaccessible in DRL settings. In this paper, we present a model-free safe control algorithm, the implicit safe set algorithm, for synthesizing safeguards for DRL agents that ensure provable safety throughout training. The proposed algorithm synthesizes a safety index (barrier certificate) and a subsequent safe control law solely by querying a black-box dynamic function (e.g., a digital twin simulator). Moreover, we theoretically prove that the implicit safe set algorithm guarantees finite time convergence to the safe set and forward invariance for both continuous-time and discrete-time systems. We validate the proposed algorithm on the state-of-the-art Safety Gym benchmark, where it achieves zero safety violations while gaining 95%±9% cumulative reward compared to state-of-the-art safe DRL methods. Furthermore, the resulting algorithm scales well to high-dimensional systems with parallel computing.}
+}
+
+@inproceedings{chen2024assemblycomplete,
+  index = {C103},
+  title={AssemblyComplete: 3D Combinatorial Construction with Deep Reinforcement Learning}, 
+  author={Alan Chen and Changliu Liu},
+  year={2025},
+  booktitle={Modeling, Estimation, and Control Conference},
+  url={https://arxiv.org/abs/2410.15469}, 
+  abstract={A critical goal in robotics and autonomy is to teach robots to adapt to real-world collaborative tasks, particularly in automatic assembly. The ability of a robot to understand the original intent of an incomplete assembly and complete missing features without human instruction is valuable but challenging. This paper introduces 3D combinatorial assembly completion, which is demonstrated using combinatorial unit primitives (i.e., Lego bricks). Combinatorial assembly is challenging due to the possible assembly combinations and complex physical constraints (e.g., no brick collisions, structure stability, inventory constraints, etc.). To address these challenges, we propose a two-part deep reinforcement learning (DRL) framework that tackles teaching the robot to understand the objective of an incomplete assembly and learning a construction policy to complete the assembly. The robot queries a stable object library to facilitate assembly inference and guide learning. In addition to the robot policy, an action mask is developed to rule out invalid actions that violate physical constraints for object-oriented construction. We demonstrate the proposed framework's feasibility and robustness in a variety of assembly scenarios in which the robot satisfies real-life assembly with respect to both solution and runtime quality. Furthermore, results demonstrate that the proposed framework effectively infers and assembles incomplete structures for unseen and unique object types.}
+}
+
+@inproceedings{cheng2025robust,
+  index = {C104},
+  title={Robust Tracking Control with Neural Network Dynamic Models under Input Perturbations}, 
+  author={Huixuan Cheng and Hanjiang Hu and Changliu Liu},
+  year={2025},
+  booktitle={Modeling, Estimation, and Control Conference},
+  url={https://arxiv.org/abs/2410.10387}, 
+  abstract={Robust control problems have significant practical implications since external disturbances can significantly impact the performance of control methods. Existing robust control methods excel at control-affine systems but fail at neural network dynamic models. Developing robust control methods for such systems remains a complex challenge. In this paper, we focus on robust tracking methods for neural network dynamic models. We first propose a reachability analysis tool designed for this system and then introduce how to reformulate a robust tracking problem with reachable sets. In addition, we prove the existence of a feedback policy that bounds the growth of reachable sets over an infinite horizon. The effectiveness of the proposed approach is validated through numerical simulations of the tracking task, where we compare it with a standard tube MPC method.}
+}
+
+@inproceedings{pun2025generating,
+  index = {C105},
   title={Generating Physically Stable and Buildable LEGO Designs from Text}, 
   author={Ava Pun and Kangle Deng and Ruixuan Liu and Deva Ramanan and Changliu Liu and Jun-Yan Zhu},
   year={2025},
-  journal={arXiv preprint arXiv:2505.05469},
+  booktitle={International Conference on Computer Vision},
   url={https://www.arxiv.org/abs/2505.05469}, 
   info = {https://avalovelace1.github.io/LegoGPT/},
   repository={https://github.com/AvaLovelace1/LegoGPT/},
@@ -2048,7 +2079,6 @@ abstract = {The denoising process of diffusion models can be interpreted as an a
   info = {https://drive.google.com/file/d/1d-ft1UMwm_gODsWk7Gl1TJmtk5MFfNzs/view?usp=sharing},
   abstract = {Human-AI collaboration is a powerful paradigm in decision-making systems, where humans and AI contribute different strengths with clear complementarity. Yet, achieving optimal team performance depends critically on proper trust in AI, ensuring humans rely on AI appropriately. In real-world scenarios, humans often lack the expertise or performance transparency to judge AI accuracy directly, creating a gap in appropriate trust calibration. In this paper, we address this challenge through three key contributions: (1) we propose a theoretical framework modeling the evolution of human trust in AI over time under AI performance uncertainty, (2) we investigate two self-calibrating trust methods, an instance-based cognitive model and a reinforcement learning (RL) model that learns trust calibration policies from experience, and (3) we conduct simulations comparing both approaches against a rule-based baseline under dynamically varying AI performance. Results show that RL-based trust calibration outperforms others in cumulative performance, while instance-based calibration offers interpretability and sample efficiency. These findings offer pathways for safe and adaptive trust alignment in human-AI collaboration toward trustworthy autonomy.},
 }
-
 
 @article{wang2025deployable,
   index = {U},
