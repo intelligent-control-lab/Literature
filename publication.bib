@@ -2101,8 +2101,28 @@ abstract = {The denoising process of diffusion models can be interpreted as an a
   }
 }
 
+@inproceedings{hu2025boundaryWorkshop,
+  index={W},
+  title={Safe PDE Boundary Control with Neural Operators}, 
+  author={Hanjiang Hu and Changliu Liu},
+  year={2025},
+  booktitle={ICML 2025 CO-BUILD Workshop on Computational Optimization of Buildings},
+  url={https://arxiv.org/abs/2411.15643}, 
+  repository={https://github.com/intelligent-control-lab/safe-pde-control},
+  abstract={The physical world dynamics are generally governed by underlying partial differential equations (PDEs) with unknown analytical forms in science and engineering problems. Neural network based data-driven approaches have been heavily studied in simulating and solving PDE problems in recent years, but it is still challenging to move forward from understanding to controlling the unknown PDE dynamics. PDE boundary control instantiates a simplified but important problem by only focusing on PDE boundary conditions as the control input and output. However, current model-free PDE controllers cannot ensure the boundary output satisfies some given user-specified safety constraint. To this end, we propose a safety filtering framework to guarantee the boundary output stays within the safe set for current model-free controllers. Specifically, we first introduce a general neural boundary control barrier function (BCBF) to ensure the feasibility of the trajectory-wise constraint satisfaction of boundary output. Based on a neural operator modeling the transfer function from boundary control input to output trajectories, we show that the change in the BCBF depends linearly on the change in input boundary, so quadratic programming-based safety filtering can be done for pre-trained model-free controllers. Extensive experiments under challenging hyperbolic, parabolic and Navier-Stokes PDE dynamics environments validate the effectiveness of the proposed method in achieving better general performance and boundary constraint satisfaction compared to the model-free controller baselines.}
+}
 
-
+@article{hu2025steeringWorkshop,
+  index = {W},
+  title={Steering Dialogue Dynamics for Robustness against Multi-turn Jailbreaking Attacks}, 
+  author={Hanjiang Hu and Alexander Robey and Changliu Liu},
+  year={2025},
+  booktitle={ICML 2025 Workshop on Reliable and Responsible Foundation Models},
+  url={https://arxiv.org/abs/2503.00187}, 
+  repository={https://github.com/HanjiangHu/NBF-LLM},
+  info = {https://sites.google.com/view/llm-nbf/home},
+  abstract={Large language models (LLMs) are shown to be vulnerable to jailbreaking attacks where adversarial prompts are designed to elicit harmful responses. While existing defenses effectively mitigate single-turn attacks by detecting and filtering unsafe inputs, they fail against multi-turn jailbreaks that exploit contextual drift over multiple interactions, gradually leading LLMs away from safe behavior. To address this challenge, we propose a safety steering framework grounded in safe control theory, ensuring invariant safety in multi-turn dialogues. Our approach models the dialogue with LLMs using state-space representations and introduces a novel neural barrier function (NBF) to detect and filter harmful queries emerging from evolving contexts proactively. Our method achieves invariant safety at each turn of dialogue by learning a safety predictor that accounts for adversarial queries, preventing potential context drift toward jailbreaks. Extensive experiments under multiple LLMs show that our NBF-based safety steering outperforms safety alignment, prompt-based steering and lightweight LLM guardrails baselines, offering stronger defenses against multi-turn jailbreaks while maintaining a better trade-off among safety, helpfulness and over-refusal. Check out the  website here \url{https://sites.google.com/view/llm-nbf/home}.}
+}
 
 @article{wang2025deployable,
   index = {U},
