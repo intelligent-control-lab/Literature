@@ -1943,6 +1943,15 @@
   abstract={It is critical to ensure safety for humanoid robots in real-world applications without compromising performance. In this paper, we consider the problem of dexterous safety, featuring limb-level geometry constraints for avoiding both external and self-collisions in cluttered environments. Compared to safety with simplified bounding geometries in sprase environments, dexterous safety produces numerous constraints which often lead to infeasible constraint sets when solving for safe robot control. To address this issue, we propose Projected Safe Set Algorithm (p-SSA), an extension of classical safe control algorithms to multi-constraint cases. p-SSA relaxes conflicting constraints in a principled manner, minimizing safety violations to guarantee feasible robot control. We verify our approach in simulation and on a real Unitree G1 humanoid robot performing complex collision avoidance tasks. Results show that p-SSA enables the humanoid to operate robustly in challenging situations with minimal safety violations and directly generalizes to various tasks with zero parameter tuning.},
 }
 
+@inproceedings{liu2025time,
+  index = {C102},
+  title={Time-Optimal Trajectory Generation with Multi-Level Continuous Kinodynamics Constraints},
+  author={Liu, Ruixuan and Liu, Changliu and Leu, Jessica},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  year={2025},
+  abstract={Time-optimal trajectory generation (TOTG) is critical in robotics applications to minimize travel time and increase robot task efficiency. To ensure the trajectory is feasible and executable by the robot, it is important to constrain the trajectory kinodynamics subject to the robot actuator limits. A typical actuator has multiple limits, 1) peak limit, and 2) multilevel continuous limits with different operation time windows. The peak limit bounds the instantaneous kinodynamics (IKD), whereas the continuous limits bound the system continuous kinodynamics (CKD). Existing works only constrain IKD, usually by the actuator peak limit, to achieve time optimality. However, a joint capable of operating at its peak limit momentarily will overheat and damage robot life if the motion continues. Alternatively, users can constrain the IKD with a reduced peak limit to avoid violating continuous limits. However, the reduced peak limit would inevitably sacrifice task efficiency. To address the challenge, this paper studies TOTG with both IKD and CKD, and proposes TOTG-C. It formulates the TOTG as a nonlinear programming (NLP). In particular, it proposes a novel formulation to encode the multi-level CKD constraints efficiently. To the best of our knowledge, TOTG-C is the first work that explicitly considers multi-level CKD constraints. We demonstrate the effectiveness and robustness of the proposed TOTG-C both in simulation and real robot experiments.},
+}
+
 @inproceedings{tang2025eye,
   index = {C103},
   title={Eye-in-Finger: Smart Fingers for Delicate Assembly and Disassembly of LEGO},
@@ -2049,7 +2058,7 @@ abstract = {The denoising process of diffusion models can be interpreted as an a
 
 @inproceedings{pun2025generating,
   index = {C106},
-  title={Generating Physically Stable and Buildable LEGO Designs from Text}, 
+  title={Generating Physically Stable and Buildable Brick Structures from Text}, 
   author={Ava Pun and Kangle Deng and Ruixuan Liu and Deva Ramanan and Changliu Liu and Jun-Yan Zhu},
   year={2025},
   booktitle={International Conference on Computer Vision},
