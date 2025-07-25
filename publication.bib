@@ -1705,17 +1705,6 @@
   abstract = {Long-term Human-Robot Collaboration (HRC) is crucial for enabling flexible manufacturing systems and integrating companion robots into daily human environments over extended periods. This paper identifies several key challenges for such collaborations, such as accurate recognition of human plan, robustness to disturbances, operational efficiency, adaptability to diverse user behaviors, and sustained human satisfaction. To address these challenges, we model the long-term HRC task through a hierarchical task graph and presents a novel multimodal and hierarchical framework to enable robots to better assist humans to advance on the task graph. In particular, the proposed multimodal framework integrates visual observations with speech commands to facilitate intuitive and flexible human-robot interactions. Additionally, our hierarchical designs for both human pose detection and plan prediction allow better understanding of human behaviors and significantly enhance system accuracy, robustness, and flexibility. Moreover, an online adaptation mechanism enables real-time adjustment to diverse user behaviors. We deploy the proposed framework to KINOVA GEN3 robot and conduct extensive user studies on real-world long-term HRC assembly scenarios. Experimental results show that our approaches reduce task completion time by 15.9%, achieves an average task success rate of 91.8% and an overall user satisfaction score of 84% in long-term HRC tasks, showcasing its applicability in enhancing real-world long-term HRC.},
 }
 
-@article{xu2024nl2hltl2planscalingnaturallanguage,
-  index = {U},
-  title={Nl2Hltl2Plan: Scaling Up Natural Language Understanding for Multi-Robots Through Hierarchical Temporal Logic Task Representation}, 
-  author={Shaojun Xu and Xusheng Luo and Yutong Huang and Letian Leng and Ruixuan Liu and Changliu Liu},
-  year={2024},
-  journal={arXiv:2408.08188},
-  url={https://arxiv.org/abs/2408.08188},
-  info={https://nl2hltl2plan.github.io},
-  abstract={To enable non-experts to specify long-horizon, multi-robot collaborative tasks, language models are increasingly used to translate natural language commands into formal specifications. However, because translation can occur in multiple ways, such translations may lack accuracy or lead to inefficient multi-robot planning. Our key insight is that concise hierarchical specifications can simplify planning while remaining straightforward to derive from human instructions. We propose Nl2Hltl2Plan, a framework that translates natural language commands into hierarchical Linear Temporal Logic (LTL) and solves the corresponding planning problem. The translation involves two steps leveraging Large Language Models (LLMs). First, an LLM transforms instructions into a Hierarchical Task Tree, capturing logical and temporal relations. Next, a fine-tuned LLM converts sub-tasks into flat LTL formulas, which are aggregated into hierarchical specifications, with the lowest level corresponding to ordered robot actions. These specifications are then used with off-the-shelf planners. Our Nl2Hltl2Plan demonstrates the potential of LLMs in hierarchical reasoning for multi-robot task planning. Evaluations in simulation and real-world experiments with human participants show that Nl2Hltl2Plan outperforms existing methods, handling more complex instructions while achieving higher success rates and lower costs in task allocation and planning.}
-}
-
 @article{zhao2024absolutestatewiseconstrainedpolicy,
   index    = {U},
   title    = {Absolute State-wise Constrained Policy Optimization: High-Probability State-wise Constraints Satisfaction},
@@ -2056,6 +2045,17 @@
   repository={https://github.com/AvaLovelace1/LegoGPT/},
   teaser = {https://github.com/waynekyrie/waynekyrie.github.io/blob/master/images/legogpt.gif?raw=true},
   abstract = {We introduce LegoGPT, the first approach for generating physically stable LEGO brick models from text prompts. To achieve this, we construct a large-scale, physically stable dataset of LEGO designs, along with their associated captions, and train an autoregressive large language model to predict the next brick to add via next-token prediction. To improve the stability of the resulting designs, we employ an efficient validity check and physics-aware rollback during autoregressive inference, which prunes infeasible token predictions using physics laws and assembly constraints. Our experiments show that LegoGPT produces stable, diverse, and aesthetically pleasing LEGO designs that align closely with the input text prompts. We also develop a text-based LEGO texturing method to generate colored and textured designs. We show that our designs can be assembled manually by humans and automatically by robotic arms. We also release our new dataset, StableText2Lego, containing over 47,000 LEGO structures of over 28,000 unique 3D objects accompanied by detailed captions, along with our code and models at the project website: this URL.}
+}
+
+@article{xu2025nl2hltl2planscalingnaturallanguage,
+  index = {J35},
+  title={NL2HLTL2Plan: Scaling Up Natural Language Understanding for Multi-Robots Through Hierarchical Temporal Logic Task Specifications}, 
+  author={Shaojun Xu and Xusheng Luo and Yutong Huang and Letian Leng and Ruixuan Liu and Changliu Liu},
+  year={2025},
+  journal={IEEE Robotics and Automation Letters},
+  url={https://arxiv.org/abs/2408.08188},
+  info={https://nl2hltl2plan.github.io},
+  abstract={To enable non-experts to specify long-horizon, multi-robot collaborative tasks, language models are increasingly used to translate natural language commands into formal specifications. However, because translation can occur in multiple ways, such translations may lack accuracy or lead to inefficient multi-robot planning. Our key insight is that concise hierarchical specifications can simplify planning while remaining straightforward to derive from human instructions. We propose Nl2Hltl2Plan, a framework that translates natural language commands into hierarchical Linear Temporal Logic (LTL) and solves the corresponding planning problem. The translation involves two steps leveraging Large Language Models (LLMs). First, an LLM transforms instructions into a Hierarchical Task Tree, capturing logical and temporal relations. Next, a fine-tuned LLM converts sub-tasks into flat LTL formulas, which are aggregated into hierarchical specifications, with the lowest level corresponding to ordered robot actions. These specifications are then used with off-the-shelf planners. Our Nl2Hltl2Plan demonstrates the potential of LLMs in hierarchical reasoning for multi-robot task planning. Evaluations in simulation and real-world experiments with human participants show that Nl2Hltl2Plan outperforms existing methods, handling more complex instructions while achieving higher success rates and lower costs in task allocation and planning.}
 }
 
 @inproceedings{huang2025multi,
