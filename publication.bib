@@ -630,8 +630,8 @@
     abstract = "{Applying intelligent robot arms in dynamic uncertain environments (i.e., flexible production lines) remains challenging, which requires efficient algorithms for real time trajectory generation. The motion planning problem for robot trajectory generation is highly nonlinear and nonconvex, which usually comes with collision avoidance constraints, robot kinematics and dynamics constraints, and task constraints (e.g., following a Cartesian trajectory defined on a surface and maintain the contact). The nonlinear and nonconvex planning problem is computationally expensive to solve, which limits the application of robot arms in the real world. In this paper, for redundant robot arm planning problems with complex constraints, we present a motion planning method using iterative convex optimization that can efficiently handle the constraints and generate optimal trajectories in real time. The proposed planner guarantees the satisfaction of the contact-rich task constraints and avoids collision in confined environments. Extensive experiments on trajectory generation for weld grinding are performed to demonstrate the effectiveness of the proposed method and its applicability in advanced robotic manufacturing.}",
     doi = {10.1115/DSCC2020-3208},
     url = {https://doi.org/10.1115/DSCC2020-3208},
-    note = {V002T31A002},
-    eprint = {https://asmedigitalcollection.asme.org/DSCC/proceedings-pdf/DSCC2020/84287/V002T31A002/6622297/v002t31a002-dscc2020-3208.pdf},
+    note = {V0021A002},
+    eprint = {https://asmedigitalcollection.asme.org/DSCC/proceedings-pdf/DSCC2020/84287/V0021A002/6622297/v0021a002-dscc2020-3208.pdf},
     video = {https://www.youtube.com/embed/Meo7TnaPido}
 }
 
@@ -2165,4 +2165,49 @@
   year={2025},
   url={https://arxiv.org/pdf/2509.20616}, 
   abstract = {Large Language Models (LLMs) have demonstrated remarkable capabilities in knowledge acquisition, reasoning, and tool use, making them promising candidates for autonomous agent applications. However, training LLM agents for complex multi-turn task planning faces significant challenges, including sparse episode-wise rewards, credit assignment across long horizons, and the computational overhead of reinforcement learning in multi-turn interaction settings. To this end, this paper introduces a novel approach that transforms multi-turn task planning into single-turn task reasoning problems, enabling efficient policy optimization through Group Relative Policy Optimization (GRPO) with dense and verifiable reward from expert trajectories. Our theoretical analysis shows that GRPO improvement on single-turn task reasoning results in a lower bound of the multi-turn success probability under the minimal turns, as well as the generalization to subtasks with shorter horizons. Experimental evaluation on the complex task planning benchmark demonstrates that our 1.5B parameter model trained with single-turn GRPO achieves superior performance compared to larger baseline models up to 14B parameters, with success rates of 70% for long-horizon planning tasks.}
+}
+
+@article{abuduweili2025,
+  index = {T4},
+  author = {Abulikemu Abuduweili},
+  title = {Algorithms for Data-efficient Continual Robot Learning},
+  year = {2025},
+  month = {10},
+  link = {https://kilthub.cmu.edu/articles/thesis/Algorithms_for_Data-efficient_Continual_Robot_Learning/30307174},
+  doi = {10.1184/R1/30307174.v1},
+  booktitle={PhD Thesis},
+  abstract = {The deployment of intelligent robotic agents in complex, non-stationary human environments—such as collaborative manufacturing, autonomous driving, and long-term navigation—hinges on their ability to learn continually from a dynamic stream of real-world data. Traditional machine learning paradigms, which rely on offline training with static datasets, are fundamentally ill-suited for these settings. They are plagued by critical limitations, most notably catastrophic forgetting, where new knowledge overwrites previously learned skills; profound data inefficiency, a particularly acute problem in robotics where data collection is expensive and time-consuming; and the challenge of modeling and controlling complex nonlinear dynamics with adaptability and generalizability from limited data.
+
+This thesis presents a systematic investigation into a new class of learning algorithms designed to overcome these barriers, enabling robust and data-efficient continual learning for robots. The contributions are organized into three syner?gistic pillars. The first pillar, Data-Efficient Optimization, introduces novel algorithms for both online and offline learning. We develop a family of Extended Kalman Filter (EKF)-based optimizers that leverage second-order information to achieve superior convergence for online adaptation. We also improve adaptive gradient methods for offline pretraining by introducing a data-driven approach to initialize optimizer states, enhancing stability and performance. The second pillar, Continual Learning with Memory Mechanisms, addresses catastrophic forgetting through bio-inspired memory architectures. This includes a feedforward compensation strategy that proactively uses critical past experiences to improve adaptation and the BioSLAM dual-memory system, which explicitly manages short-term plasticity and long-term knowledge consolidation for lifelong place recognition. The third and culminating pillar, Models for Efficient Robot Learning, presents novel frameworks for learning generalizable system models for control. We pioneer the continual learning and lifting of Koopman dynamics, a breakthrough approach for linearizing high?dimensional, nonlinear systems like legged robots from streaming data. This pillar also investigates methods for estimating neural network robustness via Lipschitz constants, a crucial step for deploying learned models in safety-critical applications.
+
+Collectively, this body of work provides a foundational framework for creating truly adaptive, resilient, and intelligent robots. By developing solutions for data-efficient optimization, memory-augmented learning, and continual dynamics modeling, this thesis paves the way for the safe and effective deployment of autonomous systems in the open world.}
+
+  @article{liu2025,
+  author = {Simin Liu},
+  title = {Reachable Sets for Control and Planning: from Reactive Safety to Contact-Rich Manipulation},
+  year = {2025},
+  month = {September},
+  school = {Carnegie Mellon University},
+  address = {Pittsburgh, PA},
+  number = {CMU-RI-TR-25-88},
+  keywords = {Motion planning, nonlinear control, reachability, manipulation, drones},
+  abstract = {This thesis investigates two fundamental challenges in robotics: ensuring reactive safety for agile systems and achieving scalable planning for contact-rich manipulation. Despite arising in distinct contexts, both problems hinge on reasoning about system dynamics and constraints. We argue that reachable sets—long studied in control theory—provide a unifying computational primitive for tackling both.
+
+In the first part, we study reactive safety for uncertain and high-dimensional systems. We develop new methods for synthesizing control barrier functions (CBFs) using both formal optimization and learning-based techniques. Specifically, we introduce a robust-adaptive synthesis framework based on sum-of-squares programming, which guarantees safety under parametric uncertainty while reducing unnecessary conservatism. To address scalability, we propose an adversarial training framework that learns neural CBFs capable of handling higher-dimensional dynamics. Across cartpole, quadrotor, and other benchmarks, our controllers achieve 100% safety while interfering substantially less with nominal performance objectives than existing baselines.
+
+In the second part, we extend reachable-set methods to long-horizon planning for contact-rich manipulation. We present a hierarchical planner for bimanual SE(2) reorientation tasks that uses mutual reachable sets as discrete motion primitives. By covering object space with a compact set of such primitives, we reduce the combinatorial complexity of hybrid contact planning to shortest-path search on a small graph. This yields efficient and expressive global plans that outperform sampling-based methods, with successful demonstrations on real robotic hardware.
+
+Together, these contributions demonstrate how reachable sets can serve as a versatile foundation across the robotics stack: from low-level safety filters for agile systems to high-level planning abstractions for dexterous manipulation. This unifying perspective suggests broader opportunities for integrating reachability-based methods into robust and scalable robotic autonomy.}
+  }
+
+@article{pandya2025,
+author = {Ravi Pandya},
+title = {Influence-Aware Safety for Human-Robot Interaction},
+year = {2025},
+month = {October},
+school = {Carnegie Mellon University},
+address = {Pittsburgh, PA},
+number = {CMU-RI-TR-25-95},
+keywords = {Human-Robot Interaction, Safe Control, AI Safety},
+abstract = {In recent years, we have seen through recommender systems on social media how influential (and potentially harmful) algorithms can be in our lives, sometimes creating polarization and conspiracies that lead to unsafe behavior. Now that robots are also growing more common in the real world, we must be very careful to ensure that they are aware of the influence they will have on people, especially when it comes to safety---we do not want robots to cause any physical harm. In this thesis, we focus on the problem of influence-aware safe control for human-robot interaction in hopes of enabling robots to intentionally and positively influence people to make their interactions with robots safer and more efficient. We first study this problem from the safe control perspective by introducing a novel method for dealing with the multimodality of the robot's uncertainty over a human's intention inside a robust safe controller. Next, we explore different methods for generating influence-aware robot behavior from different levels of abstraction: action-directed, goal-directed, and strategy-directed. We ultimately find useful tools for designing robot behaviors that can proactively influence human collaborators towards positive outcomes. Finally, we join these thrusts by posing and solving the full influence-aware safety problem for human-robot interactions. We first show that explicitly enabling a robot to reason about the influence it has on a human collaborator can lead to more efficient interactions without sacrificing safety. Finally, we extend this paradigm to more general human-AI interactions, particularly people interacting with large language models (LLMs). We show that treating safety as failures in the physical environment in this domain allows us to automatically learn safety-preserving language actions and influential behavior that can steer interactions towards safe long-term outcomes from budget constraints in e-commerce to collision avoidance in driving. The work done in this thesis establishes a basis for several key research directions in the future. Specifically, researchers in AI safety can build on the influence-aware safety problem as a basis for generating safe AI systems that are explicitly aware of how their actions may change the behavior of human users in the real world. This work also enables future work to focus on safe long-term interactions between humans and robots. While this thesis focuses on influence during single interactions, the influence-aware safety problem can easily be applied to repeated interactions with human users, which is an important directions as AI chatbots, recommendation systems and physical robots continue becoming larger parts of our daily lives. Ultimately, this thesis will help researchers understand the importance of explicitly modeling the influence that autonomous agents have on people and how to use this influence to keep people safe.}
 }
