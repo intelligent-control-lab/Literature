@@ -2121,19 +2121,6 @@
   }
 }
 
-@article{hu2025steering,
-  index = {J40},
-  title={Steering Dialogue Dynamics for Robustness against Multi-turn Jailbreaking Attacks}, 
-  author={Hanjiang Hu and Alexander Robey and Changliu Liu},
-  year={2026},
-  journal={Transactions on Machine Learning Research},
-  notes={Also presented at ICML 2025 Workshop on Reliable and Responsible Foundation Models},
-  url={https://arxiv.org/abs/2503.00187}, 
-  repository={https://github.com/HanjiangHu/NBF-LLM},
-  info = {https://sites.google.com/view/llm-nbf/home},
-  abstract={Large language models (LLMs) are shown to be vulnerable to jailbreaking attacks where adversarial prompts are designed to elicit harmful responses. While existing defenses effectively mitigate single-turn attacks by detecting and filtering unsafe inputs, they fail against multi-turn jailbreaks that exploit contextual drift over multiple interactions, gradually leading LLMs away from safe behavior. To address this challenge, we propose a safety  framework grounded in safe control theory, ensuring invariant safety in multi-turn dialogues. Our approach models the dialogue with LLMs using state-space representations and introduces a novel neural barrier function (NBF) to detect and filter harmful queries emerging from evolving contexts proactively. Our method achieves invariant safety at each turn of dialogue by learning a safety predictor that accounts for adversarial queries, preventing potential context drift toward jailbreaks. Extensive experiments under multiple LLMs show that our NBF-based safety  outperforms safety alignment, prompt-based  and lightweight LLM guardrails baselines, offering stronger defenses against multi-turn jailbreaks while maintaining a better trade-off among safety, helpfulness and over-refusal. Check out the  website here \url{https://sites.google.com/view/llm-nbf/home}.}
-}
-
 @article{wang2025deployable,
   index = {J36},
   title={Trends in Motion Prediction Toward Deployable and Generalizable Autonomy: A Revisit and Perspectives},
@@ -2229,6 +2216,17 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
   abstract = {In recent years, we have seen through recommender systems on social media how influential (and potentially harmful) algorithms can be in our lives, sometimes creating polarization and conspiracies that lead to unsafe behavior. Now that robots are also growing more common in the real world, we must be very careful to ensure that they are aware of the influence they will have on people, especially when it comes to safety---we do not want robots to cause any physical harm. In this thesis, we focus on the problem of influence-aware safe control for human-robot interaction in hopes of enabling robots to intentionally and positively influence people to make their interactions with robots safer and more efficient. We first study this problem from the safe control perspective by introducing a novel method for dealing with the multimodality of the robot's uncertainty over a human's intention inside a robust safe controller. Next, we explore different methods for generating influence-aware robot behavior from different levels of abstraction: action-directed, goal-directed, and strategy-directed. We ultimately find useful tools for designing robot behaviors that can proactively influence human collaborators towards positive outcomes. Finally, we join these thrusts by posing and solving the full influence-aware safety problem for human-robot interactions. We first show that explicitly enabling a robot to reason about the influence it has on a human collaborator can lead to more efficient interactions without sacrificing safety. Finally, we extend this paradigm to more general human-AI interactions, particularly people interacting with large language models (LLMs). We show that treating safety as failures in the physical environment in this domain allows us to automatically learn safety-preserving language actions and influential behavior that can steer interactions towards safe long-term outcomes from budget constraints in e-commerce to collision avoidance in driving. The work done in this thesis establishes a basis for several key research directions in the future. Specifically, researchers in AI safety can build on the influence-aware safety problem as a basis for generating safe AI systems that are explicitly aware of how their actions may change the behavior of human users in the real world. This work also enables future work to focus on safe long-term interactions between humans and robots. While this thesis focuses on influence during single interactions, the influence-aware safety problem can easily be applied to repeated interactions with human users, which is an important directions as AI chatbots, recommendation systems and physical robots continue becoming larger parts of our daily lives. Ultimately, this thesis will help researchers understand the importance of explicitly modeling the influence that autonomous agents have on people and how to use this influence to keep people safe.}
   }
 
+@article{kapoor2025constrained,
+      index = {U},
+      title={Constrained Decoding for Robotics Foundation Models}, 
+      author={Parv Kapoor and Akila Ganlath and Michael Clifford and Changliu Liu and Sebastian Scherer and Eunsuk Kang},
+      year={2025},
+      eprint={2509.01728},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2509.01728}, 
+}
+
 %%%%%%% 2026 %%%%%%%%%
 @inproceedings{pandya2025refusal,
   index = {C108},
@@ -2238,6 +2236,27 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
   year={2026},
   url={https://arxiv.org/abs/2510.13727}
 }
+
+@inproceedings{jung2026wholebody,
+  index={C109},
+  title={Whole-Body Safe Control of Robotic Systems with Koopman Neural Dynamics},
+  author={Jung, Sebin and Abuduweili, Abulikemu and Li, Jiaxing and Liu, Changliu},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  year={2026},
+  url={https://arxiv.org/abs/2603.03740},
+  abstract={Controlling robots with strongly nonlinear, high-dimensional dynamics remains challenging, as direct nonlinear optimization with safety constraints is often intractable in real time. The Koopman operator offers a way to represent nonlinear systems linearly in a lifted space, enabling the use of efficient linear control. We propose a data-driven framework that learns a Koopman embedding and operator from data, and integrates the resulting linear model with the Safe Set Algorithm (SSA). This allows the tracking and safety constraints to be solved in a single quadratic program (QP), ensuring feasibility and optimality without a separate safety filter. We validate the method on a Kinova Gen3 manipulator and a Go2 quadruped, showing accurate tracking and obstacle avoidance.}
+}
+
+@inproceedings{he2026viral,
+  index={C110},
+  title={VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation},
+  author={He, Tairan and Wang, Zi and Xue, Haoru and Ben, Qingwei and Luo, Zhengyi and Xiao, Wenli and Yuan, Ye and Da, Xingye and Castañeda, Fernando and Sastry, Shankar and Liu, Changliu and Shi, Guanya and Fan, Linxi and Zhu, Yuke},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  info={https://viral-humanoid.github.io},
+  url={https://arxiv.org/abs/2511.15200},
+  year={2026}
+}
+
 
 @article{yang2024feasibility,
       index = {J39},
@@ -2251,6 +2270,19 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
       url={https://arxiv.org/abs/2404.10064}, 
 }
 
+@article{hu2025steering,
+  index = {J40},
+  title={Steering Dialogue Dynamics for Robustness against Multi-turn Jailbreaking Attacks}, 
+  author={Hanjiang Hu and Alexander Robey and Changliu Liu},
+  year={2026},
+  journal={Transactions on Machine Learning Research},
+  notes={Also presented at ICML 2025 Workshop on Reliable and Responsible Foundation Models},
+  url={https://arxiv.org/abs/2503.00187}, 
+  repository={https://github.com/HanjiangHu/NBF-LLM},
+  info = {https://sites.google.com/view/llm-nbf/home},
+  abstract={Large language models (LLMs) are shown to be vulnerable to jailbreaking attacks where adversarial prompts are designed to elicit harmful responses. While existing defenses effectively mitigate single-turn attacks by detecting and filtering unsafe inputs, they fail against multi-turn jailbreaks that exploit contextual drift over multiple interactions, gradually leading LLMs away from safe behavior. To address this challenge, we propose a safety  framework grounded in safe control theory, ensuring invariant safety in multi-turn dialogues. Our approach models the dialogue with LLMs using state-space representations and introduces a novel neural barrier function (NBF) to detect and filter harmful queries emerging from evolving contexts proactively. Our method achieves invariant safety at each turn of dialogue by learning a safety predictor that accounts for adversarial queries, preventing potential context drift toward jailbreaks. Extensive experiments under multiple LLMs show that our NBF-based safety  outperforms safety alignment, prompt-based  and lightweight LLM guardrails baselines, offering stronger defenses against multi-turn jailbreaks while maintaining a better trade-off among safety, helpfulness and over-refusal. Check out the  website here \url{https://sites.google.com/view/llm-nbf/home}.}
+}
+
 @article{zheng2026contingency,
       index = {U},
       title={Contingency Planning for Safety-Critical Autonomous Vehicles: A Review and Perspectives}, 
@@ -2261,4 +2293,37 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
       archivePrefix={arXiv},
       primaryClass={eess.SY},
       url={https://arxiv.org/abs/2601.14880}, 
+}
+
+@article{abuduweili2026scaling,
+      index = {U},
+      title={Scaling Law of Neural Koopman Operators}, 
+      author={Abulikemu Abuduweili and Yuyang Pang and Feihan Li and Changliu Liu},
+      year={2026},
+      eprint={2602.19943},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2602.19943}, 
+}
+
+@article{tang2026cadprompted,
+      index = {U},
+      title={CAD-Prompted SAM3: Geometry-Conditioned Instance Segmentation for Industrial Objects}, 
+      author={Zhenran Tang and Rohan Nagabhirava and Changliu Liu},
+      year={2026},
+      eprint={2602.20551},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2602.20551}, 
+}
+
+@article{yu2026autonomous,
+      index = {U},
+      title={Autonomous Integration and Improvement of Robotic Assembly using Skill Graph Representations}, 
+      author={Peiqi Yu and Philip Huang and Chaitanya Chawla and Guanya Shi and Jiaoyang Li and Changliu Liu},
+      year={2026},
+      eprint={2603.12649},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2603.12649}, 
 }
