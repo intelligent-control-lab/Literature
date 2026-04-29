@@ -2385,11 +2385,12 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
 }
 
 @article{sun2026learning,
+  index = {U},
   title={Learning Safe-Stoppability Monitors for Humanoid Robots},
   author={Sun, Yifan and Pan, Yiyuan and Li, Shangtao and Ding, Caiwu and Cui, Tao and Wang, Lingyun and Liu, Changliu},
-  journal={arXiv preprint arXiv:2603.22703},
+  journal={arXiv:2603.22703},
   year={2026},
-  link={https://intelligent-control-lab.github.io/humanoid_stoppability/},
+  info={https://intelligent-control-lab.github.io/humanoid_stoppability/},
   url={https://arxiv.org/pdf/2603.22703},
   video={https://www.youtube.com/embed/qhbmATQcj2k?si=Ut59ARJbp_vWMGOk},
   abstract={Emergency stop (E-stop) mechanisms are the de facto standard for robot safety. However, for humanoid robots, abruptly cutting power can itself cause catastrophic failures; instead, an emergency stop must execute a predefined fallback controller that preserves balance and drives the robot toward a minimum-risk condition. This raises a critical question: from which states can a humanoid robot safely execute such a stop? In this work, we formalize emergency stopping for humanoids as a policy-dependent safe-stoppability problem and use data-driven approaches to characterize the safe-stoppable envelope. We introduce PRISM (Proactive Refinement of Importance-sampled Stoppability Monitor), a simulation-driven framework that learns a neural predictor for state-level stoppability. PRISM iteratively refines the decision boundary using importance sampling, enabling targeted exploration of rare but safety-critical states. This targeted exploration significantly improves data efficiency while reducing false-safe predictions under a fixed simulation budget. We further demonstrate sim-to-real transfer by deploying the pretrained monitor on a real humanoid platform. Results show that modeling safety as policy-dependent stoppability enables proactive safety monitoring and supports scalable certification of fail-safe behaviors for humanoid robots.}
