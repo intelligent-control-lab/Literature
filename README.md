@@ -35,11 +35,13 @@ https://www.youtube.com/watch?v=5tsSdKkTc4M
 
 6. `info`: additional information/resources for the paper, which could be the project webpage, the poster, the slides, the supplementary material, etc. Note only one link can be provided in this entry. It will be linked to the `Page` button on the ICL publication page.
 
-7. `abstract`: abstract of the paper, which will be displayed in a drop down window on the ICL publication page.
+7. `slides`: a link to the slides associated with the paper. It will be linked to the `Slides` button on the ICL publication page.
 
-8. `award`: if this paper receives award, add the award information here.
+8. `abstract`: abstract of the paper, which will be displayed in a drop down window on the ICL publication page.
 
-9. `notes`: additional information for the paper, which won't be directly linked on the ICL publication page, but is visible inside the BibTex record if user clicks the `Cite` button. If a conference/journal paper is previously presented at a workshop or other non-archieval venue, only include the BibTex record for the archieval version, and then add a note for its previous publication(s). Example:
+9. `award`: if this paper receives award, add the award information here.
+
+10. `notes`: additional information for the paper, which won't be directly linked on the ICL publication page, but is visible inside the BibTex record if user clicks the `Cite` button. If a conference/journal paper is previously presented at a workshop or other non-archieval venue, only include the BibTex record for the archieval version, and then add a note for its previous publication(s). Example:
 
 ```
 @inproceedings{lin2024nnsysbench,
@@ -52,7 +54,7 @@ https://www.youtube.com/watch?v=5tsSdKkTc4M
   notes={Also presented at ICML Workshop on Formal Verification of Machine Learning 2022 under the title "Characterizing Neural Network Verification for Systems with NN4SYSBENCH". Link: https://naizhengtan.github.io/doc/papers/characterizing22haoyu.pdf}
 }
 ```
-10. `teaser`: an image or gif to highlight the work. This will be displayed in a drop down window on the ICL publication page.
+11. `teaser`: an image or gif to highlight the work. This will be displayed in a drop down window on the ICL publication page.
 
 Additionally, we use the following conventions:
 
