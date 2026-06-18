@@ -2390,11 +2390,11 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
   year={2026}
 }
 
-@article{sun2026learning,
-  index = {U},
+@inproceedings{sun2026learning,
+  index = {C115},
   title={Learning Safe-Stoppability Monitors for Humanoid Robots},
   author={Sun, Yifan and Pan, Yiyuan and Li, Shangtao and Ding, Caiwu and Cui, Tao and Wang, Lingyun and Liu, Changliu},
-  journal={arXiv:2603.22703},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
   year={2026},
   info={https://intelligent-control-lab.github.io/humanoid_stoppability/},
   url={https://arxiv.org/pdf/2603.22703},
@@ -2413,3 +2413,24 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
       info={https://intelligent-control-lab.github.io/BrickCraft/},
       abstract={Autonomous robotic assembly of interlocking bricks demands seamless integration of long-horizon task reasoning, spatial grounding, and fine-grained manipulation. This paper presents BrickCraft, a compositional framework designed for long-horizon and generalizable interlocking brick assembly. BrickCraft models the assembly process using a relative formulation, where each step is anchored to a reference brick within the partial structure, thereby decomposing complex tasks into a finite set of reusable primitive skills. BrickCraft bridges the gap between high-level assembly plans and physical execution through situated manuals, which provide explicit spatial guidance for learned visuomotor skills by projecting the assembly intent onto real-time robot observations. Finally, BrickCraft employs a compositional execution pipeline that chains these spatially grounded skills to accomplish long-horizon assembly tasks. Extensive experimental validations demonstrate that BrickCraft acquires proficient assembly skills from a limited set of demonstrations and exhibits strong compositional generalization to unseen structures. }
 }
+
+
+@article{chen2026lambdareachability,
+      title={$\lambda$-Reachability: Geometric-Horizon Safety Bellman Equations for Humanoid Safety}, 
+      author={Rui Chen and Shangtao Li and Yifan Sun and Changliu Liu},
+      year={2026},
+      journal={arXiv:2606.16022},
+      url={https://arxiv.org/abs/2606.16022}, 
+      abstract={We introduce $\lambda$-Reachability, a scalable approach to Hamilton--Jacobi safety analysis for high-dimensional robotic systems. Unlike prior discounted formulations that rely on fixed one-step Bellman updates, $\lambda$-Reachability employs a stochastic multi-step estimator of the safety value, using a geometrically distributed rollout horizon together with a randomly absorbed terminal. Conceptually analogous to TD($\lambda$), $\lambda$-Reachability interpolates between local self-consistency updates and long-horizon max-over-trajectory safety targets via an interpretable horizon-control parameter. Unlike TD($\lambda$), where the terminal value is always incorporated in learning targets, the terminal safety value in $\lambda$-Reachability is only used at a probability controlled by parameter $\delta$. We formally show that for $\delta<1$, the update induces a contraction mapping that allows temporal-difference learning; as $\lambda \to 1$, the estimator recovers the undiscounted reachability objective. We apply $\lambda$-Reachability to high-dimensional safety learning problems with both simulated and real humanoid robots under balance and collision avoidance constraints. Experimental results demonstrate that $\lambda$-Reachability significantly improves both safe-set boundary classification and safety margin estimation compared to single-step temporal-difference baselines.}
+}
+
+@article{hu2026vlesa,
+      title={VLESA: Vision-Language Embodied Safety Agent for Human Activity Monitoring}, 
+      author={Hanjiang Hu and Yiyuan Pan and Jiaxing Li and Xusheng Luo and Alexander Robey and Na Li and Yebin Wang and Changliu Liu},
+      year={2026},
+      journal={2606.03954},
+      url={https://arxiv.org/abs/2606.03954}, 
+      repository={https://github.com/HanjiangHu/VLESA},
+      abstract={As AI systems increasingly assist humans in physical tasks, ensuring safety becomes paramount -- physical actions carry immediate and irreversible consequences that digital errors do not. We introduce the Vision-Language Embodied Safety Agent (VLESA), a framework that monitors human activities from egocentric video and triggers real-time safety interventions when dangerous actions are predicted. VLESA addresses intent-dependent safety where identical actions can be safe or dangerous depending on context. A dataset pairing egocentric frames with goal-conditioned safety annotations is introduced, enabling a goal-conditioned safety Q-filter trained via GRPO that evaluates actions with respect to inferred intent without retraining. On top of that, an intent-action prediction agent is proposed to jointly infer goals and predict future actions from video. On the ASIMOV-2.0 benchmark, VLESA achieves higher intervention accuracy at the exact ground-truth frame compared to baselines, while the GRPO-trained Q-filter improves action safety by over 41 percentage points through goal-conditioned constrained decoding. }
+}
+
