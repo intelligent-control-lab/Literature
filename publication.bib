@@ -2437,6 +2437,38 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
       abstract={As AI systems increasingly assist humans in physical tasks, ensuring safety becomes paramount -- physical actions carry immediate and irreversible consequences that digital errors do not. We introduce the Vision-Language Embodied Safety Agent (VLESA), a framework that monitors human activities from egocentric video and triggers real-time safety interventions when dangerous actions are predicted. VLESA addresses intent-dependent safety where identical actions can be safe or dangerous depending on context. A dataset pairing egocentric frames with goal-conditioned safety annotations is introduced, enabling a goal-conditioned safety Q-filter trained via GRPO that evaluates actions with respect to inferred intent without retraining. On top of that, an intent-action prediction agent is proposed to jointly infer goals and predict future actions from video. On the ASIMOV-2.0 benchmark, VLESA achieves higher intervention accuracy at the exact ground-truth frame compared to baselines, while the GRPO-trained Q-filter improves action safety by over 41 percentage points through goal-conditioned constrained decoding. }
 }
 
+@article{zheng2026dynamic,
+      index={U},
+      title={Dynamic Neural Koopman Distillation for Real-Time Robot Control Using Diffusion Models},
+      author={Lei Zheng and Peiqi Yu and Zengqi Peng and Changliu Liu and Armin Lederer},
+      year={2026},
+      journal={arXiv:2605.24924},
+      url={https://arxiv.org/abs/2605.24924},
+      info={https://fdkoopman.github.io},
+      abstract={Diffusion models excel at generating diverse and multimodal trajectories for robotic planning, yet their iterative denoising process introduces latency that is incompatible with high-frequency closed-loop control. To address this problem, we propose Dynamic Neural Koopman Distillation, a framework that distills multistep diffusion inference into a single forward pass while retaining the multimodal expressivity of the teacher model. Specifically, we introduce a Factorized Dynamic Koopman layer that models the denoising process through a factorized latent transition with state-dependent modal gains. We evaluate the proposed method on standard D4RL MuJoCo locomotion benchmarks and a physical Kinova manipulator, comparing against one-step baselines. The results show that our method significantly outperforms existing one-step distillation approaches on the reported locomotion tasks, and reduces the inference latency to the millisecond regime compared with the teacher policy. Hardware experiments further demonstrate that our method enables smooth and fast closed-loop execution while maintaining task success and comparable accuracy.}
+}
+
+@article{liu2026roco,
+      index={U},
+      title={RoCo Challenge at AAAI 2026: Benchmarking Robotic Collaborative Manipulation for Assembly Towards Industrial Automation},
+      author={Haichao Liu and Yuheng Zhou and Zhenyu Wu and Ziheng Ji and Ziyu Shan and Qianzhun Wang and Ruixuan Liu and Zhiyuan Yang and Yejun Gu and Shalman Khan and Shijun Yan and Jun Liu and Haiyue Zhu and Changliu Liu and Jianfei Yang and Jingbing Zhang and Ziwei Wang},
+      year={2026},
+      journal={arXiv:2603.15469},
+      url={https://arxiv.org/abs/2603.15469},
+      info={https://rocochallenge.github.io},
+      abstract={Embodied Artificial Intelligence (EAI) is rapidly developing, gradually subverting previous autonomous systems' paradigms from isolated perception to integrated, continuous action. This transition is highly significant for industrial robotic manipulation, promising to free human workers from repetitive, dangerous daily labor. To benchmark and advance this capability, we introduce the Robotic Collaborative Assembly Assistance (RoCo) Challenge with a dataset towards simulation and real-world assembly manipulation. Set against the backdrop of human-centered manufacturing, this challenge focuses on a high-precision planetary gearbox assembly task, a demanding yet highly representative operation in modern industry. Built upon a self-developed data collection, training, and evaluation system in Isaac Sim, and utilizing a dual-arm robot for real-world deployment, the challenge operates in two phases. The Simulation Round defines fine-grained task phases for step-wise scoring to handle the long-horizon nature of the assembly. The Real-World Round mirrors this evaluation with physical gearbox components and high-quality teleoperated datasets. The core tasks require assembling an epicyclic gearbox from scratch, including mounting three planet gears, a sun gear, and a ring gear. Attracting over 60 teams and 170+ participants from more than 10 countries, the challenge yielded highly effective solutions, most notably ARC-VLA and RoboCola. Results demonstrate that a dual-model framework for long-horizon multi-task learning is highly effective, and the strategic utilization of recovery-from-failure curriculum data is a critical insight for successful deployment. This report outlines the competition setup, evaluation approach, key findings, and future directions for industrial EAI.}
+}
+
+@article{pan2026inferencetime,
+      index={U},
+      title={Inference-Time Robot Behavior Steering through Physically-Aware Reconfiguration of Task-Structure},
+      author={Yiyuan Pan and Hanjiang Hu and Shangtao Li and Xusheng Luo and Changliu Liu},
+      year={2026},
+      journal={arXiv:2606.26588},
+      url={https://arxiv.org/abs/2606.26588},
+      abstract={A central challenge in deploying learned robot policies is inference-time behavior steering: redirecting a policy at test time to satisfy user preferences not anticipated during training, without retraining. Existing methods fail in two modes: end-to-end methods require fine-tuning or expert-level guidance, while neuro-symbolic methods rely on predefined symbols whose edits can result in logically reasonable but physically infeasible plans. To address this challenge, we propose ReStruct, which builds upon a neural automaton policy that decomposes a visuomotor policy into a high-level state-machine skeleton capturing task structure and a low-level continuous controller represented as a residual policy. Specifically, ReStruct adopts the automaton to represent the preference and incorporates it into the skeleton through a synchronous product, thereby reconfiguring the task structure. With the controller kept frozen, the action priors provided by the skeleton are updated accordingly to enable physically-aware control under a modified task structure. Extensive experiments from simulation and real-world show that ReStruct steers a wide range of preferences, from object-centric specifications to temporal-logic constraints, and after steering surpasses existing methods, exceeding VLA models in both task success and preference-following by up to 25\%.}
+}
+
 @inproceedings{he2026motion,
       index={C116},
       title={Motion Planning with Model-Based Diffusion via Constraint Optimization and Adaptive Scheduling},
