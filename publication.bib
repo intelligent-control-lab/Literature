@@ -2416,12 +2416,12 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
 }
 
 
-@article{chen2026lambdareachability,
-      index={U},
+@inproceedings{chen2026lambdareachability,
+      index={C118},
       title={$\lambda$-Reachability: Geometric-Horizon Safety Bellman Equations for Humanoid Safety}, 
       author={Rui Chen and Shangtao Li and Yifan Sun and Changliu Liu},
       year={2026},
-      journal={arXiv:2606.16022},
+      booktitle={Conference on Robot Learning},
       url={https://arxiv.org/abs/2606.16022}, 
       abstract={We introduce $\lambda$-Reachability, a scalable approach to Hamilton--Jacobi safety analysis for high-dimensional robotic systems. Unlike prior discounted formulations that rely on fixed one-step Bellman updates, $\lambda$-Reachability employs a stochastic multi-step estimator of the safety value, using a geometrically distributed rollout horizon together with a randomly absorbed terminal. Conceptually analogous to TD($\lambda$), $\lambda$-Reachability interpolates between local self-consistency updates and long-horizon max-over-trajectory safety targets via an interpretable horizon-control parameter. Unlike TD($\lambda$), where the terminal value is always incorporated in learning targets, the terminal safety value in $\lambda$-Reachability is only used at a probability controlled by parameter $\delta$. We formally show that for $\delta<1$, the update induces a contraction mapping that allows temporal-difference learning; as $\lambda \to 1$, the estimator recovers the undiscounted reachability objective. We apply $\lambda$-Reachability to high-dimensional safety learning problems with both simulated and real humanoid robots under balance and collision avoidance constraints. Experimental results demonstrate that $\lambda$-Reachability significantly improves both safe-set boundary classification and safety margin estimation compared to single-step temporal-difference baselines.}
 }
@@ -2459,12 +2459,12 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
       abstract={Embodied Artificial Intelligence (EAI) is rapidly developing, gradually subverting previous autonomous systems' paradigms from isolated perception to integrated, continuous action. This transition is highly significant for industrial robotic manipulation, promising to free human workers from repetitive, dangerous daily labor. To benchmark and advance this capability, we introduce the Robotic Collaborative Assembly Assistance (RoCo) Challenge with a dataset towards simulation and real-world assembly manipulation. Set against the backdrop of human-centered manufacturing, this challenge focuses on a high-precision planetary gearbox assembly task, a demanding yet highly representative operation in modern industry. Built upon a self-developed data collection, training, and evaluation system in Isaac Sim, and utilizing a dual-arm robot for real-world deployment, the challenge operates in two phases. The Simulation Round defines fine-grained task phases for step-wise scoring to handle the long-horizon nature of the assembly. The Real-World Round mirrors this evaluation with physical gearbox components and high-quality teleoperated datasets. The core tasks require assembling an epicyclic gearbox from scratch, including mounting three planet gears, a sun gear, and a ring gear. Attracting over 60 teams and 170+ participants from more than 10 countries, the challenge yielded highly effective solutions, most notably ARC-VLA and RoboCola. Results demonstrate that a dual-model framework for long-horizon multi-task learning is highly effective, and the strategic utilization of recovery-from-failure curriculum data is a critical insight for successful deployment. This report outlines the competition setup, evaluation approach, key findings, and future directions for industrial EAI.}
 }
 
-@article{pan2026inferencetime,
-      index={U},
+@inproceedings{pan2026inferencetime,
+      index={C119},
       title={Inference-Time Robot Behavior Steering through Physically-Aware Reconfiguration of Task-Structure},
       author={Yiyuan Pan and Hanjiang Hu and Shangtao Li and Xusheng Luo and Changliu Liu},
       year={2026},
-      journal={arXiv:2606.26588},
+      booktitle={Conference on Robot Learning},
       url={https://arxiv.org/abs/2606.26588},
       abstract={A central challenge in deploying learned robot policies is inference-time behavior steering: redirecting a policy at test time to satisfy user preferences not anticipated during training, without retraining. Existing methods fail in two modes: end-to-end methods require fine-tuning or expert-level guidance, while neuro-symbolic methods rely on predefined symbols whose edits can result in logically reasonable but physically infeasible plans. To address this challenge, we propose ReStruct, which builds upon a neural automaton policy that decomposes a visuomotor policy into a high-level state-machine skeleton capturing task structure and a low-level continuous controller represented as a residual policy. Specifically, ReStruct adopts the automaton to represent the preference and incorporates it into the skeleton through a synchronous product, thereby reconfiguring the task structure. With the controller kept frozen, the action priors provided by the skeleton are updated accordingly to enable physically-aware control under a modified task structure. Extensive experiments from simulation and real-world show that ReStruct steers a wide range of preferences, from object-centric specifications to temporal-logic constraints, and after steering surpasses existing methods, exceeding VLA models in both task success and preference-following by up to 25\%.}
 }
