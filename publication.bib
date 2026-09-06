@@ -2423,6 +2423,9 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
       year={2026},
       booktitle={Conference on Robot Learning},
       url={https://arxiv.org/abs/2606.16022}, 
+      website = {https://intelligent-control-lab.github.io/lambda_reach/},
+      youtube = {https://www.youtube.com/watch?v=sW9JjJ73NJ4},
+      code = {https://github.com/intelligent-control-lab/lambda_reach},
       abstract={We introduce $\lambda$-Reachability, a scalable approach to Hamilton--Jacobi safety analysis for high-dimensional robotic systems. Unlike prior discounted formulations that rely on fixed one-step Bellman updates, $\lambda$-Reachability employs a stochastic multi-step estimator of the safety value, using a geometrically distributed rollout horizon together with a randomly absorbed terminal. Conceptually analogous to TD($\lambda$), $\lambda$-Reachability interpolates between local self-consistency updates and long-horizon max-over-trajectory safety targets via an interpretable horizon-control parameter. Unlike TD($\lambda$), where the terminal value is always incorporated in learning targets, the terminal safety value in $\lambda$-Reachability is only used at a probability controlled by parameter $\delta$. We formally show that for $\delta<1$, the update induces a contraction mapping that allows temporal-difference learning; as $\lambda \to 1$, the estimator recovers the undiscounted reachability objective. We apply $\lambda$-Reachability to high-dimensional safety learning problems with both simulated and real humanoid robots under balance and collision avoidance constraints. Experimental results demonstrate that $\lambda$-Reachability significantly improves both safe-set boundary classification and safety margin estimation compared to single-step temporal-difference baselines.}
 }
 
