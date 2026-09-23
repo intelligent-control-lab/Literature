@@ -498,7 +498,7 @@
   author = {Jaskaran Grover and Changliu Liu and Katia Sycara},
   keywords = {Mobile robots, Multiagent systems, Autonomous robotic systems, Robotics technology, Model predictive, optimization-based control},
   abstract = {Collision avoidance for multirobot systems has been studied thoroughly. Recently, control barrier functions (CBFs) have been proposed to mediate between collision avoidance and goal achievement for multiple robots. However, it has been noted that reactive controllers (such as CBFs) are prone to deadlock, an equilibrium that causes the robots to stall before reaching their goals. In this paper, we formally analyze two and three robot systems and discover circumstances under which CBFs cause deadlocks using duality theory. For the two robot system, we consider mutually heterogeneous robots (such as one more vigorous or closer to its goal than the other) and prove that this heterogeneity does not help in preventing deadlock. We then consider three robots, and conclude from these two scenarios that the geometric symmetry resulting from robots’ initial positions and goals constrains CBFs to generate velocities that render deadlock stable. Thus, conferring skewness to the system can help evade deadlock.},
-  video = {https://www.youtube.com/embed/dQ00RrQ1cRg&t=55s}
+  video = {https://www.youtube.com/embed/dQ00RrQ1cRg?t=55s}
 }
 
 @article{cheng2020towards,
@@ -2424,7 +2424,7 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
       booktitle={Conference on Robot Learning},
       url={https://arxiv.org/abs/2606.16022}, 
       info = {https://intelligent-control-lab.github.io/lambda_reach/},
-      video = {https://www.youtube.com/watch?v=sW9JjJ73NJ4},
+      video = {https://www.youtube.com/embed/sW9JjJ73NJ4},
       repository = {https://github.com/intelligent-control-lab/lambda_reach},
       abstract={We introduce $\lambda$-Reachability, a scalable approach to Hamilton--Jacobi safety analysis for high-dimensional robotic systems. Unlike prior discounted formulations that rely on fixed one-step Bellman updates, $\lambda$-Reachability employs a stochastic multi-step estimator of the safety value, using a geometrically distributed rollout horizon together with a randomly absorbed terminal. Conceptually analogous to TD($\lambda$), $\lambda$-Reachability interpolates between local self-consistency updates and long-horizon max-over-trajectory safety targets via an interpretable horizon-control parameter. Unlike TD($\lambda$), where the terminal value is always incorporated in learning targets, the terminal safety value in $\lambda$-Reachability is only used at a probability controlled by parameter $\delta$. We formally show that for $\delta<1$, the update induces a contraction mapping that allows temporal-difference learning; as $\lambda \to 1$, the estimator recovers the undiscounted reachability objective. We apply $\lambda$-Reachability to high-dimensional safety learning problems with both simulated and real humanoid robots under balance and collision avoidance constraints. Experimental results demonstrate that $\lambda$-Reachability significantly improves both safe-set boundary classification and safety margin estimation compared to single-step temporal-difference baselines.}
 }
@@ -2486,17 +2486,23 @@ Together, these contributions demonstrate how reachable sets can serve as a vers
 }
 
 @article{yu2026maniskillformer,
+  index={U},
   title={ManiSkillFormer: Demonstration-Free Compositional Manipulation via Task-Conditioned Geometric Contracts},
   author={Yu, Peiqi and Dabhi, Mosam and Li, Shangtao and Li, Bowei and Jeni, Laszlo and Liu, Changliu},
-  journal={arXiv preprint arXiv:2609.16331},
-  year={2026}
+  journal={arXiv:2609.16331},
+  year={2026},
+  url={https://arxiv.org/abs/2609.16331},
+  video={https://www.youtube.com/embed/wcmLg7IiEP4},
+  info={https://patricia1019.github.io/ManiSkillFormer/},
+  abstract={Adapting robotic manipulation to new objects and tasks often requires additional demonstrations, policy fine-tuning, or manual engineering. Reusable manipulation skills can reduce this effort, but connecting their execution requirements to scene-specific geometry remains challenging. We present ManiSkillFormer, a framework for demonstration-free and compositional manipulation that connects perception and action through explicit geometric contracts. Building on reusable skill schemas, LLM agents generate contracts specifying the geometry primitives required by each skill, together with corresponding motion templates for semantic objects and task contexts. These contracts guide a perception module to ground task-relevant 3D geometry from observations, which is then used to instantiate reusable motion templates in a skill library.
+We evaluate ManiSkillFormer on a dual-arm robot across demonstration-free pick-and-place with 30 instances from 8 object categories, functional manipulation including unscrewing, pouring, pressing, and folding, and three long-horizon tasks. ManiSkillFormer achieves an average success rate of 88.97% for pick-and-place, 75.00% for functional manipulation, and completion rates of 50--80% across the long-horizon tasks, outperforming the evaluated baselines and two ablated pipelines. These results demonstrate the potential of explicit geometric contracts to support skill reuse and composition across objects and tasks without per-object policy fine-tuning or additional robot demonstrations.}
 }
 
 @article{li2026arstag,
   index = {U},
   title = {{ARSTAG}: An Agentic {Real2Sim2Real} System for Task-Specific Robot Data Generation},
   author = {Li, Bowei and Zhang, Yuner and Liu, Changliu},
-  journal = {arXiv preprint arXiv:2609.24563},
+  journal = {arXiv:2609.24563},
   year = {2026},
   month = sep,
   doi = {10.48550/arXiv.2609.24563},
