@@ -110,7 +110,7 @@
   abstract={The development of automated vehicles brings new challenges to road safety. The behavior of the automated vehicles should be carefully designed in order to interact with the environment and other vehicles efficiently and safely. This paper is focused on the learning and decision making methods for the automated vehicles towards safe freeway driving. Based on a multi-agent traffic model, the decision making problem is posed as an optimal control problem, which is solved by 1) behavior classification and trajectory prediction of the surrounding vehicles, and 2) a unique parallel planner architecture which addresses the efficiency goal and the safety goal separately. The simulation results demonstrate the effectiveness of the algorithm.}
 }
 
-@incollection{liu2017designing,
+@incollection{liu2017designing_chapter,
   index={B1},
   title={Designing the Robot Behavior for Safe Human--Robot Interactions},
   author={Liu, Changliu and Tomizuka, Masayoshi},
@@ -122,7 +122,7 @@
   abstract={Recent advances in robotics suggest that human robot interaction (HRI) is no longer a fantasy, but is happening in various fields such as industrial robots, autonomous vehicles and medical robots. Human safety is one of the biggest concerns in HRI. As humans will respond to the robot's movement, interactions need to be considered explicitly by the robot. A systematic approach to design the robot behavior towards safe HRI is discussed in this chapter. By modeling the interactions in a multi-agent framework, the safety issues are understood as conflicts in the multi-agent system. By mimicking human's social behavior, the robot's behavior is constrained by the "no-collision" social norm and the uncertainties it perceives for human motions. An efficient action is then found within the constraints. Both analysis and human-involved simulation verify the effectiveness of the method.}
 }
 
-@phdthesis{liu2017designing,
+@phdthesis{liu2017designing_thesis,
   index={T0},
   title={Designing robot behavior in human-robot interactions},
   author={Liu, Changliu},
@@ -787,53 +787,53 @@
   abstract={Deep neural networks are widely used for nonlinear function approximation with applications spanning from computer vision to control. Although these networks involve the composition of simple arithmetic operations, it can be very challenging to verify whether a particular network satisfies certain input-output properties. This article surveys methods that have emerged recently for soundly verifying such properties. These methods borrow insights from reachability analysis, optimization, and search. We discuss fundamental differences and connections between existing algorithms. In addition, we provide pedagogical implementations of existing methods and compare them on a set of benchmark problems.}
 }
 
-@article{grover2021simultaneously,
+@inproceedings{grover2021simultaneously,
   index={W},
   title={Simultaneously learning safety margins and task parameters of multirobot systems},
   author={Grover, Jaskaran Singh and Liu, Changliu and Sycara, Katia},
-  journal={RSS BI-MAS Workshop},
+  booktitle={RSS BI-MAS Workshop},
   year={2021},
   url={https://jaskaransgrover.github.io/files/RSS_Workshop.pdf},
   abstract={We present an algorithm for learning constraint and objective function parameters of optimization-based controllers used in multirobot systems. Our proposed approach uses position-velocity measurements of each robot in the team to perform this inference. The motivation to learn these parameters stems from the need to infer an agent’s intent for accurate predictions of motion in a multiagent system. We develop an extension of our prior work in which we performed task learning assuming constraint parameters were known. In this work, we perform simultaneous learning of constraint and cost function parameters by posing it as a constrained nonconvex optimization problem. The cost function parameters that we learn encode information of the task being performed by each robot in the team whereas the constraint parameters encode information about individual safety margin distances and size of the safe control set for each robot. Our simulation results show the accurate reconstruction of both the constraint and cost function parameters and we analyze some failure cases.}
 }
 
 
-@article{wei2021online,
+@inproceedings{wei2021online,
   index={W},
   title={Online Verification of Deep Neural Networks under Domain or Weight Shift},
   author={Wei, Tianhao and Liu, Changliu},
-  journal={RSS R4P Workshop},
+  booktitle={RSS R4P Workshop},
   year={2021},
   url={https://arxiv.org/abs/2106.12732},
   abstract={Although neural networks are widely used, it remains challenging to formally verify the safety and robustness of neural networks in real-world applications. Existing methods are designed to verify the network before deployment, which are limited to relatively simple specifications and fixed networks. These methods are not ready to be applied to real-world problems with complex and/or dynamically changing specifications and networks. To effectively handle such problems, verification needs to be performed online when these changes take place. However, it is still challenging to run existing verification algorithms online. Our key insight is that we can leverage the temporal dependencies of these changes to accelerate the verification process. This paper establishes a novel framework for scalable online verification to solve real-world verification problems with dynamically changing specifications and/or networks. We propose three types of acceleration algorithms: Branch Management to reduce repetitive computation, Perturbation Tolerance to tolerate changes, and Incremental Computation to reuse previous results. Experiment results show that our algorithms achieve up to 100× acceleration, and thus show a promising way to extend neural network verification to real-world applications.}
 }
 
 
-@article{liu2021iada,
+@inproceedings{liu2021iada,
   index={W},
   title={IADA: Iterative Adversarial Data Augmentation Using Formal Verification and Expert Guidance},
   author={Liu, Ruixuan and Liu, Changliu},
-  journal={ICML Workshop on Human in the Loop Learning},
+  booktitle={ICML Workshop on Human in the Loop Learning},
   year={2021},
   url={https://arxiv.org/abs/2108.06871},
   abstract={Neural networks (NNs) are widely used for classification tasks for their remarkable performance. However, the robustness and accuracy of NNs heavily depend on the training data. In many applications, massive training data is usually not available. To address the challenge, this paper proposes an iterative adversarial data augmentation (IADA) framework to learn neural network models from an insufficient amount of training data. The method uses formal verification to identify the most "confusing" input samples, and leverages human guidance to safely and iteratively augment the training data with these samples. The proposed framework is applied to an artificial 2D dataset, the MNIST dataset, and a human motion dataset. By applying IADA to fully-connected NN classifiers, we show that our training method can improve the robustness and accuracy of the learned model. By comparing to regular supervised training, on the MNIST dataset, the average perturbation bound improved 107.4%. The classification accuracy improved 1.77%, 3.76%, 10.85% on the 2D dataset, the MNIST dataset, and the human motion dataset respectively.}
 }
 
-@article{wang2021hierarchical,
+@inproceedings{wang2021hierarchical,
   index={W},
   title={Hierarchical Adaptable and Transferable Networks (HATN) for Driving Behavior Prediction},
   author={Wang, Letian and Hu, Yeping and Sun, Liting and Zhan, Wei and Tomizuka, Masayoshi and Liu, Changliu},
-  journal={NeurIPS workshop on Machine Learning for Autonomous Driving},
+  booktitle={NeurIPS workshop on Machine Learning for Autonomous Driving},
   year={2021},
   url={https://arxiv.org/pdf/2111.00788.pdf},
   abstract={When autonomous vehicles still struggle to solve challenging situations during on-road driving, humans have long mastered the essence of driving with efficient transferable and adaptable driving capability. By mimicking humans' cognition model and semantic understanding during driving, we present HATN, a hierarchical framework to generate high-quality driving behaviors in multi-agent dense-traffic environments. Our method hierarchically consists of a high-level intention identification and low-level action generation policy. With the semantic sub-task definition and generic state representation, the hierarchical framework is transferable across different driving scenarios. Besides, our model is also able to capture variations of driving behaviors among individuals and scenarios by an online adaptation module. We demonstrate our algorithms in the task of trajectory prediction for real traffic data at intersections and roundabouts, where we conducted extensive studies of the proposed method and demonstrated how our method outperformed other methods in terms of prediction accuracy and transferability.}
 }
 
-@article{wang2021online,
+@inproceedings{wang2021online,
   index={W},
   title={Online Adaptation of Neural Network Models by Modified Extended Kalman Filter for Customizable and Transferable Driving Behavior Prediction},
   author={Wang, Letian and Hu, Yeping and Liu, Changliu},
-  journal={AAAI Workshop HCSSL},
+  booktitle={AAAI Workshop HCSSL},
   year={2021},
   url={https://paperswithcode.com/paper/online-adaptation-of-neural-network-models-by},
   abstract={High fidelity behavior prediction of human drivers is crucial for efficient and safe deployment of autonomous vehicles, which is challenging due to the stochasticity, heterogeneity, and time-varying nature of human behaviors. On one hand, the trained prediction model can only capture the motion pattern in an average sense, while the nuances among individuals can hardly be reflected. On the other hand, the prediction model trained on the training set may not generalize to the testing set which may be in a different scenario or data distribution, resulting in low transferability and generalizability. In this paper, we applied a τ-step modified Extended Kalman Filter parameter adaptation algorithm (MEKFλ) to the driving behavior prediction task, which has not been studied before in literature. With the feedback of the observed trajectory, the algorithm is applied to neural-network-based models to improve the performance of driving behavior predictions across different human subjects and scenarios. A new set of metrics is proposed for systematic evaluation of online adaptation performance in reducing the prediction error for different individuals and scenarios. Empirical studies on the best layer in the model and steps of observation to adapt are also provided.}
@@ -980,27 +980,27 @@
   index = {C48},
   author = {Jaskaran Grover and Nishant Mohanty and Wenhao Luo and Changliu Liu and Katia Sycara},
   title ={Noncooperative Herding With Control Barrier Functions: Theory and Experiments},
-  journal = {IEEE Conference on Decision and Control},
+  booktitle = {IEEE Conference on Decision and Control},
   year={2022},
   url={https://arxiv.org/pdf/2204.10945.pdf}
 }
 
-@article{grover2022semantically,
+@inproceedings{grover2022semantically,
   index = {C49},
   author = {Jaskaran Grover and Yiwei Lyu and Wenhao Luo and Changliu Liu and John Dolan and Katia Sycara},
   title ={Semantically-Aware Pedestrian Intent Prediction With Barrier Functions and Mixed-Integer Quadratic Programming},
-  journal = {IFAC Workshop on Cyber-Physical Human Systems},
+  booktitle = {IFAC Workshop on Cyber-Physical Human Systems},
   year={2022},
   url={https://webpages.charlotte.edu/wluo4/publications/IFAC_CPHS_2022_Pedestrian_Intent_Prediction.pdf},
   award = {Best Student Paper Finalist}
 }
 
-@article{liu2022task,
+@inproceedings{liu2022task,
   index = {C50},
   author = {Ruixuan Liu and Rui Chen and Changliu Liu},
   robot = {fanuc, kinova},
   title ={Task-agnostic Adaptation for Safe Human-robot Handover},
-  journal = {IFAC Workshop on Cyber-Physical Human Systems},
+  booktitle = {IFAC Workshop on Cyber-Physical Human Systems},
   year={2022},
   link={https://www.sciencedirect.com/science/article/pii/S2405896323001295},
   award = {Best Student Paper Award},
@@ -1023,7 +1023,7 @@
   index = {C52},
   author = {Ankur Deka and Changliu Liu and Katia Sycara},
   title ={ARC - Actor Residual Critic for Adversarial Imitation Learning},
-  journal = {Conference on Robot Learning},
+  booktitle = {Conference on Robot Learning},
   year={2022},
   pages={1446--1456},
   organization={PMLR},
@@ -1034,7 +1034,7 @@
   index = {C53},
   author = {Simin Liu and Changliu Liu and John Dolan},
   title ={Safe Control Under Input Limits with Neural Control Barrier Functions},
-  journal = {Conference on Robot Learning},
+  booktitle = {Conference on Robot Learning},
   year={2022},
   url={https://arxiv.org/abs/2211.11056}
 }
@@ -1335,12 +1335,12 @@
   publisher={Springer International Publishing Cham}
 }
 
-@article{liu2023robotic,
+@inproceedings{liu2023robotic,
   index={W},
   title={Robotic LEGO Assembly and Disassembly from Human Demonstration},
   robot={fanuc},
   author={Liu, Ruixuan and Sun, Yifan and Liu, Changliu},
-  journal={ACC Workshop on Recent Advancement of Human Autonomy Interaction and Integration},
+  booktitle={ACC Workshop on Recent Advancement of Human Autonomy Interaction and Integration},
   year={2023},
   url={https://arxiv.org/abs/2305.15667},
   video={https://www.youtube.com/embed/CRIKbV_0TvU?si=uBjQNxoIZC3q7kd0},
@@ -1615,7 +1615,7 @@
   index = {C79},
   title={Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation},
   author={He, Tairan and Luo, Zhengyi and Xiao, Wenli and Zhang, Chong and Kitani, Kris and Liu, Changliu and Shi, Guanya},
-  journal={IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
   year={2024}
 }
 
