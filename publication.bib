@@ -2515,3 +2515,15 @@ We evaluate ManiSkillFormer on a dual-arm robot across demonstration-free pick-a
   teaser = {https://boweili666.github.io/ARSTAG/assets/tasks-overview-full.webp},
   abstract = {ARSTAG automates the creation of robot policy training data from one RGB image and a language instruction. Coordinated language agents reconstruct task-relevant simulation scenes, produce feasible robot demonstrations, and diversify the data using task-consistent randomization. Evaluation covers seven manipulation tasks and three visuomotor policy architectures on a dual-arm robot. The pi0.5 policy achieves 74.6 percent average real-world success. Ablations indicate improved robustness from randomization and better performance with larger generated datasets.}
 }
+
+@inproceedings{wen2026robofin3d,
+  index={W},
+  title={{RoboFin3D}: A Sim-to-Real Platform for Robotic Surface Finishing},
+  author={Haowei Wen and Shangtao Li and Vaibhav Sanjay and Philip Huang and Jiaoyang Li and Changliu Liu},
+  booktitle={IROS 2026 Workshop on Sim2Real and Classical Control: From Rigorous Theory to Data-Driven Robotics},
+  year={2026},
+  url={https://icontrol.ri.cmu.edu/assets/papers/RoboFin3D.pdf},
+  poster={https://icontrol.ri.cmu.edu/assets/papers/RoboFin3D_Poster.pdf},
+  notes={Haowei Wen and Shangtao Li contributed equally.},
+  abstract={Grinding and sanding are fundamental processes in industrial robotic surface finishing. However, physical trials are expensive and consume workpieces, making reproducible experiments difficult. We present RoboFin3D, a sim-to-real platform built on Isaac Sim and the Newton physics engine, that provides physics-based grinding and sanding simulation for cheap and repeatable robotic surface finishing experiments. RoboFin3D utilizes a signed distance field (SDF) to model the changing geometry of the workpiece, enabling contact computation, live updates and rendering without an intermediate mesh. It additionally uses a separate surface field to model progressive surface appearance change during sanding. We also introduce WeldGen, a weld sampling module, to generate weld beads on 8,918 real-world workpiece meshes for providing diverse simulation assets. The simulation parameters are calibrated on real experimental results and our evaluation demonstrates our simulation's fidelity against the real world. We also demonstrate that simulation-generated data can be used to improve the performance of perception models. Simulation-only fine-tuning of SAM2 improves IoU for segmentation of unsanded regions from 77.15% to 84.47%, while combined synthetic and real training reaches 97.41%.}
+}
